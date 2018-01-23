@@ -23,6 +23,6 @@
       </TableView>
       <Label layoutX="27.0" layoutY="24.0" text="Sort by:" />
       <ComboBox fx:id="comboColumn" layoutX="101.0" layoutY="19.0" prefWidth="150.0" />
-      <Button layoutX="830.0" layoutY="19.0" mnemonicParsing="false" text="Ayuda" />
+      <Button fx:id="botonAyuda" layoutX="830.0" layoutY="19.0" mnemonicParsing="false" onAction="#ayuda" text="Ayuda" />
    </children>
 </AnchorPane>

@@ -2,7 +2,15 @@
 package view;
 
 import controller.Prueba;
+import java.awt.Desktop;
+import java.io.File;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -25,8 +33,13 @@ public class VistaProductoController {
     private TableColumn stockColumn;
     @FXML
     private ComboBox comboColumn;
+    @FXML
+    private Button botonAyuda;
     
     private Prueba prueba;
+    
+    private Desktop desktop = Desktop.getDesktop();
+    private File file = new File("C:\\Users\\Jesus\\Desktop\\DAM2\\antonio\\Introduccion_JSP.pptx");
     
     public VistaProductoController(){
     }
@@ -57,6 +70,20 @@ public class VistaProductoController {
     public void setPrueba(Prueba prueba){
         this.prueba=prueba;
         tablaProducto.setItems(prueba.getDatosProducto());
+    }
+    
+    public void ayuda(){
+        this.botonAyuda.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                
+                try {
+                    desktop.open(file);
+                } catch (IOException ex) {
+                    System.out.println("error abriendo archivo");
+                }
+            }
+        });
     }
     
 }
