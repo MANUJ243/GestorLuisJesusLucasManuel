@@ -34,12 +34,13 @@ public class EditarProductoController {
     public void setProducto(Producto producto) {
         this.producto = producto;
         idTextField.setText(String.valueOf(producto.getId()));
-        nombreTextField.setText(producto.getNombre());
-        precioTextField.setText(String.valueOf(producto.getPrecio()));
-        stockTextField.setText(String.valueOf(producto.getStock()));
-        String img = producto.getPathImagen();
-        imagen.setStyle("-fx-background-image: url('file:" + img + "'); -fx-background-size: 150px; -fx-background-repeat: no-repeat; -fx-background-position: 50%; -fx-background-color:#F9F9F9;");
-
+        if (!(producto.isNullProduct())) {
+            nombreTextField.setText(producto.getNombre());
+            precioTextField.setText(String.valueOf(producto.getPrecio()));
+            stockTextField.setText(String.valueOf(producto.getStock()));
+            String img = producto.getPathImagen();
+            imagen.setStyle("-fx-background-image: url('file:" + img + "'); -fx-background-size: 150px; -fx-background-repeat: no-repeat; -fx-background-position: 50%; -fx-background-color:#F9F9F9;");
+        }
     }
 
     public boolean pulsadoGuardar() {
@@ -53,7 +54,7 @@ public class EditarProductoController {
             producto.setPrecio(Double.parseDouble(precioTextField.getText()));
             producto.setStock(Integer.parseInt(stockTextField.getText()));
             producto.setPathImagen("src/img/pera_amarilla.jpg");
-            pulsadoGuardar=true;
+            pulsadoGuardar = true;
             escenarioEdicion.close();
         }
 

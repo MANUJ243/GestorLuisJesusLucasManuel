@@ -34,7 +34,8 @@ public class Producto {
     }*/
     
     public Producto() {
-        this.idFinal = null;
+        id++;
+        this.idFinal = new SimpleIntegerProperty(id);
         this.nombre = null;
         this.descripcion = null;
         this.precio = null;
@@ -71,6 +72,13 @@ public class Producto {
 
     public int getId() {
         return idFinal.get();
+    }
+    
+    public boolean isNullProduct(){
+        if (this.nombre == null) {
+            return true;
+        }
+        return false;
     }
 
     public String getNombre() {
