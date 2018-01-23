@@ -1,6 +1,7 @@
 
 package model;
 
+import java.io.File;
 import java.time.LocalDate;
 import javafx.beans.property.DoubleProperty;
 import javafx.beans.property.IntegerProperty;
@@ -38,8 +39,10 @@ public class Producto {
         this.fechaAlta = new SimpleObjectProperty(LocalDate.of(1974, 6, 15));
         this.fechaModificacion = new SimpleObjectProperty(LocalDate.of(1974, 6, 15));
         this.imagen = new Button();
-        this.imagen.setPrefSize(60, 60);
-        this.imagen.setStyle("-fx-background-image: url('file:/"+img+"');");
+        this.imagen.setPrefSize(200, 200);
+        String path  = new File(img).getAbsolutePath();
+        String javaPath = path.replace("\\", "/");
+        this.imagen.setStyle("-fx-background-image: url('file:/"+javaPath+"'); -fx-background-repeat: no-repeat; -fx-background-position: 50%; -fx-background-color:#F9F9F9;");
         this.imagen.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
