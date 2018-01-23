@@ -27,10 +27,22 @@ public class Producto {
     private String pathImagen;
     private final Button imagen;
 
-    public Producto() {
+    /*public Producto() {
         
         this(null, null, null, null);
         System.out.println("****");
+    }*/
+    
+    public Producto() {
+        this.idFinal = null;
+        this.nombre = null;
+        this.descripcion = null;
+        this.precio = null;
+        this.stock = null;
+        this.fechaAlta = null;
+        this.fechaModificacion = null;
+        this.pathImagen = null;
+        this.imagen = null;
     }
 
     public Producto(String nombre, Double precio, Integer stock, String img) {
