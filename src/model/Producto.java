@@ -17,7 +17,7 @@ import javafx.scene.control.Button;
 
 public class Producto {
     
-    private static  int id;
+    private static  int id=1000;
     private final IntegerProperty idFinal;
     private final StringProperty nombre;
     private final StringProperty descripcion;
