@@ -11,8 +11,10 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 import model.Producto;
+import view.EditarProductoController;
 import view.VistaProductoController;
 
 public class Prueba extends Application {
@@ -20,14 +22,17 @@ public class Prueba extends Application {
     private Stage escenarioPrincipal;
     private BorderPane layoutPrincipal;
     private AnchorPane vistaProducto;
+    private AnchorPane editarProducto;
     private ObservableList datosProducto = FXCollections.observableArrayList();
     
     public Prueba(){
-        datosProducto.add(new Producto("Pera",10.00,1, "src/img/camburguer.png"));
-        datosProducto.add(new Producto("Zanahoria",8.00,3, "src/img/camburguer.png"));
+        datosProducto.add(new Producto("Pera",10.00,1, "src/img/pera3.jpg"));
+        datosProducto.add(new Producto("Hamburguesa",8.00,3, "src/img/camburguer.png"));
+        datosProducto.add(new Producto("Coca-cola",8.00,3, "src/img/coca_cola.jpg"));
     }
     
     public ObservableList getDatosProducto(){
+        
         return datosProducto;
     }
     
@@ -66,6 +71,30 @@ public class Prueba extends Application {
         layoutPrincipal.setCenter(vistaProducto);
         VistaProductoController vistaProductoController = loader.getController();
         vistaProductoController.setPrueba(this);
+    }
+    
+    public boolean muestraEditaProducto(Producto producto){
+      
+        FXMLLoader loader = new FXMLLoader();
+        URL location = Prueba.class.getResource("../view/EditarProducto.fxml");
+        loader.setLocation(location);
+        try {
+            editarProducto=loader.load();
+        } catch (IOException ex) {
+            Logger.getLogger(Prueba.class.getName()).log(Level.SEVERE, null, ex);
+            return false;
+        }
+        Stage escenarioEdicion=new Stage();
+        escenarioEdicion.setTitle("Editar producto");
+        escenarioEdicion.initModality(Modality.WINDOW_MODAL);
+        escenarioEdicion.initOwner(escenarioPrincipal);
+        Scene escena = new Scene(editarProducto);
+        escenarioEdicion.setScene(escena);
+        EditarProductoController controller = loader.getController();
+        controller.setEscenarioEdicion(escenarioEdicion);
+        controller.setProducto(producto);
+        escenarioEdicion.showAndWait();
+        return controller.pulsadoGuardar();
     }
     
       public Stage getPrimaryStage() {

@@ -2,6 +2,7 @@ package view;
 
 import controller.Prueba;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 
@@ -24,6 +25,9 @@ public class VistaDetallesController {
     private ImageView codigoBarrasImg;
     @FXML
     private Label codigoBarras;
+    @FXML
+    private Button botonBorrar;
+    
     
     private Prueba prueba;
     

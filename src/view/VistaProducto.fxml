@@ -11,9 +11,9 @@
    <children>
       <TableView fx:id="tablaProducto" layoutX="461.0" layoutY="66.0" prefHeight="534.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="66.0">
         <columns>
-          <TableColumn fx:id="idColumn" prefWidth="149.0" text="ID" />
-          <TableColumn fx:id="imagenColumn" prefWidth="183.0" text="Imagen" />
-            <TableColumn fx:id="nombreColumn" prefWidth="183.0" text="Nombre" />
+          <TableColumn fx:id="imagenColumn" maxWidth="2500.0" prefWidth="95.0" text="Imagen" />
+          <TableColumn fx:id="idColumn" maxWidth="2000.0" minWidth="0.0" prefWidth="0.0" text="ID" />
+            <TableColumn fx:id="nombreColumn" maxWidth="6000.0" prefWidth="183.0" text="Nombre" />
             <TableColumn fx:id="precioColumn" prefWidth="155.0" text="Precio" />
             <TableColumn fx:id="stockColumn" minWidth="3.0" prefWidth="173.0" text="Stock" />
         </columns>
@@ -24,5 +24,8 @@
       <Label layoutX="27.0" layoutY="24.0" text="Sort by:" />
       <ComboBox fx:id="comboColumn" layoutX="101.0" layoutY="19.0" prefWidth="150.0" />
       <Button fx:id="botonAyuda" layoutX="830.0" layoutY="19.0" mnemonicParsing="false" onAction="#ayuda" text="Ayuda" />
+      <Button layoutX="744.0" layoutY="19.0" mnemonicParsing="false" onAction="#borrarProducto" text="Borrar" />
+      <Button layoutX="634.0" layoutY="19.0" mnemonicParsing="false" onAction="#editarProducto" text="Editar" />
+      <Button layoutX="530.0" layoutY="19.0" mnemonicParsing="false" onAction="#crearProducto" text="Nuevo" />
    </children>
 </AnchorPane>
