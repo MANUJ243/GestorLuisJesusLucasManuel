@@ -1,5 +1,6 @@
 package controller;
 
+import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.util.logging.Level;
@@ -9,10 +10,15 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.Marshaller;
+import javax.xml.bind.Unmarshaller;
+import model.Empaquetador;
 import model.Producto;
 import view.EditarProductoController;
 import view.VistaProductoController;
@@ -104,5 +110,56 @@ public class Prueba extends Application {
     public static void main(String[] args) {
         launch(args);
     }
+    
+    public void cargaProductos(File archivo){
+        try {
+            //Contexto
+            JAXBContext context = JAXBContext.newInstance(Empaquetador.class);
+            Unmarshaller um = context.createUnmarshaller();
 
+            //Leo XML del archivo y hago unmarshall
+            Empaquetador empaquetador = (Empaquetador) um.unmarshal(archivo);
+
+            //Borro los anteriores
+            datosProducto.clear();
+            datosProducto.addAll(empaquetador.getProductos());
+
+            //setRutaArchivoPersonas(archivo);                                  //Guardo la ruta del archivo al registro de preferencias
+
+        } catch (Exception e) {
+            //Muestro alerta
+            Alert alerta = new Alert(Alert.AlertType.ERROR);
+            alerta.setTitle("Error");
+            alerta.setHeaderText("No se pueden cargar datos de la ruta "+ archivo.getPath());
+            alerta.setContentText(e.toString());
+            alerta.showAndWait();
+        }
+    }
+    
+    public void guardaProductos(File archivo) {
+        
+        try {
+            //Contexto
+            JAXBContext context = JAXBContext.newInstance(Empaquetador.class);
+            Marshaller m = context.createMarshaller();
+            m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+
+            //Empaqueto los datos de las personas
+            Empaquetador empaquetador = new Empaquetador();
+            empaquetador.setProductos(datosProducto);
+
+            //Marshall y guardo XML a archivo
+            m.marshal(empaquetador, archivo);
+
+            //Guardo la ruta delk archivo en el registro
+            //setRutaArchivoPersonas(archivo);
+            
+        } catch (Exception e) { // catches ANY exception
+            Alert alerta = new Alert(Alert.AlertType.ERROR);
+            alerta.setTitle("Error");
+            alerta.setHeaderText("No se puede guardar en el archivo "+ archivo.getPath());
+            alerta.setContentText(e.toString());
+            alerta.showAndWait();
+        }
+    }
 }
