@@ -2,7 +2,6 @@
 package view;
 
 import controller.Prueba;
-import static javafx.application.ConditionalFeature.FXML;
 import javafx.fxml.FXML;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TableColumn;
@@ -30,7 +29,6 @@ public class VistaProductoController {
     private Prueba prueba;
     
     public VistaProductoController(){
-        
     }
     
     @FXML
