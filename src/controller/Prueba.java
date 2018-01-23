@@ -23,8 +23,8 @@ public class Prueba extends Application {
     private ObservableList datosProducto = FXCollections.observableArrayList();
     
     public Prueba(){
-        datosProducto.add(new Producto("Pera",10.00,1, "C:/Users/Jesus/Desktop/prJairo/JavaFXApplication1/src/img/camburguer.png"));
-        datosProducto.add(new Producto("Zanahoria",8.00,3, "C:/Users/Jesus/Desktop/prJairo/JavaFXApplication1/src/img/camburguer.png"));
+        datosProducto.add(new Producto("Pera",10.00,1, "/src/img/camburguer.png"));
+        datosProducto.add(new Producto("Zanahoria",8.00,3, "/src/img/camburguer.png"));
     }
     
     public ObservableList getDatosProducto(){
