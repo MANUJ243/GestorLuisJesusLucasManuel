@@ -42,7 +42,7 @@ public class Producto {
         this.imagen.setPrefSize(200, 200);
         String path  = new File(img).getAbsolutePath();
         String javaPath = path.replace("\\", "/");
-        this.imagen.setStyle("-fx-background-image: url('file:/"+javaPath+"'); -fx-background-repeat: no-repeat; -fx-background-position: 50%; -fx-background-color:#F9F9F9;");
+        this.imagen.setStyle("-fx-background-image: url('file:/"+javaPath+"'); -fx-background-size: 150px; -fx-background-repeat: no-repeat; -fx-background-position: 50%; -fx-background-color:#F9F9F9;");
         this.imagen.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
