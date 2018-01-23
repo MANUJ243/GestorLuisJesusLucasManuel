@@ -117,6 +117,7 @@ public class VistaProductoController {
                     
                 }
                 tablaProducto.setItems(prueba.getDatosProducto());
+                tablaProducto.refresh();
                 //tablaProducto.setItems(datosProducto);
             }
         } else {
