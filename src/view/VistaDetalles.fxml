@@ -7,10 +7,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="736.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="736.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.VistaDetallesController">
    <center>
-      <ImageView fitHeight="431.0" fitWidth="424.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="TOP_LEFT">
+      <ImageView fx:id="fotoProducto" fitHeight="431.0" fitWidth="424.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="TOP_LEFT">
          <BorderPane.margin>
             <Insets left="30.0" top="30.0" />
          </BorderPane.margin>
@@ -19,9 +18,9 @@
    <bottom>
       <AnchorPane prefHeight="271.0" prefWidth="720.0" BorderPane.alignment="CENTER">
          <children>
-            <Label alignment="TOP_LEFT" layoutX="14.0" layoutY="14.0" prefHeight="89.0" prefWidth="550.0" text="Descripcion" />
-            <ImageView fitHeight="121.0" fitWidth="293.0" layoutX="214.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true" />
-            <Label layoutX="343.0" layoutY="236.0" text="Codigo de barras" />
+            <Label fx:id="descripcion" alignment="TOP_LEFT" layoutX="14.0" layoutY="14.0" prefHeight="89.0" prefWidth="550.0" text="Descripcion" />
+            <ImageView fx:id="codigoBarrasImg" fitHeight="121.0" fitWidth="293.0" layoutX="214.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="codigoBarras" layoutX="343.0" layoutY="236.0" text="Codigo de barras" />
             <Button layoutX="577.0" layoutY="14.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="126.0" text="Editar" />
             <Button layoutX="576.0" layoutY="59.0" mnemonicParsing="false" text="Exportar Codigo" />
          </children>
@@ -30,11 +29,11 @@
    <right>
       <AnchorPane prefHeight="473.0" prefWidth="232.0" BorderPane.alignment="CENTER">
          <children>
-            <Label layoutX="14.0" layoutY="28.0" text="Nombre" />
-            <Label layoutX="14.0" layoutY="62.0" text="Precio" />
-            <Label layoutX="16.0" layoutY="97.0" text="Stock" />
-            <Label layoutX="16.0" layoutY="131.0" text="Fecha de alta" />
-            <Label layoutX="14.0" layoutY="169.0" text="Fecha de modificacion" />
+            <Label fx:id="nombre" layoutX="14.0" layoutY="28.0" text="Nombre" />
+            <Label fx:id="precio" layoutX="14.0" layoutY="62.0" text="Precio" />
+            <Label fx:id="stock" layoutX="16.0" layoutY="97.0" text="Stock" />
+            <Label fx:id="fechaAlta" layoutX="16.0" layoutY="131.0" text="Fecha de alta" />
+            <Label fx:id="fechaModificacion" layoutX="14.0" layoutY="169.0" text="Fecha de modificacion" />
          </children>
       </AnchorPane>
    </right>
