@@ -29,11 +29,12 @@
    <right>
       <AnchorPane prefHeight="473.0" prefWidth="232.0" BorderPane.alignment="CENTER">
          <children>
-            <Label fx:id="nombre" layoutX="14.0" layoutY="28.0" text="Nombre" />
-            <Label fx:id="precio" layoutX="14.0" layoutY="62.0" text="Precio" />
-            <Label fx:id="stock" layoutX="16.0" layoutY="97.0" text="Stock" />
-            <Label fx:id="fechaAlta" layoutX="16.0" layoutY="131.0" text="Fecha de alta" />
-            <Label fx:id="fechaModificacion" layoutX="14.0" layoutY="169.0" text="Fecha de modificacion" />
+            <Label fx:id="nombre" layoutX="14.0" layoutY="63.0" text="Nombre" />
+            <Label fx:id="precio" layoutX="14.0" layoutY="97.0" text="Precio" />
+            <Label fx:id="stock" layoutX="16.0" layoutY="132.0" text="Stock" />
+            <Label fx:id="fechaAlta" layoutX="16.0" layoutY="166.0" text="Fecha de alta" />
+            <Label fx:id="fechaModificacion" layoutX="14.0" layoutY="204.0" text="Fecha de modificacion" />
+            <Label fx:id="id" layoutX="14.0" layoutY="29.0" text="Id" />
          </children>
       </AnchorPane>
    </right>

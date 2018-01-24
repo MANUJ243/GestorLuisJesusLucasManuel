@@ -112,7 +112,6 @@ public class Prueba extends Application {
             detallesProducto = loader.load();
         } catch (IOException ex) {
             Logger.getLogger(Prueba.class.getName()).log(Level.SEVERE, null, ex);
-            //return false;
         }
         Stage escenarioDetalles = new Stage();
         escenarioDetalles.setTitle("Detalles producto");
@@ -122,9 +121,8 @@ public class Prueba extends Application {
         escenarioDetalles.setScene(escena);
         VistaDetallesController controller = loader.getController();
         controller.setEscenarioDetalles(escenarioDetalles);
-        //controller.setProducto(producto);
+        controller.setProducto(producto);
         escenarioDetalles.showAndWait();
-        //return controller.pulsadoGuardar();
     }
 
     public Stage getPrimaryStage() {

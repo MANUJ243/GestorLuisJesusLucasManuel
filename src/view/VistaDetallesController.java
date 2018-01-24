@@ -6,10 +6,13 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
+import model.Producto;
 
 public class VistaDetallesController {
     @FXML
     private ImageView fotoProducto;
+    @FXML
+    private Label id;
     @FXML
     private Label nombre;
     @FXML
@@ -26,8 +29,6 @@ public class VistaDetallesController {
     private ImageView codigoBarrasImg;
     @FXML
     private Label codigoBarras;
-    @FXML
-    private Button botonBorrar;
     
     private Stage escenarioDetalles;
     private Prueba prueba;
@@ -37,5 +38,13 @@ public class VistaDetallesController {
     
     public void setEscenarioDetalles(Stage escenarioDetalles) {
         this.escenarioDetalles = escenarioDetalles;
+    }
+    
+    public void setProducto(Producto producto) {
+        id.setText(producto.getId()+"");
+        nombre.setText(producto.getNombre());
+        precio.setText(producto.getPrecio()+"");
+        stock.setText(producto.getStock()+"");
+        descripcion.setText(producto.getDescripcion());
     }
 }
