@@ -34,7 +34,13 @@ public class VistaProductoController {
     @FXML
     private TableColumn stockColumn;
     @FXML
-    private ComboBox comboColumn;
+    private Button botonDetalles;
+    @FXML
+    private Button botonEditar;
+    @FXML
+    private Button botonNuevo;
+    @FXML
+    private Button botonBorrar;
     @FXML
     private Button botonAyuda;
 
@@ -61,6 +67,11 @@ public class VistaProductoController {
         nombreColumn.setCellValueFactory(new PropertyValueFactory<>(nombre));
         precioColumn.setCellValueFactory(new PropertyValueFactory<>(precio));
         stockColumn.setCellValueFactory(new PropertyValueFactory<>(stock));
+        botonDetalles.setStyle("-fx-background-image: url('file:src/img_buttons/button_detalles.png');");
+        botonEditar.setStyle("-fx-background-image: url('file:src/img_buttons/button_editar.png');");
+        botonNuevo.setStyle("-fx-background-image: url('file:src/img_buttons/button_nuevo.png');");
+        botonBorrar.setStyle("-fx-background-image: url('file:src/img_buttons/button_borrar.png');");
+        botonAyuda.setStyle("-fx-background-image: url('file:src/img_buttons/button_ayuda.png');");
 
         /* //Borro los detalles de la persona
         mostrarDetallesPersona(null);
@@ -89,10 +100,10 @@ public class VistaProductoController {
             alerta.showAndWait();
         }
     }
-    
+
     @FXML
     private void detallesProducto() {
-         Producto seleccionado = (Producto) tablaProducto.getSelectionModel().getSelectedItem();
+        Producto seleccionado = (Producto) tablaProducto.getSelectionModel().getSelectedItem();
         if (seleccionado != null) {
             prueba.muestraVistaDetalles(seleccionado);
         } else {
@@ -111,17 +122,17 @@ public class VistaProductoController {
         if (pulsadoGuardar) {
             prueba.getDatosProducto().add(temporal);
             System.out.println("nuevo producto -> " + temporal.getNombre());
-             System.out.println("nuevo producto -> " + temporal.getPathImagen());
+            System.out.println("nuevo producto -> " + temporal.getPathImagen());
         }
     }
 
     @FXML
     public void editarProducto() {
-        
+
         Producto seleccionado = (Producto) tablaProducto.getSelectionModel().getSelectedItem();
         if (seleccionado != null) {
             boolean pulsadoGuardar = prueba.muestraEditaProducto(seleccionado);
-            if (pulsadoGuardar) {           
+            if (pulsadoGuardar) {
                 tablaProducto.setItems(prueba.getDatosProducto());
                 tablaProducto.refresh();
             }

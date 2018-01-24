@@ -44,10 +44,10 @@ public class VistaDetallesController {
     
     public void setProducto(Producto producto) {
         fotoProducto.setImage(new Image("file:"+producto.getPathImagen()));
-        id.setText(producto.getId()+"");
-        nombre.setText(producto.getNombre());
-        precio.setText(producto.getPrecio()+"");
-        stock.setText(producto.getStock()+"");
+        id.setText("ID : " + producto.getId()+"");
+        nombre.setText("Nombre : " + producto.getNombre());
+        precio.setText("Precio : " + producto.getPrecio()+"");
+        stock.setText("Stock : " + producto.getStock()+"");
         descripcion.setText(producto.getDescripcion());
         BarCodeGenerator bar = new BarCodeGenerator(producto.getId()+"");
         bar.anadirAImageView(codigoBarrasImg);

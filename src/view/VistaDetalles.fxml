@@ -20,7 +20,7 @@
       </AnchorPane>
    </bottom>
    <right>
-      <AnchorPane prefHeight="473.0" prefWidth="232.0" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="463.0" prefWidth="330.0" BorderPane.alignment="CENTER">
          <children>
             <Label fx:id="nombre" layoutX="14.0" layoutY="63.0" text="Nombre" />
             <Label fx:id="precio" layoutX="14.0" layoutY="97.0" text="Precio" />
@@ -32,7 +32,7 @@
       </AnchorPane>
    </right>
    <center>
-      <ImageView fx:id="fotoProducto" fitHeight="431.0" fitWidth="424.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="TOP_LEFT">
+      <ImageView fx:id="fotoProducto" fitHeight="354.0" fitWidth="350.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="TOP_LEFT">
          <BorderPane.margin>
             <Insets left="30.0" top="30.0" />
          </BorderPane.margin></ImageView>
