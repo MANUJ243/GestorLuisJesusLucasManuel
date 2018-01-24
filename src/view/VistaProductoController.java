@@ -96,6 +96,8 @@ public class VistaProductoController {
         boolean pulsadoGuardar = prueba.muestraEditaProducto(temporal);
         if (pulsadoGuardar) {
             prueba.getDatosProducto().add(temporal);
+            System.out.println("nuevo producto -> " + temporal.getNombre());
+             System.out.println("nuevo producto -> " + temporal.getPathImagen());
         }
     }
 
@@ -105,20 +107,9 @@ public class VistaProductoController {
         Producto seleccionado = (Producto) tablaProducto.getSelectionModel().getSelectedItem();
         if (seleccionado != null) {
             boolean pulsadoGuardar = prueba.muestraEditaProducto(seleccionado);
-            if (pulsadoGuardar) {
-                //aqui es donde os he comentado que vienen los datos de todos los productos mas el editado
-                //como veis en el sout viene bien pero nose porque cojones en el setItems la tabla no actualiza...
-                ObservableList datosProducto = FXCollections.observableArrayList();
-                datosProducto=prueba.getDatosProducto();
-                for (int i = 0; i < datosProducto.size(); i++) {
-                    Producto p = (Producto) datosProducto.get(i);
-                    System.out.println("Producto -> " +  p.getNombre());
-                    
-                    
-                }
+            if (pulsadoGuardar) {           
                 tablaProducto.setItems(prueba.getDatosProducto());
                 tablaProducto.refresh();
-                //tablaProducto.setItems(datosProducto);
             }
         } else {
             Alert alerta = new Alert(Alert.AlertType.WARNING);

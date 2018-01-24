@@ -24,25 +24,23 @@ import view.EditarProductoController;
 import view.VistaProductoController;
 
 public class Prueba extends Application {
-    
+
     private Stage escenarioPrincipal;
     private BorderPane layoutPrincipal;
     private AnchorPane vistaProducto;
     private AnchorPane editarProducto;
     private ObservableList datosProducto = FXCollections.observableArrayList();
-    
-    public Prueba(){
-        datosProducto.add(new Producto("Pera",10.00,1, "src/img/pera3.jpg"));
-        datosProducto.add(new Producto("Hamburguesa",8.00,3, "src/img/camburguer.png"));
-        datosProducto.add(new Producto("Coca-cola",8.00,3, "src/img/coca_cola.jpg"));
+
+    public Prueba() {
+        datosProducto.add(new Producto("Pera", 10.00, 1, "src/img/pera3.jpg"));
+        datosProducto.add(new Producto("Hamburguesa", 8.00, 3, "src/img/camburguer.png"));
+        datosProducto.add(new Producto("Coca-cola", 8.00, 3, "src/img/coca_cola.jpg"));
     }
-    
-    public ObservableList getDatosProducto(){
-        
+
+    public ObservableList getDatosProducto() {
+   
         return datosProducto;
     }
-    
-    
 
     @Override
     public void start(Stage primaryStage) {
@@ -60,7 +58,7 @@ public class Prueba extends Application {
         } catch (IOException ex) {
             Logger.getLogger(Prueba.class.getName()).log(Level.SEVERE, null, ex);
         }
-        Scene escena=new Scene(layoutPrincipal);
+        Scene escena = new Scene(layoutPrincipal);
         escenarioPrincipal.setScene(escena);
         escenarioPrincipal.show();
     }
@@ -70,7 +68,7 @@ public class Prueba extends Application {
         URL location = Prueba.class.getResource("../view/VistaProducto.fxml");
         loader.setLocation(location);
         try {
-            vistaProducto=loader.load();
+            vistaProducto = loader.load();
         } catch (IOException ex) {
             Logger.getLogger(Prueba.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -78,19 +76,19 @@ public class Prueba extends Application {
         VistaProductoController vistaProductoController = loader.getController();
         vistaProductoController.setPrueba(this);
     }
-    
-    public boolean muestraEditaProducto(Producto producto){
-      
+
+    public boolean muestraEditaProducto(Producto producto) {
+
         FXMLLoader loader = new FXMLLoader();
         URL location = Prueba.class.getResource("../view/EditarProducto.fxml");
         loader.setLocation(location);
         try {
-            editarProducto=loader.load();
+            editarProducto = loader.load();
         } catch (IOException ex) {
             Logger.getLogger(Prueba.class.getName()).log(Level.SEVERE, null, ex);
             return false;
         }
-        Stage escenarioEdicion=new Stage();
+        Stage escenarioEdicion = new Stage();
         escenarioEdicion.setTitle("Editar producto");
         escenarioEdicion.initModality(Modality.WINDOW_MODAL);
         escenarioEdicion.initOwner(escenarioPrincipal);
@@ -102,16 +100,16 @@ public class Prueba extends Application {
         escenarioEdicion.showAndWait();
         return controller.pulsadoGuardar();
     }
-    
-      public Stage getPrimaryStage() {
+
+    public Stage getPrimaryStage() {
         return escenarioPrincipal;
     }
 
     public static void main(String[] args) {
         launch(args);
     }
-    
-    public void cargaProductos(File archivo){
+
+    public void cargaProductos(File archivo) {
         try {
             //Contexto
             JAXBContext context = JAXBContext.newInstance(Empaquetador.class);
@@ -125,19 +123,18 @@ public class Prueba extends Application {
             datosProducto.addAll(empaquetador.getProductos());
 
             //setRutaArchivoPersonas(archivo);                                  //Guardo la ruta del archivo al registro de preferencias
-
         } catch (Exception e) {
             //Muestro alerta
             Alert alerta = new Alert(Alert.AlertType.ERROR);
             alerta.setTitle("Error");
-            alerta.setHeaderText("No se pueden cargar datos de la ruta "+ archivo.getPath());
+            alerta.setHeaderText("No se pueden cargar datos de la ruta " + archivo.getPath());
             alerta.setContentText(e.toString());
             alerta.showAndWait();
         }
     }
-    
+
     public void guardaProductos(File archivo) {
-        
+
         try {
             //Contexto
             JAXBContext context = JAXBContext.newInstance(Empaquetador.class);
@@ -153,11 +150,10 @@ public class Prueba extends Application {
 
             //Guardo la ruta delk archivo en el registro
             //setRutaArchivoPersonas(archivo);
-            
         } catch (Exception e) { // catches ANY exception
             Alert alerta = new Alert(Alert.AlertType.ERROR);
             alerta.setTitle("Error");
-            alerta.setHeaderText("No se puede guardar en el archivo "+ archivo.getPath());
+            alerta.setHeaderText("No se puede guardar en el archivo " + archivo.getPath());
             alerta.setContentText(e.toString());
             alerta.showAndWait();
         }

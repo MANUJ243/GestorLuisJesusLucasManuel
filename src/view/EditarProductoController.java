@@ -1,10 +1,12 @@
 package view;
 
+import java.io.File;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import model.Producto;
 
@@ -34,13 +36,16 @@ public class EditarProductoController {
     public void setProducto(Producto producto) {
         this.producto = producto;
         idTextField.setText(String.valueOf(producto.getId()));
-        if (!(producto.isNullProduct())) {
-            nombreTextField.setText(producto.getNombre());
-            precioTextField.setText(String.valueOf(producto.getPrecio()));
-            stockTextField.setText(String.valueOf(producto.getStock()));
-            String img = producto.getPathImagen();
-            imagen.setStyle("-fx-background-image: url('file:" + img + "'); -fx-background-size: 150px; -fx-background-repeat: no-repeat; -fx-background-position: 50%; -fx-background-color:#F9F9F9;");
+        nombreTextField.setText(producto.getNombre());
+        precioTextField.setText(String.valueOf(producto.getPrecio()));
+        stockTextField.setText(String.valueOf(producto.getStock()));
+        String img = producto.getPathImagen();
+        imagen.setStyle("-fx-background-image: url('file:" + img + "'); -fx-background-size: 150px; -fx-background-repeat: no-repeat; -fx-background-position: 50%; -fx-background-color:#F9F9F9;");
+        if (producto.getNombre() == null) {
+            precioTextField.setText("");
+            stockTextField.setText("");
         }
+        nombreTextField.requestFocus();
     }
 
     public boolean pulsadoGuardar() {
@@ -57,6 +62,21 @@ public class EditarProductoController {
             pulsadoGuardar = true;
             escenarioEdicion.close();
         }
+
+    }
+
+    @FXML
+    public void seleccionaImagen() {
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.setTitle("Open Resource File");
+        File file = fileChooser.showOpenDialog(escenarioEdicion);
+        if (file != null) {
+            copyImageToFilePackage(file);
+        
+        }
+    }
+    
+    private void copyImageToFilePackage(File file) {
 
     }
 

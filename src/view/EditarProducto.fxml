@@ -38,5 +38,6 @@
       <Button layoutX="641.0" layoutY="543.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
       <Label layoutX="8.0" layoutY="290.0" text="Descripción:" />
       <Button fx:id="imagen" layoutX="481.0" layoutY="14.0" mnemonicParsing="false" prefHeight="165.0" prefWidth="195.0" />
+      <Button layoutX="481.0" layoutY="194.0" mnemonicParsing="false" onAction="#seleccionaImagen" prefHeight="31.0" prefWidth="195.0" text="Selecciona una imagen" />
    </children>
 </AnchorPane>

@@ -27,13 +27,12 @@ public class Producto {
     private String pathImagen;
     private final Button imagen;
 
-    /*public Producto() {
-        
-        this(null, null, null, null);
-        System.out.println("****");
-    }*/
-    
     public Producto() {
+
+        this(null, 0.0, 0, null);
+    }
+
+    /* public Producto() {
         id++;
         this.idFinal = new SimpleIntegerProperty(id);
         this.nombre = null;
@@ -44,8 +43,7 @@ public class Producto {
         this.fechaModificacion = null;
         this.pathImagen = null;
         this.imagen = null;
-    }
-
+    }*/
     public Producto(String nombre, Double precio, Integer stock, String img) {
         id++;
         idFinal = new SimpleIntegerProperty(id);
@@ -73,8 +71,8 @@ public class Producto {
     public int getId() {
         return idFinal.get();
     }
-    
-    public boolean isNullProduct(){
+
+    public boolean isNullProduct() {
         if (this.nombre == null) {
             return true;
         }
@@ -115,6 +113,8 @@ public class Producto {
 
     public void setPathImagen(String path) {
         this.pathImagen = path;
+        this.imagen.setStyle("-fx-background-image: url('file:" + pathImagen + "'); -fx-background-size: 150px; -fx-background-repeat: no-repeat; -fx-background-position: 50%; -fx-background-color:#F9F9F9;");
+
     }
 
     public void setNombre(String nombre) {
