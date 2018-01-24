@@ -1,6 +1,12 @@
 package view;
 
 import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
@@ -28,6 +34,8 @@ public class EditarProductoController {
     private Stage escenarioEdicion;
     private Producto producto;
     private boolean pulsadoGuardar = false;
+    private File file;
+    private String img;
 
     public void setEscenarioEdicion(Stage escenarioEdicion) {
         this.escenarioEdicion = escenarioEdicion;
@@ -39,7 +47,7 @@ public class EditarProductoController {
         nombreTextField.setText(producto.getNombre());
         precioTextField.setText(String.valueOf(producto.getPrecio()));
         stockTextField.setText(String.valueOf(producto.getStock()));
-        String img = producto.getPathImagen();
+        img = producto.getPathImagen();
         imagen.setStyle("-fx-background-image: url('file:" + img + "'); -fx-background-size: 150px; -fx-background-repeat: no-repeat; -fx-background-position: 50%; -fx-background-color:#F9F9F9;");
         if (producto.getNombre() == null) {
             precioTextField.setText("");
@@ -54,11 +62,11 @@ public class EditarProductoController {
 
     @FXML
     public void guardar() {
-        if (!datosValidos()) {
+        if (datosValidos()) {
             producto.setNombre(nombreTextField.getText());
             producto.setPrecio(Double.parseDouble(precioTextField.getText()));
             producto.setStock(Integer.parseInt(stockTextField.getText()));
-            producto.setPathImagen("src/img/pera_amarilla.jpg");
+            producto.setPathImagen(img);
             pulsadoGuardar = true;
             escenarioEdicion.close();
         }
@@ -66,18 +74,35 @@ public class EditarProductoController {
     }
 
     @FXML
-    public void seleccionaImagen() {
+    public boolean seleccionaImagen() {
         FileChooser fileChooser = new FileChooser();
         fileChooser.setTitle("Open Resource File");
-        File file = fileChooser.showOpenDialog(escenarioEdicion);
+        file = fileChooser.showOpenDialog(escenarioEdicion);
         if (file != null) {
             copyImageToFilePackage(file);
-        
-        }
-    }
-    
-    private void copyImageToFilePackage(File file) {
+            img = "src/img/" + file.getName();
+            imagen.setStyle("-fx-background-image: url('file:" + img + "'); -fx-background-size: 150px; -fx-background-repeat: no-repeat; -fx-background-position: 50%; -fx-background-color:#F9F9F9;");
 
+        }
+        return false;
+    }
+
+    private void copyImageToFilePackage(File file) {
+        Path entrada = Paths.get(file.getAbsolutePath());
+        Path salida = Paths.get("src/img/" + file.getName());
+
+        try {
+            InputStream input = Files.newInputStream(entrada);
+            OutputStream output = Files.newOutputStream(salida);
+            int c;
+            while ((c = input.read()) != -1) {
+                output.write(c);
+            }
+            input.close();
+            output.close();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
     }
 
     @FXML
@@ -109,6 +134,9 @@ public class EditarProductoController {
                 error = true;
             }
         }
+        if(img==null){
+            error=true;
+        }
         if (error) {
             Alert alerta = new Alert(Alert.AlertType.WARNING);
             alerta.setTitle("Error");
@@ -116,7 +144,7 @@ public class EditarProductoController {
             alerta.setContentText("Por favor,corrija los errores");
             alerta.showAndWait();
         }
-        return error;
+        return !error;
     }
 
 }
