@@ -63,11 +63,11 @@ public class Producto {
         this.imagen.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                System.out.println("boton");
+                
             }
         });
     }
-
+    
     public int getId() {
         return idFinal.get();
     }

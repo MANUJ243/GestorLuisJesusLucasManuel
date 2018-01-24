@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
+import javafx.stage.Stage;
 
 public class VistaDetallesController {
     @FXML
@@ -28,13 +29,13 @@ public class VistaDetallesController {
     @FXML
     private Button botonBorrar;
     
-    
+    private Stage escenarioDetalles;
     private Prueba prueba;
     
     public VistaDetallesController(){
     }
     
-    @FXML
-    private void initialize() {
+    public void setEscenarioDetalles(Stage escenarioDetalles) {
+        this.escenarioDetalles = escenarioDetalles;
     }
 }

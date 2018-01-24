@@ -89,6 +89,20 @@ public class VistaProductoController {
             alerta.showAndWait();
         }
     }
+    
+    @FXML
+    private void detallesProducto() {
+         Producto seleccionado = (Producto) tablaProducto.getSelectionModel().getSelectedItem();
+        if (seleccionado != null) {
+            prueba.muestraVistaDetalles(seleccionado);
+        } else {
+            Alert alerta = new Alert(Alert.AlertType.WARNING);
+            alerta.setTitle("Alerta");
+            alerta.setHeaderText("Producto no seleccionado!");
+            alerta.setContentText("Por favor,seleccione un producto");
+            alerta.showAndWait();
+        }
+    }
 
     @FXML
     public void crearProducto() {

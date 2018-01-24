@@ -27,5 +27,6 @@
       <Button layoutX="744.0" layoutY="19.0" mnemonicParsing="false" onAction="#borrarProducto" text="Borrar" />
       <Button layoutX="634.0" layoutY="19.0" mnemonicParsing="false" onAction="#editarProducto" text="Editar" />
       <Button layoutX="530.0" layoutY="19.0" mnemonicParsing="false" onAction="#crearProducto" text="Nuevo" />
+      <Button layoutX="435.0" layoutY="19.0" mnemonicParsing="false" onAction="#detallesProducto" text="Detalles" />
    </children>
 </AnchorPane>

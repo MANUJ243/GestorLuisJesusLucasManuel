@@ -21,6 +21,7 @@ import javax.xml.bind.Unmarshaller;
 import model.Empaquetador;
 import model.Producto;
 import view.EditarProductoController;
+import view.VistaDetallesController;
 import view.VistaProductoController;
 
 public class Prueba extends Application {
@@ -29,6 +30,7 @@ public class Prueba extends Application {
     private BorderPane layoutPrincipal;
     private AnchorPane vistaProducto;
     private AnchorPane editarProducto;
+    private BorderPane detallesProducto;
     private ObservableList datosProducto = FXCollections.observableArrayList();
 
     public Prueba() {
@@ -99,6 +101,30 @@ public class Prueba extends Application {
         controller.setProducto(producto);
         escenarioEdicion.showAndWait();
         return controller.pulsadoGuardar();
+    }
+    
+    public void muestraVistaDetalles(Producto producto) {
+
+        FXMLLoader loader = new FXMLLoader();
+        URL location = Prueba.class.getResource("../view/vistaDetalles.fxml");
+        loader.setLocation(location);
+        try {
+            detallesProducto = loader.load();
+        } catch (IOException ex) {
+            Logger.getLogger(Prueba.class.getName()).log(Level.SEVERE, null, ex);
+            //return false;
+        }
+        Stage escenarioDetalles = new Stage();
+        escenarioDetalles.setTitle("Detalles producto");
+        escenarioDetalles.initModality(Modality.WINDOW_MODAL);
+        escenarioDetalles.initOwner(escenarioPrincipal);
+        Scene escena = new Scene(detallesProducto);
+        escenarioDetalles.setScene(escena);
+        VistaDetallesController controller = loader.getController();
+        controller.setEscenarioDetalles(escenarioDetalles);
+        //controller.setProducto(producto);
+        escenarioDetalles.showAndWait();
+        //return controller.pulsadoGuardar();
     }
 
     public Stage getPrimaryStage() {
