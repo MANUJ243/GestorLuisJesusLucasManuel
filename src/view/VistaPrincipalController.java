@@ -5,6 +5,7 @@ import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.MenuItem;
 import javafx.stage.Stage;
 
@@ -50,5 +51,15 @@ public class VistaPrincipalController {
         } catch (IOException ex) {
             System.out.println("error abriendo archivo");
         }
+    }
+    
+    @FXML
+    private void about() {
+            Alert alerta = new Alert(Alert.AlertType.INFORMATION);
+            alerta.setTitle("About");
+            alerta.setHeaderText("Developed by:");
+            alerta.setContentText("correojesusmc@gmail.com\nmanuj243@gmail.com\nlucas1sanz96@gmail.com\nluismunozcastro1@gmail.com");
+            alerta.showAndWait();
+        
     }
 }

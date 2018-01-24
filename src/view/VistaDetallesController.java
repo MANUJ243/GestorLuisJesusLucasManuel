@@ -4,6 +4,7 @@ import controller.Prueba;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TableView;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
@@ -31,9 +32,13 @@ public class VistaDetallesController {
     private ImageView codigoBarrasImg;
     @FXML
     private Label codigoBarras;
+    @FXML
+    private Button editar;
     
     private Stage escenarioDetalles;
     private Prueba prueba;
+    Producto product;
+    private TableView tabla;
     
     public VistaDetallesController(){
     }
@@ -43,6 +48,7 @@ public class VistaDetallesController {
     }
     
     public void setProducto(Producto producto) {
+        this.product = producto;
         fotoProducto.setImage(new Image("file:"+producto.getPathImagen()));
         id.setText("ID : " + producto.getId()+"");
         nombre.setText("Nombre : " + producto.getNombre());
@@ -51,5 +57,18 @@ public class VistaDetallesController {
         descripcion.setText(producto.getDescripcion());
         BarCodeGenerator bar = new BarCodeGenerator(producto.getId()+"");
         bar.anadirAImageView(codigoBarrasImg);
+    }
+    
+    public void setTableView(TableView tabla){
+        this.tabla = tabla;
+    }
+    
+    @FXML
+    public void editar(){
+        boolean pulsadoGuardar = prueba.muestraEditaProducto(product);
+        if (pulsadoGuardar) {
+                tabla.setItems(prueba.getDatosProducto());
+                tabla.refresh();
+            }
     }
 }

@@ -86,6 +86,10 @@ public class VistaProductoController {
         this.prueba = prueba;
         tablaProducto.setItems(prueba.getDatosProducto());
     }
+    
+    public TableView getTable(){
+        return this.tablaProducto;
+    }
 
     //Aquí podemos sacar otro tipo de alerta para hacerlo más original y no poner el que puso Jairo en la lista de personas
     @FXML

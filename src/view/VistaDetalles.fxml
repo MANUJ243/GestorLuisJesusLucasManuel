@@ -14,7 +14,7 @@
             <Label fx:id="descripcion" alignment="TOP_LEFT" layoutX="14.0" layoutY="14.0" prefHeight="89.0" prefWidth="550.0" text="Descripcion" />
             <ImageView fx:id="codigoBarrasImg" fitHeight="121.0" fitWidth="293.0" layoutX="214.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true" />
             <Label fx:id="codigoBarras" layoutX="343.0" layoutY="236.0" text="Codigo de barras" />
-            <Button layoutX="577.0" layoutY="14.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="126.0" text="Editar" />
+            <Button fx:id="editar" layoutX="577.0" layoutY="14.0" mnemonicParsing="false" onAction="#editar" prefHeight="31.0" prefWidth="126.0" text="Editar" />
             <Button layoutX="576.0" layoutY="59.0" mnemonicParsing="false" text="Exportar Codigo" />
          </children>
       </AnchorPane>

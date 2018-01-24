@@ -32,6 +32,8 @@ public class Prueba extends Application {
     private AnchorPane vistaProducto;
     private AnchorPane editarProducto;
     private BorderPane detallesProducto;
+    private VistaProductoController vistaProductoController;
+    private VistaDetallesController controller;
     private ObservableList datosProducto = FXCollections.observableArrayList();
 
     public Prueba() {
@@ -79,7 +81,7 @@ public class Prueba extends Application {
             Logger.getLogger(Prueba.class.getName()).log(Level.SEVERE, null, ex);
         }
         layoutPrincipal.setCenter(vistaProducto);
-        VistaProductoController vistaProductoController = loader.getController();
+        vistaProductoController = loader.getController();
         vistaProductoController.setPrueba(this);
     }
 
@@ -123,9 +125,10 @@ public class Prueba extends Application {
         escenarioDetalles.initOwner(escenarioPrincipal);
         Scene escena = new Scene(detallesProducto);
         escenarioDetalles.setScene(escena);
-        VistaDetallesController controller = loader.getController();
+        controller = loader.getController();
         controller.setEscenarioDetalles(escenarioDetalles);
         controller.setProducto(producto);
+        controller.setTableView(vistaProductoController.getTable());
         escenarioDetalles.showAndWait();
     }
 
