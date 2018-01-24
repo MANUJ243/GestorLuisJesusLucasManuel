@@ -22,7 +22,7 @@ public class BarCodeGenerator {
         barcode.setCode(id);
         barcode.setCheckDigit(true);
 
-        bufferedImage = barcode.draw(new BufferedImage(400, 400, BufferedImage.TYPE_INT_RGB));
+        bufferedImage = barcode.draw(new BufferedImage(80, 60, BufferedImage.TYPE_INT_RGB));
     }
     
     public void exportarPNG(){
