@@ -22,6 +22,7 @@ import model.Empaquetador;
 import model.Producto;
 import view.EditarProductoController;
 import view.VistaDetallesController;
+import view.VistaPrincipalController;
 import view.VistaProductoController;
 
 public class Prueba extends Application {
@@ -60,8 +61,11 @@ public class Prueba extends Application {
         } catch (IOException ex) {
             Logger.getLogger(Prueba.class.getName()).log(Level.SEVERE, null, ex);
         }
+        VistaPrincipalController vistaPrincipalController = loader.getController();
+        vistaPrincipalController.setEscenarioMenuBar(escenarioPrincipal);
         Scene escena = new Scene(layoutPrincipal);
         escenarioPrincipal.setScene(escena);
+        escenarioPrincipal.setMaximized(true);
         escenarioPrincipal.show();
     }
 
