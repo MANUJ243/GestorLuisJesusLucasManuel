@@ -4,9 +4,11 @@ import controller.Prueba;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 import model.Producto;
+import util.BarCodeGenerator;
 
 public class VistaDetallesController {
     @FXML
@@ -41,10 +43,13 @@ public class VistaDetallesController {
     }
     
     public void setProducto(Producto producto) {
+        fotoProducto.setImage(new Image("file:"+producto.getPathImagen()));
         id.setText(producto.getId()+"");
         nombre.setText(producto.getNombre());
         precio.setText(producto.getPrecio()+"");
         stock.setText(producto.getStock()+"");
         descripcion.setText(producto.getDescripcion());
+        BarCodeGenerator bar = new BarCodeGenerator(producto.getId()+"");
+        bar.anadirAImageView(codigoBarrasImg);
     }
 }

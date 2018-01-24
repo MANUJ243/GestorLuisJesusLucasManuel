@@ -8,13 +8,6 @@
 <?import javafx.scene.layout.BorderPane?>
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="736.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.VistaDetallesController">
-   <center>
-      <ImageView fx:id="fotoProducto" fitHeight="431.0" fitWidth="424.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="TOP_LEFT">
-         <BorderPane.margin>
-            <Insets left="30.0" top="30.0" />
-         </BorderPane.margin>
-      </ImageView>
-   </center>
    <bottom>
       <AnchorPane prefHeight="271.0" prefWidth="720.0" BorderPane.alignment="CENTER">
          <children>
@@ -38,4 +31,10 @@
          </children>
       </AnchorPane>
    </right>
+   <center>
+      <ImageView fx:id="fotoProducto" fitHeight="431.0" fitWidth="424.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="TOP_LEFT">
+         <BorderPane.margin>
+            <Insets left="30.0" top="30.0" />
+         </BorderPane.margin></ImageView>
+   </center>
 </BorderPane>
