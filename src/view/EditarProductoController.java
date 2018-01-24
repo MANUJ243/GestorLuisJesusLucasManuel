@@ -74,8 +74,10 @@ public class EditarProductoController {
     }
 
     @FXML
-    public boolean seleccionaImagen() {
+    public boolean seleccionaImagen() {        
+        FileChooser.ExtensionFilter imageFilter = new FileChooser.ExtensionFilter("Image Files", "*.jpg", "*.png");
         FileChooser fileChooser = new FileChooser();
+        fileChooser.getExtensionFilters().add(imageFilter);
         fileChooser.setTitle("Open Resource File");
         file = fileChooser.showOpenDialog(escenarioEdicion);
         if (file != null) {
