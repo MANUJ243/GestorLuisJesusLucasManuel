@@ -130,64 +130,64 @@
 		<rutaImg>cardhu.png</rutaImg>
 	</producto>
 	<producto>
-		<id></id>
-		<nombre></nombre>
-		<desc></desc>
-		<precio></precio>
-		<stock></stock>
+		<id>1013</id>
+		<nombre>KELLOGS barrita de cereales all bran con chocolate estuche 240 gr</nombre>
+		<desc>Barrita de cereales de trigo y fibra de avena enriquecida con salvado y con trocitos de chocolate.</desc>
+		<precio>2.5</precio>
+		<stock>14</stock>
 		<fechaMod></fechaMod>
 		<fechaAlt></fechaAlt>
-		<rutaImg></rutaImg>
+		<rutaImg>barritas.jpg</rutaImg>
 	</producto>
 	<producto>
-		<id></id>
-		<nombre></nombre>
-		<desc></desc>
-		<precio></precio>
-		<stock></stock>
+		<id>1014</id>
+		<nombre>KINDER Bueno white chocolate blanco 45 gr</nombre>
+		<desc>Crujientes barritas con relleno cremoso de leche y avellanas con cobertura de chocolate blanco y virutas de cacao</desc>
+		<precio>1.25</precio>
+		<stock>20</stock>
 		<fechaMod></fechaMod>
 		<fechaAlt></fechaAlt>
-		<rutaImg></rutaImg>
+		<rutaImg>kinder.jpg</rutaImg>
 	</producto>
 	<producto>
-		<id></id>
-		<nombre></nombre>
-		<desc></desc>
-		<precio></precio>
-		<stock></stock>
+		<id>1015</id>
+		<nombre>ROYAL caramelo liquido 400 grs</nombre>
+		<desc>Jarabe de caramelo.</desc>
+		<precio>2.26</precio>
+		<stock>6</stock>
 		<fechaMod></fechaMod>
 		<fechaAlt></fechaAlt>
-		<rutaImg></rutaImg>
+		<rutaImg>caramelo.jpg</rutaImg>
 	</producto>
 	<producto>
-		<id></id>
-		<nombre></nombre>
-		<desc></desc>
-		<precio></precio>
-		<stock></stock>
+		<id>1016</id>
+		<nombre>RAM chocolate a la taza envase 1 lt</nombre>
+		<desc>Producto lácteo con chocolate. UHT</desc>
+		<precio>1.88</precio>
+		<stock>45</stock>
 		<fechaMod></fechaMod>
 		<fechaAlt></fechaAlt>
-		<rutaImg></rutaImg>
+		<rutaImg>ram.jpg</rutaImg>
 	</producto>
 	<producto>
-		<id></id>
-		<nombre></nombre>
-		<desc></desc>
-		<precio></precio>
-		<stock></stock>
+		<id>1017</id>
+		<nombre>HORNIMANS té verde al limón</nombre>
+		<desc>Té Verde con Limón aromatizado, estuche 20 bolsitas</desc>
+		<precio>2.07</precio>
+		<stock>36</stock>
 		<fechaMod></fechaMod>
 		<fechaAlt></fechaAlt>
-		<rutaImg></rutaImg>
+		<rutaImg>te.jpg</rutaImg>
 	</producto>
 	<producto>
-		<id></id>
-		<nombre></nombre>
-		<desc></desc>
-		<precio></precio>
-		<stock></stock>
+		<id>1018</id>
+		<nombre>DANONE yogur natural azucarado</nombre>
+		<desc>pack 4 unidades 125 g</desc>
+		<precio>1.09</precio>
+		<stock>62</stock>
 		<fechaMod></fechaMod>
 		<fechaAlt></fechaAlt>
-		<rutaImg></rutaImg>
+		<rutaImg>danone.jpg</rutaImg>
 	</producto>
 	<producto>
 		<id></id>
