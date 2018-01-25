@@ -45,15 +45,15 @@ public class EditarProductoController {
     public void setProducto(Producto producto) {
         this.producto = producto;
         idTextField.setText(String.valueOf(producto.getId()));
+        
+        if (producto.getNombre() != null) {
         nombreTextField.setText(producto.getNombre());
         precioTextField.setText(String.valueOf(producto.getPrecio()));
         stockTextField.setText(String.valueOf(producto.getStock()));
         descripcionTextArea.setText(String.valueOf(producto.getDescripcion()));
         img = producto.getPathImagen();
         imagen.setStyle("-fx-background-image: url('file:" + img + "'); -fx-background-size: 150px; -fx-background-repeat: no-repeat; -fx-background-position: 50%; -fx-background-color:#F9F9F9;");
-        if (producto.getNombre() == null) {
-            precioTextField.setText("");
-            stockTextField.setText("");
+
         }
         nombreTextField.requestFocus();
     }
