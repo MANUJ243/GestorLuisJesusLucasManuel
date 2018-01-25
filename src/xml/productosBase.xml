@@ -61,8 +61,8 @@
 	</producto>
 	<producto>
 		<id>1006</id>
-		<nombre>MAHOU cerveza rubia nacional</nombre>
-		<desc></desc>
+		<nombre>MAHOU clasica</nombre>
+		<desc>cerveza rubia nacional</desc>
 		<precio>0.52</precio>
 		<stock>140</stock>
 		<fechaMod></fechaMod>
@@ -71,8 +71,8 @@
 	</producto>
 	<producto>
 		<id>1007</id>
-		<nombre>DANONE DANET natillas de chocolate pack 8 unidades 125 gr</nombre>
-		<desc></desc>
+		<nombre>DANONE DANET natillas de chocolate,pack 8 unidades 125 gr. </nombre>
+		<desc>Una natilla de 125 g de Danet natillas chocolate Danone tiene 21,6 gr de azúcar, lo que supone un 24,0% de la cantidad máxima orientativa al día (CDO). Se trata de un producto que aporta a nuestra dieta una importante cantidad de azúcares.</desc>
 		<precio>3.05</precio>
 		<stock>28</stock>
 		<fechaMod></fechaMod>
@@ -81,8 +81,8 @@
 	</producto>
 	<producto>
 		<id>1008</id>
-		<nombre>GARCIA BAQUERO queso curado ya cortado pieza 250 g</nombre>
-		<desc></desc>
+		<nombre>GARCIA BAQUERO queso curado ya cortado,pieza 250g </nombre>
+		<desc>Estos quesos curados tienen maduraciones más largas, son quesos aromáticos, equilibrados y sabrosos.</desc>
 		<precio>3.95</precio>
 		<stock>15</stock>
 		<fechaMod></fechaMod>
@@ -91,8 +91,8 @@
 	</producto>
 	<producto>
 		<id>1009</id>
-		<nombre>Kiwis zespry bandeja 500 gr</nombre>
-		<desc></desc>
+		<nombre>Kiwis zespry Bandeja 500 gr</nombre>
+		<desc>El kiwi Zespri Green, también conocido como Hayward, es refrescante, jugoso y tiene un sabor ligeramente ácido. Es idóneo para llevarlo contigo allá donde vayas y, además, te aporta las vitaminas y los minerales que necesitas.</desc>
 		<precio>2.89</precio>
 		<stock>24</stock>
 		<fechaMod></fechaMod>
@@ -101,8 +101,8 @@
 	</producto>
 	<producto>
 		<id>1010</id>
-		<nombre>DUREX preservativos intense orgasmic caja 12 uds</nombre>
-		<desc></desc>
+		<nombre>DUREX preservativos intense orgasmic,12 uds </nombre>
+		<desc>Durex Intense Orgasmic es el nuevo formato de preservativos con puntos, estrías y gel estimulante que proporciona una mayor placer a los dos componentes de la pareja en las relaciones sexuales</desc>
 		<precio>14.99</precio>
 		<stock>528</stock>
 		<fechaMod></fechaMod>
@@ -111,8 +111,8 @@
 	</producto>
 	<producto>
 		<id>1011</id>
-		<nombre>ULTIMA alimento para gatos esterilizados bolsa 400 gr</nombre>
-		<desc></desc>
+		<nombre>ULTIMA alimento para gatos esterilizados,400 gr </nombre>
+		<desc>Tras la esterilización, los gatos tienden a aumentar de peso y a tener un tracto urinario más sensible. Con ultima Gatos Esterilizados cubrirás de forma eficaz las necesidades nutricionales de tu gato esterilizado ayudándole a estar en una óptima condición física mientras él disfruta de cada comida.</desc>
 		<precio>2.39</precio>
 		<stock>41</stock>
 		<fechaMod></fechaMod>
@@ -121,8 +121,8 @@
 	</producto>
 	<producto>
 		<id>1012</id>
-		<nombre>CARDHU whisky malta 12 años botella 70 cl</nombre>
-		<desc></desc>
+		<nombre>CARDHU whisky malta 12 años,botella 70 cl </nombre>
+		<desc>Whisky puro de malta escocés de la gama Cardhu con un sabor intenso y delicioso. Un whisky de malta dulce, limpio, fresco y con toques de roble. Se disfruta mejor solo o con hielo. Envejecido durante 12 años para liberar las notas afrutadas.</desc>
 		<precio>24.35</precio>
 		<stock>52</stock>
 		<fechaMod></fechaMod>
