@@ -57,7 +57,7 @@ public class Producto {
         this.pathImagen = img;
         this.imagen = new Button();
         //Luis: he cambiado el tamaño del botón de las imagenes para que salgan más productos por fila (incluso los podriamos hacer + pequeños..)
-        //this.imagen.setPrefSize(80, 80);
+        this.imagen.setPrefSize(80, 80);
         // String path  = new File(img).getAbsolutePath();
         // String javaPath = path.replace("\\", "/");
         this.imagen.setStyle("-fx-pref-height: 80px; -fx-pref-width: 80px; -fx-background-image: url('file:" + pathImagen + "'); -fx-background-size: 80px; -fx-background-repeat: no-repeat; -fx-background-position: 50%; -fx-background-color:#F9F9F9;");
@@ -120,7 +120,7 @@ public class Producto {
 
     public void setPathImagen(String path) {
         this.pathImagen = path;
-        this.imagen.setStyle("-fx-background-image: url('file:" + pathImagen + "'); -fx-background-size: 150px; -fx-background-repeat: no-repeat; -fx-background-position: 50%; -fx-background-color:#F9F9F9;");
+        this.imagen.setStyle("-fx-background-image: url('file:" + pathImagen + "'); -fx-background-size: 80px; -fx-background-repeat: no-repeat; -fx-background-position: 50%; -fx-background-color:#F9F9F9;");
 
     }
 

@@ -36,6 +36,7 @@ public class VistaDetallesController {
     private Button editar;
     
     private Stage escenarioDetalles;
+    
     private Prueba prueba;
     Producto product;
     private TableView tabla;
@@ -59,6 +60,10 @@ public class VistaDetallesController {
         bar.anadirAImageView(codigoBarrasImg);
     }
     
+    public void setPrueba(Prueba prueba){
+        this.prueba=prueba;
+    }
+    
     public void setTableView(TableView tabla){
         this.tabla = tabla;
     }
@@ -67,8 +72,10 @@ public class VistaDetallesController {
     public void editar(){
         boolean pulsadoGuardar = prueba.muestraEditaProducto(product);
         if (pulsadoGuardar) {
+                this.setProducto(product);
                 tabla.setItems(prueba.getDatosProducto());
                 tabla.refresh();
             }
+        
     }
 }

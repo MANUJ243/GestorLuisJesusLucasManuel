@@ -86,7 +86,6 @@ public class Prueba extends Application {
     }
 
     public boolean muestraEditaProducto(Producto producto) {
-
         FXMLLoader loader = new FXMLLoader();
         URL location = Prueba.class.getResource("../view/EditarProducto.fxml");
         loader.setLocation(location);
@@ -128,6 +127,7 @@ public class Prueba extends Application {
         controller = loader.getController();
         controller.setEscenarioDetalles(escenarioDetalles);
         controller.setProducto(producto);
+        controller.setPrueba(this);
         controller.setTableView(vistaProductoController.getTable());
         escenarioDetalles.showAndWait();
     }
