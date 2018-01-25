@@ -68,11 +68,11 @@ public class VistaProductoController {
         nombreColumn.setCellValueFactory(new PropertyValueFactory<>(nombre));
         precioColumn.setCellValueFactory(new PropertyValueFactory<>(precio));
         stockColumn.setCellValueFactory(new PropertyValueFactory<>(stock));
-        botonDetalles.setStyle("-fx-background-image: url('file:src/img_buttons/button_detalles.png');");
+        /*botonDetalles.setStyle("-fx-background-image: url('file:src/img_buttons/button_detalles.png');");
         botonEditar.setStyle("-fx-background-image: url('file:src/img_buttons/button_editar.png');");
         botonNuevo.setStyle("-fx-background-image: url('file:src/img_buttons/button_nuevo.png');");
         botonBorrar.setStyle("-fx-background-image: url('file:src/img_buttons/button_borrar.png');");
-        botonAyuda.setStyle("-fx-background-image: url('file:src/img_buttons/button_ayuda.png');");
+        botonAyuda.setStyle("-fx-background-image: url('file:src/img_buttons/button_ayuda.png');");*/
 
         /* //Borro los detalles de la persona
         mostrarDetallesPersona(null);
