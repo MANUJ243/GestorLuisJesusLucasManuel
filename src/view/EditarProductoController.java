@@ -47,6 +47,7 @@ public class EditarProductoController {
         nombreTextField.setText(producto.getNombre());
         precioTextField.setText(String.valueOf(producto.getPrecio()));
         stockTextField.setText(String.valueOf(producto.getStock()));
+        descripcionTextArea.setText(String.valueOf(producto.getDescripcion()));
         img = producto.getPathImagen();
         imagen.setStyle("-fx-background-image: url('file:" + img + "'); -fx-background-size: 150px; -fx-background-repeat: no-repeat; -fx-background-position: 50%; -fx-background-color:#F9F9F9;");
         if (producto.getNombre() == null) {
@@ -67,6 +68,7 @@ public class EditarProductoController {
             producto.setPrecio(Double.parseDouble(precioTextField.getText()));
             producto.setStock(Integer.parseInt(stockTextField.getText()));
             producto.setPathImagen(img);
+            producto.setDescripcion(descripcionTextArea.getText());
             pulsadoGuardar = true;
             escenarioEdicion.close();
         }

@@ -1,6 +1,5 @@
 package model;
 
-import java.io.File;
 import java.time.LocalDate;
 import javafx.beans.property.DoubleProperty;
 import javafx.beans.property.IntegerProperty;
@@ -10,7 +9,6 @@ import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
-import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
@@ -33,33 +31,18 @@ public class Producto {
         this(null, 0.0, 0, null);
     }
 
-    /* public Producto() {
-        id++;
-        this.idFinal = new SimpleIntegerProperty(id);
-        this.nombre = null;
-        this.descripcion = null;
-        this.precio = null;
-        this.stock = null;
-        this.fechaAlta = null;
-        this.fechaModificacion = null;
-        this.pathImagen = null;
-        this.imagen = null;
-    }*/
     public Producto(String nombre, Double precio, Integer stock, String img) {
         id++;
         idFinal = new SimpleIntegerProperty(id);
         this.nombre = new SimpleStringProperty(nombre);
-        this.descripcion = new SimpleStringProperty("descripcion");
+        this.descripcion = new SimpleStringProperty("Descripcion por defecto");
         this.precio = new SimpleDoubleProperty(precio);
         this.stock = new SimpleIntegerProperty(stock);
         this.fechaAlta = new SimpleObjectProperty(LocalDate.of(1974, 6, 15));
         this.fechaModificacion = new SimpleObjectProperty(LocalDate.of(1974, 6, 15));
         this.pathImagen = img;
         this.imagen = new Button();
-        //Luis: he cambiado el tamaño del botón de las imagenes para que salgan más productos por fila (incluso los podriamos hacer + pequeños..)
         this.imagen.setPrefSize(80, 80);
-        // String path  = new File(img).getAbsolutePath();
-        // String javaPath = path.replace("\\", "/");
         this.imagen.setStyle("-fx-pref-height: 80px; -fx-pref-width: 80px; -fx-background-image: url('file:" + pathImagen + "'); -fx-background-size: 80px; -fx-background-repeat: no-repeat; -fx-background-position: 50%; -fx-background-color:#F9F9F9;");
         this.imagen.addEventHandler(MouseEvent.MOUSE_ENTERED, new EventHandler<MouseEvent>(){
             @Override
