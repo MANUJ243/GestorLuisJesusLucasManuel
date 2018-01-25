@@ -3,7 +3,7 @@
 		<id>1000</id>
 		<nombre>Aceite de oliva virgen</nombre>
 		<desc>ALMACENAR EN LUGAR FRESCO SECO Y ALEJADO DE LA LUZ</desc>
-		<precio>4,30€</precio>
+		<precio>4.30</precio>
 		<stock>5</stock>
 		<fechaMod></fechaMod>
 		<fechaAlt></fechaAlt>
@@ -12,8 +12,8 @@
 	<producto>
 		<id>1001</id>
 		<nombre>Aceite de girasol</nombre>
-		<desc>Acidez máxima: 0,2°.Contiene cantidades insignificantes de hidratos de carbono, azúcares, proteinas y sal.</desc>
-		<precio>0,99€</precio>
+		<desc>Acidez mï¿½xima: 0,2ï¿½.Contiene cantidades insignificantes de hidratos de carbono, azï¿½cares, proteinas y sal.</desc>
+		<precio>0.99</precio>
 		<stock>8</stock>
 		<fechaMod></fechaMod>
 		<fechaAlt></fechaAlt>
@@ -21,9 +21,9 @@
 	</producto>
 	<producto>
 		<id>1002</id>
-		<nombre>Atún claro en aceite de girasol</nombre>
-		<desc>El atún en lata es un alimento con bastantes beneficios. Junto con el pollo, es uno de los alimentos proteicos preferidos por los deportistas</desc>
-		<precio>2,79€</precio>
+		<nombre>Atï¿½n claro en aceite de girasol</nombre>
+		<desc>El atï¿½n en lata es un alimento con bastantes beneficios. Junto con el pollo, es uno de los alimentos proteicos preferidos por los deportistas</desc>
+		<precio>2,79</precio>
 		<stock>34</stock>
 		<fechaMod></fechaMod>
 		<fechaAlt></fechaAlt>
@@ -33,7 +33,7 @@
 		<id>1003</id>
 		<nombre>Pipas de girasol fritas peladas</nombre>
 		<desc>Quieres pipas? Pues no tengo... jajaja XD</desc>
-		<precio>0,54€</precio>
+		<precio>0.54</precio>
 		<stock>988</stock>
 		<fechaMod></fechaMod>
 		<fechaAlt></fechaAlt>
@@ -43,7 +43,7 @@
 		<id>1004</id>
 		<nombre>Mayonesa girasol</nombre>
 		<desc>Mayones Guitars & Basses Duvell Series. Duvell Series. Mayones Guitars & Basses Hydra Series. Hydra Series.</desc>
-		<precio>1,59€</precio>
+		<precio>1.59</precio>
 		<stock>43</stock>
 		<fechaMod></fechaMod>
 		<fechaAlt></fechaAlt>
@@ -53,7 +53,7 @@
 		<id>1005</id>
 		<nombre>Agua mineral con gas</nombre>
 		<desc></desc>
-		<precio>4,10€</precio>
+		<precio>4.10</precio>
 		<stock>71</stock>
 		<fechaMod></fechaMod>
 		<fechaAlt></fechaAlt>
@@ -61,73 +61,73 @@
 	</producto>
 	<producto>
 		<id>1006</id>
-		<nombre></nombre>
+		<nombre>MAHOU cerveza rubia nacional</nombre>
 		<desc></desc>
-		<precio></precio>
-		<stock></stock>
+		<precio>0.52</precio>
+		<stock>140</stock>
 		<fechaMod></fechaMod>
 		<fechaAlt></fechaAlt>
-		<rutaImg></rutaImg>
+		<rutaImg>mahou.jpg</rutaImg>
 	</producto>
 	<producto>
 		<id>1007</id>
-		<nombre></nombre>
+		<nombre>DANONE DANET natillas de chocolate pack 8 unidades 125 gr</nombre>
 		<desc></desc>
-		<precio></precio>
-		<stock></stock>
+		<precio>3.05</precio>
+		<stock>28</stock>
 		<fechaMod></fechaMod>
 		<fechaAlt></fechaAlt>
-		<rutaImg></rutaImg>
+		<rutaImg>danet.jpg</rutaImg>
 	</producto>
 	<producto>
 		<id>1008</id>
-		<nombre></nombre>
+		<nombre>GARCIA BAQUERO queso curado ya cortado pieza 250 g</nombre>
 		<desc></desc>
-		<precio></precio>
-		<stock></stock>
+		<precio>3.95</precio>
+		<stock>15</stock>
 		<fechaMod></fechaMod>
 		<fechaAlt></fechaAlt>
-		<rutaImg></rutaImg>
+		<rutaImg>queso.png</rutaImg>
 	</producto>
 	<producto>
 		<id>1009</id>
-		<nombre></nombre>
+		<nombre>Kiwis zespry bandeja 500 gr</nombre>
 		<desc></desc>
-		<precio></precio>
-		<stock></stock>
+		<precio>2.89</precio>
+		<stock>24</stock>
 		<fechaMod></fechaMod>
 		<fechaAlt></fechaAlt>
-		<rutaImg></rutaImg>
+		<rutaImg>kiwi.png</rutaImg>
 	</producto>
 	<producto>
 		<id>1010</id>
-		<nombre></nombre>
+		<nombre>DUREX preservativos intense orgasmic caja 12 uds</nombre>
 		<desc></desc>
-		<precio></precio>
-		<stock></stock>
+		<precio>14.99</precio>
+		<stock>528</stock>
 		<fechaMod></fechaMod>
 		<fechaAlt></fechaAlt>
-		<rutaImg></rutaImg>
+		<rutaImg>condones.jpg</rutaImg>
 	</producto>
 	<producto>
 		<id>1011</id>
-		<nombre></nombre>
+		<nombre>ULTIMA alimento para gatos esterilizados bolsa 400 gr</nombre>
 		<desc></desc>
-		<precio></precio>
-		<stock></stock>
+		<precio>2.39</precio>
+		<stock>41</stock>
 		<fechaMod></fechaMod>
 		<fechaAlt></fechaAlt>
-		<rutaImg></rutaImg>
+		<rutaImg>comida_gato.png</rutaImg>
 	</producto>
 	<producto>
 		<id>1012</id>
-		<nombre></nombre>
+		<nombre>CARDHU whisky malta 12 aÃ±os botella 70 cl</nombre>
 		<desc></desc>
-		<precio></precio>
-		<stock></stock>
+		<precio>24.35</precio>
+		<stock>52</stock>
 		<fechaMod></fechaMod>
 		<fechaAlt></fechaAlt>
-		<rutaImg></rutaImg>
+		<rutaImg>cardhu.png</rutaImg>
 	</producto>
 	<producto>
 		<id></id>
