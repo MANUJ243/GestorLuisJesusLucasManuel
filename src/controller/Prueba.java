@@ -160,7 +160,7 @@ public class Prueba extends Application {
             datosProducto.clear();
             datosProducto.addAll(empaquetador.getProductos());
 
-            setRutaArchivoPersonas(archivo);                                  //Guardo la ruta del archivo al registro de preferencias
+            setRutaArchivoPersonas(archivo);                                  //Guardo la ruta del archivo al registro de preferenciass
         } catch (Exception e) {
             //Muestro alerta
             Alert alerta = new Alert(Alert.AlertType.ERROR);
