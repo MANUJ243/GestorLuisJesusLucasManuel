@@ -6,14 +6,14 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement(name = "productos")
 public class Empaquetador {
-    private List productos;
+    private List<Producto> productos;
     
     @XmlElement(name = "producto")
-    public List getProductos(){
+    public List<Producto> getProductos(){
         return productos;
     }
     
-    public void setProductos(List productos){
+    public void setProductos(List<Producto> productos){
         this.productos = productos;
     }
 }

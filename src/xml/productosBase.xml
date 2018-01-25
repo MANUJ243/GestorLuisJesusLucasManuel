@@ -42,7 +42,7 @@
 	<producto>
 		<id>1004</id>
 		<nombre>Mayonesa girasol</nombre>
-		<desc>Mayones Guitars & Basses Duvell Series. Duvell Series. Mayones Guitars & Basses Hydra Series. Hydra Series.</desc>
+		<desc>Mayones Guitars  Basses Duvell Series. Duvell Series. Mayones Guitars  Basses Hydra Series. Hydra Series.</desc>
 		<precio>1.59</precio>
 		<stock>43</stock>
 		<fechaMod></fechaMod>
@@ -137,7 +137,7 @@
 		<stock>14</stock>
 		<fechaMod></fechaMod>
 		<fechaAlt></fechaAlt>
-		<rutaImg>barritas.jpg</rutaImg>
+		<rutaImg>src/img/barritas.jpg</rutaImg>
 	</producto>
 	<producto>
 		<id>1014</id>

@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.util.prefs.Preferences;
 import javafx.application.Application;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -37,9 +38,9 @@ public class Prueba extends Application {
     private ObservableList datosProducto = FXCollections.observableArrayList();
 
     public Prueba() {
-        datosProducto.add(new Producto("Pera", 10.00, 1, "src/img/pera3.jpg"));
-        datosProducto.add(new Producto("Hamburguesa", 8.00, 3, "src/img/camburguer.png"));
-        datosProducto.add(new Producto("Coca-cola", 8.00, 3, "src/img/coca_cola.jpg"));
+//        datosProducto.add(new Producto("Pera", 10.00, 1, "src/img/pera3.jpg"));
+//        datosProducto.add(new Producto("Hamburguesa", 8.00, 3, "src/img/camburguer.png"));
+//        datosProducto.add(new Producto("Coca-cola", 8.00, 3, "src/img/coca_cola.jpg"));
     }
 
     public ObservableList getDatosProducto() {
@@ -65,10 +66,16 @@ public class Prueba extends Application {
         }
         VistaPrincipalController vistaPrincipalController = loader.getController();
         vistaPrincipalController.setEscenarioMenuBar(escenarioPrincipal);
+        vistaPrincipalController.setPrueba(this);
         Scene escena = new Scene(layoutPrincipal);
         escenarioPrincipal.setScene(escena);
         escenarioPrincipal.setMaximized(true);
         escenarioPrincipal.show();
+         //Intento cargar el último archivo abierto
+        File archivo = getRutaArchivoProducto();
+        if (archivo != null){
+            cargaProductos(archivo);
+        }
     }
 
     private void initLayoutProducto() {
@@ -153,7 +160,7 @@ public class Prueba extends Application {
             datosProducto.clear();
             datosProducto.addAll(empaquetador.getProductos());
 
-            //setRutaArchivoPersonas(archivo);                                  //Guardo la ruta del archivo al registro de preferencias
+            setRutaArchivoPersonas(archivo);                                  //Guardo la ruta del archivo al registro de preferencias
         } catch (Exception e) {
             //Muestro alerta
             Alert alerta = new Alert(Alert.AlertType.ERROR);
@@ -180,7 +187,7 @@ public class Prueba extends Application {
             m.marshal(empaquetador, archivo);
 
             //Guardo la ruta delk archivo en el registro
-            //setRutaArchivoPersonas(archivo);
+            setRutaArchivoPersonas(archivo);
         } catch (Exception e) { // catches ANY exception
             Alert alerta = new Alert(Alert.AlertType.ERROR);
             alerta.setTitle("Error");
@@ -188,5 +195,37 @@ public class Prueba extends Application {
             alerta.setContentText(e.toString());
             alerta.showAndWait();
         }
+    }
+    
+    //Obtengo la ruta del archivo de la preferencias de usuario en Java
+    public File getRutaArchivoProducto() {
+        
+        Preferences prefs = Preferences.userNodeForPackage(Prueba.class);
+        String rutaArchivo = prefs.get("rutaArchivo", null);
+        System.out.println(rutaArchivo);
+        if (rutaArchivo != null) {
+            return new File(rutaArchivo);
+        } else {
+            return null;
+        }
+    }
+    
+    //Guardo la ruta del archivo en las preferencias de usuario en Java
+    public void setRutaArchivoPersonas(File archivo){
+        
+        Preferences prefs = Preferences.userNodeForPackage(Prueba.class);
+        if (archivo != null){
+            //Añado la ruta a las preferencias
+            prefs.put("rutaArchivo", archivo.getPath());
+            //Actualizo el título del escenario a partir del archivo
+            escenarioPrincipal.setTitle("Prueba - "+archivo.getName());
+        }
+        else{
+            //Elimino la ruta de las preferencias
+            prefs.remove("rutaArchivo");
+            //Actualizo el título del escenario quitando el nombre del archivo
+            escenarioPrincipal.setTitle("Prueba");
+        }
+        
     }
 }

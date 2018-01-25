@@ -28,10 +28,10 @@ public class Producto {
 
     public Producto() {
 
-        this(null, 0.0, 0, null);
+        this(null,0.0, 0, null);
     }
 
-    public Producto(String nombre, Double precio, Integer stock, String img) {
+    public Producto(String nombre, Double precio, Integer stock, String rutaImg) {
         id++;
         idFinal = new SimpleIntegerProperty(id);
         this.nombre = new SimpleStringProperty(nombre);
@@ -40,7 +40,7 @@ public class Producto {
         this.stock = new SimpleIntegerProperty(stock);
         this.fechaAlta = new SimpleObjectProperty(LocalDate.now());
         this.fechaModificacion = new SimpleObjectProperty(null);
-        this.pathImagen = img;
+        this.pathImagen = rutaImg;
         this.imagen = new Button();
         this.imagen.setPrefSize(80, 80);
         this.imagen.setStyle("-fx-pref-height: 80px; -fx-pref-width: 80px; -fx-background-image: url('file:" + pathImagen + "'); -fx-background-size: 80px; -fx-background-repeat: no-repeat; -fx-background-position: 50%; -fx-background-color:#F9F9F9;");
