@@ -7,6 +7,7 @@ import java.io.OutputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.time.LocalDate;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
@@ -69,6 +70,7 @@ public class EditarProductoController {
             producto.setStock(Integer.parseInt(stockTextField.getText()));
             producto.setPathImagen(img);
             producto.setDescripcion(descripcionTextArea.getText());
+            producto.setFechaModificacion(LocalDate.now());
             pulsadoGuardar = true;
             escenarioEdicion.close();
         }

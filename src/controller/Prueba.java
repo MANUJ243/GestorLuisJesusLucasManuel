@@ -33,7 +33,7 @@ public class Prueba extends Application {
     private AnchorPane editarProducto;
     private BorderPane detallesProducto;
     private VistaProductoController vistaProductoController;
-    private VistaDetallesController controller;
+    private VistaDetallesController vistaDetallesController;
     private ObservableList datosProducto = FXCollections.observableArrayList();
 
     public Prueba() {
@@ -124,11 +124,11 @@ public class Prueba extends Application {
         escenarioDetalles.initOwner(escenarioPrincipal);
         Scene escena = new Scene(detallesProducto);
         escenarioDetalles.setScene(escena);
-        controller = loader.getController();
-        controller.setEscenarioDetalles(escenarioDetalles);
-        controller.setProducto(producto);
-        controller.setPrueba(this);
-        controller.setTableView(vistaProductoController.getTable());
+        vistaDetallesController = loader.getController();
+        vistaDetallesController.setEscenarioDetalles(escenarioDetalles);
+        vistaDetallesController.setProducto(producto);
+        vistaDetallesController.setPrueba(this);
+        vistaDetallesController.setTableView(vistaProductoController.getTable());
         escenarioDetalles.showAndWait();
     }
 

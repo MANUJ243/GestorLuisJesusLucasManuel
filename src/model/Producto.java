@@ -38,8 +38,8 @@ public class Producto {
         this.descripcion = new SimpleStringProperty("Descripcion por defecto");
         this.precio = new SimpleDoubleProperty(precio);
         this.stock = new SimpleIntegerProperty(stock);
-        this.fechaAlta = new SimpleObjectProperty(LocalDate.of(1974, 6, 15));
-        this.fechaModificacion = new SimpleObjectProperty(LocalDate.of(1974, 6, 15));
+        this.fechaAlta = new SimpleObjectProperty(LocalDate.now());
+        this.fechaModificacion = new SimpleObjectProperty(null);
         this.pathImagen = img;
         this.imagen = new Button();
         this.imagen.setPrefSize(80, 80);
@@ -85,12 +85,15 @@ public class Producto {
         return stock.get();
     }
 
-    public ObjectProperty getFechaAlta() {
-        return fechaAlta;
+    public LocalDate getFechaAlta() {
+        return (LocalDate) fechaAlta.get();
+    }
+    public void setFechaModificacion(LocalDate fechaModificacion){
+        this.fechaModificacion.set(fechaModificacion);
     }
 
-    public ObjectProperty getFechaModificacion() {
-        return fechaModificacion;
+    public LocalDate getFechaModificacion() {
+        return (LocalDate) fechaModificacion.get();
     }
 
     public Button getImagen() {

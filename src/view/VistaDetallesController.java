@@ -10,6 +10,7 @@ import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 import model.Producto;
 import util.BarCodeGenerator;
+import util.UtilidadDeFechas;
 
 public class VistaDetallesController {
     @FXML
@@ -40,6 +41,7 @@ public class VistaDetallesController {
     private Prueba prueba;
     Producto product;
     private TableView tabla;
+    private static final String SIN_MODIFICACIONES="Sin modificaciones";
     
     public VistaDetallesController(){
     }
@@ -55,6 +57,14 @@ public class VistaDetallesController {
         nombre.setText("Nombre : " + producto.getNombre());
         precio.setText("Precio : " + producto.getPrecio()+"");
         stock.setText("Stock : " + producto.getStock()+"");
+        fechaAlta.setText("Fecha de alta : " + UtilidadDeFechas.formato(producto.getFechaAlta()));
+        if(UtilidadDeFechas.formato(producto.getFechaModificacion())==null){
+            fechaModificacion.setText("Fecha de modificación : " + SIN_MODIFICACIONES);
+        }else{
+            fechaModificacion.setText("Fecha de modificación : " + UtilidadDeFechas.formato(producto.getFechaModificacion()));
+        }
+        
+        
         descripcion.setText(producto.getDescripcion());
         BarCodeGenerator bar = new BarCodeGenerator(producto.getId()+"");
         bar.anadirAImageView(codigoBarrasImg);
