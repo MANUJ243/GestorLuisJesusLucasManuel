@@ -43,7 +43,7 @@ public class Prueba extends Application {
     }
 
     public ObservableList getDatosProducto() {
-   
+
         return datosProducto;
     }
 
@@ -107,7 +107,7 @@ public class Prueba extends Application {
         escenarioEdicion.showAndWait();
         return controller.pulsadoGuardar();
     }
-    
+
     public void muestraVistaDetalles(Producto producto) {
 
         FXMLLoader loader = new FXMLLoader();

@@ -28,7 +28,7 @@ public class VistaPrincipalController {
     private Prueba prueba;
 
     private Desktop desktop = Desktop.getDesktop();
-    //Luis:He creado un paquete file en el proyecto para que el word o pdf se aloje en el proyecto
+
     private File file = new File("src/file/ayuda.docx");
 
     public VistaPrincipalController() {
