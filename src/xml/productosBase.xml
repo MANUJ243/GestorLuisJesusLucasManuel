@@ -190,63 +190,63 @@
 		<rutaImg>danone.jpg</rutaImg>
 	</producto>
 	<producto>
-		<id></id>
-		<nombre></nombre>
-		<desc></desc>
-		<precio></precio>
-		<stock></stock>
+		<id>1019</id>
+		<nombre>FINDUS Salto arroz 3 delicias tradicional bolsa 500 gr</nombre>
+		<desc>Mezcla de arroz tres delicias ultracongelada</desc>
+		<precio>2.49</precio>
+		<stock>43</stock>
 		<fechaMod></fechaMod>
 		<fechaAlt></fechaAlt>
 		<rutaImg></rutaImg>
 	</producto>
 	<producto>
-		<id></id>
-		<nombre></nombre>
-		<desc></desc>
-		<precio></precio>
-		<stock></stock>
+		<id>1020</id>
+		<nombre>PESCANOVA filetes de merluza</nombre>
+		<desc>Filetes de Merluza sin piel Medianos</desc>
+		<precio>3.99</precio>
+		<stock>93</stock>
 		<fechaMod></fechaMod>
 		<fechaAlt></fechaAlt>
-		<rutaImg></rutaImg>
+		<rutaImg>merluza.jpg</rutaImg>
 	</producto>
 	<producto>
-		<id></id>
-		<nombre></nombre>
-		<desc></desc>
-		<precio></precio>
-		<stock></stock>
+		<id>1021</id>
+		<nombre>NESTLE helado mini maxibon nata pack 6 uds</nombre>
+		<desc>Helado sabor nata con trozos de chocolate, recubrimiento de chocolate con leche y galletas.</desc>
+		<precio>3.85</precio>
+		<stock>58</stock>
 		<fechaMod></fechaMod>
 		<fechaAlt></fechaAlt>
-		<rutaImg></rutaImg>
+		<rutaImg>maxibon.jpg</rutaImg>
 	</producto>
 	<producto>
-		<id></id>
-		<nombre></nombre>
-		<desc></desc>
-		<precio></precio>
-		<stock></stock>
+		<id>1022</id>
+		<nombre>ASTURIANA leche desnatada</nombre>
+		<desc>Leche UHT desnatada, envase 1 lt.</desc>
+		<precio>0.78</precio>
+		<stock>7</stock>
 		<fechaMod></fechaMod>
 		<fechaAlt></fechaAlt>
-		<rutaImg></rutaImg>
+		<rutaImg>leche.jpg</rutaImg>
 	</producto>
 	<producto>
-		<id></id>
-		<nombre></nombre>
-		<desc></desc>
-		<precio></precio>
-		<stock></stock>
+		<id>1023</id>
+		<nombre>DANONE DANET natillas vainilla</nombre>
+		<desc>Natillas. Postre lácteo. Pack 8 unidades 125 gr</desc>
+		<precio>3.05</precio>
+		<stock>52</stock>
 		<fechaMod></fechaMod>
 		<fechaAlt></fechaAlt>
-		<rutaImg></rutaImg>
+		<rutaImg>natillas.jpg</rutaImg>
 	</producto>
 	<producto>
-		<id></id>
-		<nombre></nombre>
-		<desc></desc>
-		<precio></precio>
-		<stock></stock>
+		<id>1024</id>
+		<nombre>SKIP cápsulas active clean</nombre>
+		<desc>caja 28 tabletas</desc>
+		<precio>7.99</precio>
+		<stock>81</stock>
 		<fechaMod></fechaMod>
 		<fechaAlt></fechaAlt>
-		<rutaImg></rutaImg>
+		<rutaImg>detergente.jpg</rutaImg>
 	</producto>
 </productos>
