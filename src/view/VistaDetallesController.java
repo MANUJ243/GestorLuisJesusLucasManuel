@@ -57,11 +57,11 @@ public class VistaDetallesController {
         nombre.setText("Nombre : " + producto.getNombre());
         precio.setText("Precio : " + producto.getPrecio()+"");
         stock.setText("Stock : " + producto.getStock()+"");
-        fechaAlta.setText("Fecha de alta : " + UtilidadDeFechas.formato(producto.getFechaAlta()));
-        if(UtilidadDeFechas.formato(producto.getFechaModificacion())==null){
+        fechaAlta.setText("Fecha de alta : " + producto.getFechaAlta());
+        if(producto.getFechaModificacion()==null){
             fechaModificacion.setText("Fecha de modificación : " + SIN_MODIFICACIONES);
         }else{
-            fechaModificacion.setText("Fecha de modificación : " + UtilidadDeFechas.formato(producto.getFechaModificacion()));
+            fechaModificacion.setText("Fecha de modificación : " + producto.getFechaModificacion());
         }
         
         

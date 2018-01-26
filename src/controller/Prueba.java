@@ -38,9 +38,9 @@ public class Prueba extends Application {
     private ObservableList datosProducto = FXCollections.observableArrayList();
 
     public Prueba() {
-//        datosProducto.add(new Producto("Pera", 10.00, 1, "src/img/pera3.jpg"));
-//        datosProducto.add(new Producto("Hamburguesa", 8.00, 3, "src/img/camburguer.png"));
-//        datosProducto.add(new Producto("Coca-cola", 8.00, 3, "src/img/coca_cola.jpg"));
+        //datosProducto.add(new Producto("Pera","descripcion", "10.00", "1", "src/img/pera3.jpg"));
+        //datosProducto.add(new Producto("Hamburguesa","descripcion", "8.00", "3","src/img/camburguer.png"));
+        //datosProducto.add(new Producto("Coca-cola","descripcion", "8.00", "3", "src/img/coca_cola.jpg"));
     }
 
     public ObservableList getDatosProducto() {
@@ -185,6 +185,7 @@ public class Prueba extends Application {
 
             //Marshall y guardo XML a archivo
             m.marshal(empaquetador, archivo);
+            m.marshal(empaquetador, System.out);
 
             //Guardo la ruta delk archivo en el registro
             setRutaArchivoPersonas(archivo);
