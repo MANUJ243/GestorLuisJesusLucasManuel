@@ -12,7 +12,7 @@
 	<producto>
 		<id>1001</id>
 		<nombre>Aceite de girasol</nombre>
-		<descripcion>Acidez m�xima: 0,2�.Contiene cantidades insignificantes de hidratos de carbono, az�cares, proteinas y sal.</descripcion>
+		<descripcion>Acidez máxima: 0,2gr.Contiene cantidades insignificantes de hidratos de carbono, azúcares, proteinas y sal.</descripcion>
 		<precio>0.99</precio>
 		<stock>8</stock>
 		<fechaModificacion>26/01/2018</fechaModificacion>
@@ -21,8 +21,8 @@
 	</producto>
 	<producto>
 		<id>1002</id>
-		<nombre>At�n claro en aceite de girasol</nombre>
-		<descripcion>El at�n en lata es un alimento con bastantes beneficios. Junto con el pollo, es uno de los alimentos proteicos preferidos por los deportistas</descripcion>
+		<nombre>Atún claro en aceite de girasol</nombre>
+		<descripcion>El atún en lata es un alimento con bastantes beneficios. Junto con el pollo, es uno de los alimentos proteicos preferidos por los deportistas</descripcion>
 		<precio>2,79</precio>
 		<stock>34</stock>
 		<fechaModificacion>26/01/2018</fechaModificacion>
