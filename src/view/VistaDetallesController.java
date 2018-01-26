@@ -5,8 +5,10 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextArea;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import model.Producto;
 import util.BarCodeGenerator;
@@ -28,7 +30,7 @@ public class VistaDetallesController {
     @FXML
     private Label fechaModificacion;
     @FXML
-    private Label descripcion;
+    private Text descripcion;
     @FXML
     private ImageView codigoBarrasImg;
     @FXML

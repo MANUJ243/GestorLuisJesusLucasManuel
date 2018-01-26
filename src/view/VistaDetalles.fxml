@@ -6,15 +6,16 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Text?>
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="736.0" prefWidth="720.0" stylesheets="@../css/EstiloPrincipal.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.VistaDetallesController">
    <bottom>
       <AnchorPane prefHeight="271.0" prefWidth="720.0" BorderPane.alignment="CENTER">
          <children>
-            <Label fx:id="descripcion" alignment="TOP_LEFT" layoutX="14.0" layoutY="14.0" prefHeight="89.0" prefWidth="550.0" text="Descripcion" />
             <ImageView fx:id="codigoBarrasImg" fitHeight="113.0" fitWidth="216.0" layoutX="252.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true" />
             <Button fx:id="editar" layoutX="577.0" layoutY="14.0" mnemonicParsing="false" onAction="#editar" prefHeight="31.0" prefWidth="126.0" styleClass="botonAzul" text="Editar" />
             <Button layoutX="576.0" layoutY="59.0" mnemonicParsing="false" text="Exportar Codigo" />
+            <Text fx:id="descripcion" layoutX="32.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="485.13671875" />
          </children>
       </AnchorPane>
    </bottom>
