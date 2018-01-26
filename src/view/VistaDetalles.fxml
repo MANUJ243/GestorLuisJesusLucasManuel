@@ -15,18 +15,18 @@
             <ImageView fx:id="codigoBarrasImg" fitHeight="113.0" fitWidth="216.0" layoutX="252.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true" />
             <Button fx:id="editar" layoutX="577.0" layoutY="14.0" mnemonicParsing="false" onAction="#editar" prefHeight="31.0" prefWidth="126.0" styleClass="botonAzul" text="Editar" />
             <Button layoutX="576.0" layoutY="59.0" mnemonicParsing="false" text="Exportar Codigo" />
-            <Text fx:id="descripcion" layoutX="32.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="485.13671875" />
+            <Text fx:id="descripcion" layoutX="22.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="485.13671875" />
+            <Label fx:id="nombre" layoutX="22.0" layoutY="4.0" text="Nombre" />
          </children>
       </AnchorPane>
    </bottom>
    <right>
       <AnchorPane prefHeight="463.0" prefWidth="330.0" BorderPane.alignment="CENTER">
          <children>
-            <Label fx:id="nombre" layoutX="14.0" layoutY="63.0" text="Nombre" />
-            <Label fx:id="precio" layoutX="14.0" layoutY="97.0" text="Precio" />
-            <Label fx:id="stock" layoutX="16.0" layoutY="132.0" text="Stock" />
-            <Label fx:id="fechaAlta" layoutX="16.0" layoutY="166.0" text="Fecha de alta" />
-            <Label fx:id="fechaModificacion" layoutX="14.0" layoutY="204.0" text="Fecha de modificacion" />
+            <Label fx:id="precio" layoutX="14.0" layoutY="60.0" text="Precio" />
+            <Label fx:id="stock" layoutX="16.0" layoutY="95.0" text="Stock" />
+            <Label fx:id="fechaAlta" layoutX="16.0" layoutY="129.0" text="Fecha de alta" />
+            <Label fx:id="fechaModificacion" layoutX="14.0" layoutY="167.0" text="Fecha de modificacion" />
             <Label fx:id="id" layoutX="14.0" layoutY="29.0" text="Id" />
          </children>
       </AnchorPane>
