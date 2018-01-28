@@ -250,7 +250,7 @@
         <pathImagen>src/img/detergente.jpg</pathImagen>
     </producto>
     <producto>
-        <id>1024</id>
+        <id>1036</id>
         <nombre>Isotónico Storm</nombre>
         <precio>4.00</precio>
         <pathImagen>src/img/673659.jpg</pathImagen>
@@ -365,6 +365,216 @@
         <precio>0.78</precio>
         <pathImagen>src/img/000099.jpg</pathImagen>
         <stock>54</stock>
+        <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
+        <fechaAlta>28/01/2018</fechaAlta>
+        <fechaModificacion>28/01/2018</fechaModificacion>
+    </producto>
+    <producto>
+        <id>1037</id>
+        <nombre>Lasaña casera</nombre>
+        <precio>2.50</precio>
+        <pathImagen>src/img/274162.jpg</pathImagen>
+        <stock>21</stock>
+        <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
+        <fechaAlta>28/01/2018</fechaAlta>
+        <fechaModificacion>28/01/2018</fechaModificacion>
+    </producto>
+    <producto>
+        <id>1038</id>
+        <nombre>Lasaña de espinacas y queso de cabra</nombre>
+        <precio>2.50</precio>
+        <pathImagen>src/img/892199.jpg</pathImagen>
+        <stock>99</stock>
+        <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
+        <fechaAlta>28/01/2018</fechaAlta>
+        <fechaModificacion>28/01/2018</fechaModificacion>
+    </producto>
+    <producto>
+        <id>1039</id>
+        <nombre>Lasaña de atún</nombre>
+        <precio>2.50</precio>
+        <pathImagen>src/img/139461.jpg</pathImagen>
+        <stock>123</stock>
+        <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
+        <fechaAlta>28/01/2018</fechaAlta>
+        <fechaModificacion>28/01/2018</fechaModificacion>
+    </producto>
+    <producto>
+        <id>1040</id>
+        <nombre>Bola de pizza fresca</nombre>
+        <precio>1.00</precio>
+        <pathImagen>src/img/235086.jpg</pathImagen>
+        <stock>163</stock>
+        <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
+        <fechaAlta>28/01/2018</fechaAlta>
+        <fechaModificacion>28/01/2018</fechaModificacion>
+    </producto>
+    <producto>
+        <id>1041</id>
+        <nombre>Provopizza queso azul y nueces</nombre>
+        <precio>2.50</precio>
+        <pathImagen>src/img/935761.jpg</pathImagen>
+        <stock>154</stock>
+        <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
+        <fechaAlta>28/01/2018</fechaAlta>
+        <fechaModificacion>28/01/2018</fechaModificacion>
+    </producto>
+    <producto>
+        <id>1042</id>
+        <nombre>Provopizza de sobrasada</nombre>
+        <precio>2.50</precio>
+        <pathImagen>src/img/935762.jpg</pathImagen>
+        <stock>16</stock>
+        <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
+        <fechaAlta>28/01/2018</fechaAlta>
+        <fechaModificacion>28/01/2018</fechaModificacion>
+    </producto>
+    <producto>
+        <id>1043</id>
+        <nombre>Pasta a la bolgnesa</nombre>
+        <precio>2.50</precio>
+        <pathImagen>src/img/185675.jpg</pathImagen>
+        <stock>113</stock>
+        <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
+        <fechaAlta>28/01/2018</fechaAlta>
+        <fechaModificacion>28/01/2018</fechaModificacion>
+    </producto>
+    <producto>
+        <id>1044</id>
+        <nombre>Mini pizza atún</nombre>
+        <precio>1.50</precio>
+        <pathImagen>src/img/154538.jpg</pathImagen>
+        <stock>27</stock>
+        <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
+        <fechaAlta>28/01/2018</fechaAlta>
+        <fechaModificacion>28/01/2018</fechaModificacion>
+    </producto>
+    <producto>
+        <id>1045</id>
+        <nombre>mini Pizza carbonara</nombre>
+        <precio>1.50</precio>
+        <pathImagen>src/img/154503.jpg</pathImagen>
+        <stock>44</stock>
+        <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
+        <fechaAlta>28/01/2018</fechaAlta>
+        <fechaModificacion>28/01/2018</fechaModificacion>
+    </producto>
+    <producto>
+        <id>1046</id>
+        <nombre>Ensaladilla Rusa</nombre>
+        <precio>3.00</precio>
+        <pathImagen>src/img/384223.png</pathImagen>
+        <stock>62</stock>
+        <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
+        <fechaAlta>28/01/2018</fechaAlta>
+        <fechaModificacion>28/01/2018</fechaModificacion>
+    </producto>
+    <producto>
+        <id>1047</id>
+        <nombre>Ensalada de Cangrejo</nombre>
+        <precio>3.00</precio>
+        <pathImagen>src/img/384200.png</pathImagen>
+        <stock>195</stock>
+        <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
+        <fechaAlta>28/01/2018</fechaAlta>
+        <fechaModificacion>28/01/2018</fechaModificacion>
+    </producto>
+    <producto>
+        <id>1048</id>
+        <nombre>Ensalada de Cangrejo</nombre>
+        <precio>2.00</precio>
+        <pathImagen>src/img/387070.png</pathImagen>
+        <stock>105</stock>
+        <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
+        <fechaAlta>28/01/2018</fechaAlta>
+        <fechaModificacion>28/01/2018</fechaModificacion>
+    </producto>
+    <producto>
+        <id>1049</id>
+        <nombre>Patatas con Ali Oli</nombre>
+        <precio>3.00</precio>
+        <pathImagen>src/img/384206.png</pathImagen>
+        <stock>62</stock>
+        <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
+        <fechaAlta>28/01/2018</fechaAlta>
+        <fechaModificacion>28/01/2018</fechaModificacion>
+    </producto>
+    <producto>
+        <id>1050</id>
+        <nombre>Ensaladilla Rusa</nombre>
+        <precio>2.00</precio>
+        <pathImagen>src/img/387064.png</pathImagen>
+        <stock>4</stock>
+        <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
+        <fechaAlta>28/01/2018</fechaAlta>
+        <fechaModificacion>28/01/2018</fechaModificacion>
+    </producto>
+    <producto>
+        <id>1051</id>
+        <nombre>Sandwich nórdico de pollo</nombre>
+        <precio>1.50</precio>
+        <pathImagen>src/img/726672.png</pathImagen>
+        <stock>164</stock>
+        <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
+        <fechaAlta>28/01/2018</fechaAlta>
+        <fechaModificacion>28/01/2018</fechaModificacion>
+    </producto>
+    <producto>
+        <id>1052</id>
+        <nombre>Ensalada Americana</nombre>
+        <precio>3.00</precio>
+        <pathImagen>src/img/384202.png</pathImagen>
+        <stock>152</stock>
+        <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
+        <fechaAlta>28/01/2018</fechaAlta>
+        <fechaModificacion>28/01/2018</fechaModificacion>
+    </producto>
+    <producto>
+        <id>1053</id>
+        <nombre>Sandwicht nórdico mixto</nombre>
+        <precio>1.50</precio>
+        <pathImagen>src/img/726653.png</pathImagen>
+        <stock>175</stock>
+        <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
+        <fechaAlta>28/01/2018</fechaAlta>
+        <fechaModificacion>28/01/2018</fechaModificacion>
+    </producto>
+    <producto>
+        <id>1054</id>
+        <nombre>Sandwich de tortilla y empanada</nombre>
+        <precio>1.50</precio>
+        <pathImagen>src/img/247619.png</pathImagen>
+        <stock>159</stock>
+        <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
+        <fechaAlta>28/01/2018</fechaAlta>
+        <fechaModificacion>28/01/2018</fechaModificacion>
+    </producto>
+    <producto>
+        <id>1055</id>
+        <nombre>Sandwich york salsa inglesa</nombre>
+        <precio>2.25</precio>
+        <pathImagen>src/img/988977.jpg</pathImagen>
+        <stock>70</stock>
+        <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
+        <fechaAlta>28/01/2018</fechaAlta>
+        <fechaModificacion>28/01/2018</fechaModificacion>
+    </producto>
+    <producto>
+        <id>1056</id>
+        <nombre>Sandwich prmium sajonia</nombre>
+        <precio>2.00</precio>
+        <pathImagen>src/img/822918.jpg</pathImagen>
+        <stock>182</stock>
+        <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
+        <fechaAlta>28/01/2018</fechaAlta>
+        <fechaModificacion>28/01/2018</fechaModificacion>
+    </producto>
+    <producto>
+        <id>1057</id>
+        <nombre>Sandwich premium maxi club</nombre>
+        <precio>2.00</precio>
+        <pathImagen>src/img/822914.jpg</pathImagen>
+        <stock>66</stock>
         <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
         <fechaAlta>28/01/2018</fechaAlta>
         <fechaModificacion>28/01/2018</fechaModificacion>
