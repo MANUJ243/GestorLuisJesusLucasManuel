@@ -579,4 +579,124 @@
         <fechaAlta>28/01/2018</fechaAlta>
         <fechaModificacion>28/01/2018</fechaModificacion>
     </producto>
+    <producto>
+        <id>1058</id>
+        <nombre>Pechuga de Pavo</nombre>
+        <precio>1.59</precio>
+        <pathImagen>src/img/453483.png</pathImagen>
+        <stock>64</stock>
+        <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
+        <fechaAlta>28/01/2018</fechaAlta>
+        <fechaModificacion>28/01/2018</fechaModificacion>
+    </producto>
+    <producto>
+        <id>1059</id>
+        <nombre>Pechuga de Pavo</nombre>
+        <precio>2.30</precio>
+        <pathImagen>src/img/629626.png</pathImagen>
+        <stock>122</stock>
+        <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
+        <fechaAlta>28/01/2018</fechaAlta>
+        <fechaModificacion>28/01/2018</fechaModificacion>
+    </producto>
+    <producto>
+        <id>1060</id>
+        <nombre>Pechuga de pavo</nombre>
+        <precio>1.95</precio>
+        <pathImagen>src/img/115181.png</pathImagen>
+        <stock>162</stock>
+        <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
+        <fechaAlta>28/01/2018</fechaAlta>
+        <fechaModificacion>28/01/2018</fechaModificacion>
+    </producto>
+    <producto>
+        <id>1061</id>
+        <nombre>Pechuga de Pavo braseada</nombre>
+        <precio>1.59</precio>
+        <pathImagen>src/img/528745.png</pathImagen>
+        <stock>114</stock>
+        <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
+        <fechaAlta>28/01/2018</fechaAlta>
+        <fechaModificacion>28/01/2018</fechaModificacion>
+    </producto>
+    <producto>
+        <id>1062</id>
+        <nombre>Pechuga de pavo en lonchas finas</nombre>
+        <precio>1.50</precio>
+        <pathImagen>src/img/640020.png</pathImagen>
+        <stock>183</stock>
+        <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
+        <fechaAlta>28/01/2018</fechaAlta>
+        <fechaModificacion>28/01/2018</fechaModificacion>
+    </producto>
+    <producto>
+        <id>1063</id>
+        <nombre>Pechuga de Pavo en Finas lonchas</nombre>
+        <precio>1.00</precio>
+        <pathImagen>src/img/075168.png</pathImagen>
+        <stock>70</stock>
+        <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
+        <fechaAlta>28/01/2018</fechaAlta>
+        <fechaModificacion>28/01/2018</fechaModificacion>
+    </producto>
+    <producto>
+        <id>1064</id>
+        <nombre>Pechuga de pavo natural asada</nombre>
+        <precio>3.74</precio>
+        <pathImagen>src/img/242516.png</pathImagen>
+        <stock>56</stock>
+        <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
+        <fechaAlta>28/01/2018</fechaAlta>
+        <fechaModificacion>28/01/2018</fechaModificacion>
+    </producto>
+    <producto>
+        <id>1065</id>
+        <nombre>Pechuga de pavo</nombre>
+        <precio>1.00</precio>
+        <pathImagen>src/img/216260.png</pathImagen>
+        <stock>6</stock>
+        <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
+        <fechaAlta>28/01/2018</fechaAlta>
+        <fechaModificacion>28/01/2018</fechaModificacion>
+    </producto>
+    <producto>
+        <id>1066</id>
+        <nombre>Mortadela de Pavo</nombre>
+        <precio>1.55</precio>
+        <pathImagen>src/img/794538.png</pathImagen>
+        <stock>131</stock>
+        <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
+        <fechaAlta>28/01/2018</fechaAlta>
+        <fechaModificacion>28/01/2018</fechaModificacion>
+    </producto>
+    <producto>
+        <id>1067</id>
+        <nombre>Lonchas de pavo</nombre>
+        <precio>2.00</precio>
+        <pathImagen>src/img/725121.png</pathImagen>
+        <stock>36</stock>
+        <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
+        <fechaAlta>28/01/2018</fechaAlta>
+        <fechaModificacion>28/01/2018</fechaModificacion>
+    </producto>
+    <producto>
+        <id>1068</id>
+        <nombre>Pechuga de pavo en lonchas</nombre>
+        <precio>1.00</precio>
+        <pathImagen>src/img/176743.png</pathImagen>
+        <stock>88</stock>
+        <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
+        <fechaAlta>28/01/2018</fechaAlta>
+        <fechaModificacion>28/01/2018</fechaModificacion>
+    </producto>
+    <producto>
+        <id>1069</id>
+        <nombre>Pechuga pavo mini</nombre>
+        <precio>2.99</precio>
+        <pathImagen>src/img/074199.png</pathImagen>
+        <stock>22</stock>
+        <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
+        <fechaAlta>28/01/2018</fechaAlta>
+        <fechaModificacion>28/01/2018</fechaModificacion>
+    </producto>
 </productos>
