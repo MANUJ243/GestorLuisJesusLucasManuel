@@ -1,252 +1,372 @@
 <productos>
-	<producto>
-		<id>1000</id>
-		<nombre>Aceite de oliva virgen</nombre>
-		<descripcion>ALMACENAR EN LUGAR FRESCO SECO Y ALEJADO DE LA LUZ</descripcion>
-		<precio>4.30</precio>
-		<stock>5</stock>
-		<fechaModificacion>26/01/2018</fechaModificacion>
-		<fechaAlta>26/01/2018</fechaAlta>
-		<pathImagen>src/img/471213.jpg</pathImagen>
-	</producto>
-	<producto>
-		<id>1001</id>
-		<nombre>Aceite de girasol</nombre>
-		<descripcion>Acidez máxima: 0,2gr.Contiene cantidades insignificantes de hidratos de carbono, azúcares, proteinas y sal.</descripcion>
-		<precio>0.99</precio>
-		<stock>8</stock>
-		<fechaModificacion>26/01/2018</fechaModificacion>
-		<fechaAlta>26/01/2018</fechaAlta>
-		<pathImagen>src/img/505201.jpg</pathImagen>
-	</producto>
-	<producto>
-		<id>1002</id>
-		<nombre>Atún claro en aceite de girasol</nombre>
-		<descripcion>El atún en lata es un alimento con bastantes beneficios. Junto con el pollo, es uno de los alimentos proteicos preferidos por los deportistas</descripcion>
-		<precio>2,79</precio>
-		<stock>34</stock>
-		<fechaModificacion>26/01/2018</fechaModificacion>
-		<fechaAlta>26/01/2018</fechaAlta>
-		<pathImagen>src/img/568198.jpg</pathImagen>
-	</producto>
-	<producto>
-		<id>1003</id>
-		<nombre>Pipas de girasol fritas peladas</nombre>
-		<descripcion>Quieres pipas? Pues no tengo... jajaja XD</descripcion>
-		<precio>0.54</precio>
-		<stock>988</stock>
-		<fechaModificacion>26/01/2018</fechaModificacion>
-		<fechaAlta>26/01/2018</fechaAlta>
-		<pathImagen>src/img/712450.jpg</pathImagen>
-	</producto>
-	<producto>
-		<id>1004</id>
-		<nombre>Mayonesa girasol</nombre>
-		<descripcion>Mayones Guitars  Basses Duvell Series. Duvell Series. Mayones Guitars  Basses Hydra Series. Hydra Series.</descripcion>
-		<precio>1.59</precio>
-		<stock>43</stock>
-		<fechaModificacion>26/01/2018</fechaModificacion>
-		<fechaAlta>26/01/2018</fechaAlta>
-		<pathImagen>src/img/137829.jpg</pathImagen>
-	</producto>
-	<producto>
-		<id>1005</id>
-		<nombre>Agua mineral con gas</nombre>
-		<descripcion></descripcion>
-		<precio>4.10</precio>
-		<stock>71</stock>
-		<fechaModificacion>26/01/2018</fechaModificacion>
-		<fechaAlta>26/01/2018</fechaAlta>
-		<pathImagen>src/img/026623.jpg</pathImagen>
-	</producto>
-	<producto>
-		<id>1006</id>
-		<nombre>MAHOU clasica</nombre>
-		<descripcion>cerveza rubia nacional</descripcion>
-		<precio>0.52</precio>
-		<stock>140</stock>
-		<fechaModificacion>26/01/2018</fechaModificacion>
-		<fechaAlta>26/01/2018</fechaAlta>
-		<pathImagen>src/img/mahou.jpg</pathImagen>
-	</producto>
-	<producto>
-		<id>1007</id>
-		<nombre>DANONE DANET natillas de chocolate</nombre>
-		<descripcion>Una natilla de 125 g de Danet natillas chocolate Danone tiene 21,6 gr de azúcar, lo que supone un 24,0% de la cantidad máxima orientativa al día (CDO). Se trata de un producto que aporta a nuestra dieta una importante cantidad de azúcares.</descripcion>
-		<precio>3.05</precio>
-		<stock>28</stock>
-		<fechaModificacion>26/01/2018</fechaModificacion>
-		<fechaAlta>26/01/2018</fechaAlta>
-		<pathImagen>src/img/danet.jpg</pathImagen>
-	</producto>
-	<producto>
-		<id>1008</id>
-		<nombre>GARCIA BAQUERO queso curado ya cortado,pieza 250g </nombre>
-		<descripcion>Estos quesos curados tienen maduraciones más largas, son quesos aromáticos, equilibrados y sabrosos.</descripcion>
-		<precio>3.95</precio>
-		<stock>15</stock>
-		<fechaModificacion>26/01/2018</fechaModificacion>
-		<fechaAlta>26/01/2018</fechaAlta>
-		<pathImagen>src/img/queso.png</pathImagen>
-	</producto>
-	<producto>
-		<id>1009</id>
-		<nombre>Kiwis zespry Bandeja 500 gr</nombre>
-		<descripcion>El kiwi Zespri Green, también conocido como Hayward, es refrescante, jugoso y tiene un sabor ligeramente ácido. Es idóneo para llevarlo contigo allá donde vayas y, además, te aporta las vitaminas y los minerales que necesitas.</descripcion>
-		<precio>2.89</precio>
-		<stock>24</stock>
-		<fechaModificacion>26/01/2018</fechaModificacion>
-		<fechaAlta>26/01/2018</fechaAlta>
-		<pathImagen>src/img/kiwi.png</pathImagen>
-	</producto>
-	<producto>
-		<id>1010</id>
-		<nombre>DUREX preservativos intense orgasmic,12 uds </nombre>
-		<descripcion>Durex Intense Orgasmic es el nuevo formato de preservativos con puntos, estrías y gel estimulante que proporciona una mayor placer a los dos componentes de la pareja en las relaciones sexuales</descripcion>
-		<precio>14.99</precio>
-		<stock>528</stock>
-		<fechaModificacion>26/01/2018</fechaModificacion>
-		<fechaAlta>26/01/2018</fechaAlta>
-		<pathImagen>src/img/condones.jpg</pathImagen>
-	</producto>
-	<producto>
-		<id>1011</id>
-		<nombre>ULTIMA alimento para gatos esterilizados,400 gr </nombre>
-		<descripcion>Tras la esterilización, los gatos tienden a aumentar de peso y a tener un tracto urinario más sensible. Con ultima Gatos Esterilizados cubrirás de forma eficaz las necesidades nutricionales de tu gato esterilizado ayudándole a estar en una óptima condición física mientras él disfruta de cada comida.</descripcion>
-		<precio>2.39</precio>
-		<stock>41</stock>
-		<fechaModificacion>26/01/2018</fechaModificacion>
-		<fechaAlta>26/01/2018</fechaAlta>
-		<pathImagen>src/img/comida_gato.png</pathImagen>
-	</producto>
-	<producto>
-		<id>1012</id>
-		<nombre>CARDHU whisky malta 12 años,botella 70 cl </nombre>
-		<descripcion>Whisky puro de malta escocés de la gama Cardhu con un sabor intenso y delicioso. Un whisky de malta dulce, limpio, fresco y con toques de roble. Se disfruta mejor solo o con hielo. Envejecido durante 12 años para liberar las notas afrutadas.</descripcion>
-		<precio>24.35</precio>
-		<stock>52</stock>
-		<fechaModificacion>26/01/2018</fechaModificacion>
-		<fechaAlta>26/01/2018</fechaAlta>
-		<pathImagen>src/img/cardhu.png</pathImagen>
-	</producto>
-	<producto>
-		<id>1013</id>
-		<nombre>KELLOGS barrita de cereales all bran con chocolate estuche 240 gr</nombre>
-		<descripcion>Barrita de cereales de trigo y fibra de avena enriquecida con salvado y con trocitos de chocolate.</descripcion>
-		<precio>2.5</precio>
-		<stock>14</stock>
-		<fechaModificacion>26/01/2018</fechaModificacion>
-		<fechaAlta>26/01/2018</fechaAlta>
-		<pathImagen>src/img/barritas.jpg</pathImagen>
-	</producto>
-	<producto>
-		<id>1014</id>
-		<nombre>KINDER Bueno white chocolate blanco 45 gr</nombre>
-		<descripcion>Crujientes barritas con relleno cremoso de leche y avellanas con cobertura de chocolate blanco y virutas de cacao</descripcion>
-		<precio>1.25</precio>
-		<stock>20</stock>
-		<fechaModificacion>26/01/2018</fechaModificacion>
-		<fechaAlta>26/01/2018</fechaAlta>
-		<pathImagen>src/img/kinder.jpg</pathImagen>
-	</producto>
-	<producto>
-		<id>1015</id>
-		<nombre>ROYAL caramelo liquido 400 grs</nombre>
-		<descripcion>Jarabe de caramelo.</descripcion>
-		<precio>2.26</precio>
-		<stock>6</stock>
-		<fechaModificacion>26/01/2018</fechaModificacion>
-		<fechaAlta>26/01/2018</fechaAlta>
-		<pathImagen>src/img/caramelo.jpg</pathImagen>
-	</producto>
-	<producto>
-		<id>1016</id>
-		<nombre>RAM chocolate a la taza envase 1 lt</nombre>
-		<descripcion>Producto lácteo con chocolate. UHT</descripcion>
-		<precio>1.88</precio>
-		<stock>45</stock>
-		<fechaModificacion>26/01/2018</fechaModificacion>
-		<fechaAlta>26/01/2018</fechaAlta>
-		<pathImagen>src/img/ram.jpg</pathImagen>
-	</producto>
-	<producto>
-		<id>1017</id>
-		<nombre>HORNIMANS té verde al limón</nombre>
-		<descripcion>Té Verde con Limón aromatizado, estuche 20 bolsitas</descripcion>
-		<precio>2.07</precio>
-		<stock>36</stock>
-		<fechaModificacion>26/01/2018</fechaModificacion>
-		<fechaAlta>26/01/2018</fechaAlta>
-		<pathImagen>src/img/te.jpg</pathImagen>
-	</producto>
-	<producto>
-		<id>1018</id>
-		<nombre>DANONE yogur natural azucarado</nombre>
-		<descripcion>pack 4 unidades 125 g</descripcion>
-		<precio>1.09</precio>
-		<stock>62</stock>
-		<fechaModificacion>26/01/2018</fechaModificacion>
-		<fechaAlta>26/01/2018</fechaAlta>
-		<pathImagen>src/img/danone.jpg</pathImagen>
-	</producto>
-	<producto>
-		<id>1019</id>
-		<nombre>FINDUS Salto arroz 3 delicias tradicional bolsa 500 gr</nombre>
-		<descripcion>Mezcla de arroz tres delicias ultracongelada</descripcion>
-		<precio>2.49</precio>
-		<stock>43</stock>
-		<fechaModificacion>26/01/2018</fechaModificacion>
-		<fechaAlta>26/01/2018</fechaAlta>
-		<pathImagen>src/img/arroz.jpg</pathImagen>
-	</producto>
-	<producto>
-		<id>1020</id>
-		<nombre>PESCANOVA filetes de merluza</nombre>
-		<descripcion>Filetes de Merluza sin piel Medianos</descripcion>
-		<precio>3.99</precio>
-		<stock>93</stock>
-		<fechaModificacion>26/01/2018</fechaModificacion>
-		<fechaAlta>26/01/2018</fechaAlta>
-		<pathImagen>src/img/merluza.jpg</pathImagen>
-	</producto>
-	<producto>
-		<id>1021</id>
-		<nombre>NESTLE helado mini maxibon nata pack 6 uds</nombre>
-		<descripcion>Helado sabor nata con trozos de chocolate, recubrimiento de chocolate con leche y galletas.</descripcion>
-		<precio>3.85</precio>
-		<stock>58</stock>
-		<fechaModificacion>26/01/2018</fechaModificacion>
-		<fechaAlta>26/01/2018</fechaAlta>
-		<pathImagen>src/img/maxibon.jpg</pathImagen>
-	</producto>
-	<producto>
-		<id>1022</id>
-		<nombre>ASTURIANA leche desnatada</nombre>
-		<descripcion>Leche UHT desnatada, envase 1 lt.</descripcion>
-		<precio>0.78</precio>
-		<stock>7</stock>
-		<fechaModificacion>26/01/2018</fechaModificacion>
-		<fechaAlta>26/01/2018</fechaAlta>
-		<pathImagen>src/img/leche.jpg</pathImagen>
-	</producto>
-	<producto>
-		<id>1023</id>
-		<nombre>DANONE DANET natillas vainilla</nombre>
-		<descripcion>Natillas. Postre lácteo. Pack 8 unidades 125 gr</descripcion>
-		<precio>3.05</precio>
-		<stock>52</stock>
-		<fechaModificacion>26/01/2018</fechaModificacion>
-		<fechaAlta>26/01/2018</fechaAlta>
-		<pathImagen>src/img/natillas.jpg</pathImagen>
-	</producto>
-	<producto>
-		<id>1024</id>
-		<nombre>SKIP cápsulas active clean</nombre>
-		<descripcion>caja 28 tabletas</descripcion>
-		<precio>7.99</precio>
-		<stock>81</stock>
-		<fechaModificacion>26/01/2018</fechaModificacion>
-		<fechaAlta>26/01/2018</fechaAlta>
-		<pathImagen>src/img/detergente.jpg</pathImagen>
-	</producto>
+    <producto>
+        <id>1000</id>
+        <nombre>Aceite de oliva virgen</nombre>
+        <descripcion>ALMACENAR EN LUGAR FRESCO SECO Y ALEJADO DE LA LUZ</descripcion>
+        <precio>4.30</precio>
+        <stock>5</stock>
+        <fechaModificacion>26/01/2018</fechaModificacion>
+        <fechaAlta>26/01/2018</fechaAlta>
+        <pathImagen>src/img/471213.jpg</pathImagen>
+    </producto>
+    <producto>
+        <id>1001</id>
+        <nombre>Aceite de girasol</nombre>
+        <descripcion>Acidez máxima: 0,2gr.Contiene cantidades insignificantes de hidratos de carbono, azúcares, proteinas y sal.</descripcion>
+        <precio>0.99</precio>
+        <stock>8</stock>
+        <fechaModificacion>26/01/2018</fechaModificacion>
+        <fechaAlta>26/01/2018</fechaAlta>
+        <pathImagen>src/img/505201.jpg</pathImagen>
+    </producto>
+    <producto>
+        <id>1002</id>
+        <nombre>Atún claro en aceite de girasol</nombre>
+        <descripcion>El atún en lata es un alimento con bastantes beneficios. Junto con el pollo, es uno de los alimentos proteicos preferidos por los deportistas</descripcion>
+        <precio>2,79</precio>
+        <stock>34</stock>
+        <fechaModificacion>26/01/2018</fechaModificacion>
+        <fechaAlta>26/01/2018</fechaAlta>
+        <pathImagen>src/img/568198.jpg</pathImagen>
+    </producto>
+    <producto>
+        <id>1003</id>
+        <nombre>Pipas de girasol fritas peladas</nombre>
+        <descripcion>Quieres pipas? Pues no tengo... jajaja XD</descripcion>
+        <precio>0.54</precio>
+        <stock>988</stock>
+        <fechaModificacion>26/01/2018</fechaModificacion>
+        <fechaAlta>26/01/2018</fechaAlta>
+        <pathImagen>src/img/712450.jpg</pathImagen>
+    </producto>
+    <producto>
+        <id>1004</id>
+        <nombre>Mayonesa girasol</nombre>
+        <descripcion>Mayones Guitars  Basses Duvell Series. Duvell Series. Mayones Guitars  Basses Hydra Series. Hydra Series.</descripcion>
+        <precio>1.59</precio>
+        <stock>43</stock>
+        <fechaModificacion>26/01/2018</fechaModificacion>
+        <fechaAlta>26/01/2018</fechaAlta>
+        <pathImagen>src/img/137829.jpg</pathImagen>
+    </producto>
+    <producto>
+        <id>1005</id>
+        <nombre>Agua mineral con gas</nombre>
+        <descripcion></descripcion>
+        <precio>4.10</precio>
+        <stock>71</stock>
+        <fechaModificacion>26/01/2018</fechaModificacion>
+        <fechaAlta>26/01/2018</fechaAlta>
+        <pathImagen>src/img/026623.jpg</pathImagen>
+    </producto>
+    <producto>
+        <id>1006</id>
+        <nombre>MAHOU clasica</nombre>
+        <descripcion>cerveza rubia nacional</descripcion>
+        <precio>0.52</precio>
+        <stock>140</stock>
+        <fechaModificacion>26/01/2018</fechaModificacion>
+        <fechaAlta>26/01/2018</fechaAlta>
+        <pathImagen>src/img/mahou.jpg</pathImagen>
+    </producto>
+    <producto>
+        <id>1007</id>
+        <nombre>DANONE DANET natillas de chocolate</nombre>
+        <descripcion>Una natilla de 125 g de Danet natillas chocolate Danone tiene 21,6 gr de azúcar, lo que supone un 24,0% de la cantidad máxima orientativa al día (CDO). Se trata de un producto que aporta a nuestra dieta una importante cantidad de azúcares.</descripcion>
+        <precio>3.05</precio>
+        <stock>28</stock>
+        <fechaModificacion>26/01/2018</fechaModificacion>
+        <fechaAlta>26/01/2018</fechaAlta>
+        <pathImagen>src/img/danet.jpg</pathImagen>
+    </producto>
+    <producto>
+        <id>1008</id>
+        <nombre>GARCIA BAQUERO queso curado ya cortado,pieza 250g </nombre>
+        <descripcion>Estos quesos curados tienen maduraciones más largas, son quesos aromáticos, equilibrados y sabrosos.</descripcion>
+        <precio>3.95</precio>
+        <stock>15</stock>
+        <fechaModificacion>26/01/2018</fechaModificacion>
+        <fechaAlta>26/01/2018</fechaAlta>
+        <pathImagen>src/img/queso.png</pathImagen>
+    </producto>
+    <producto>
+        <id>1009</id>
+        <nombre>Kiwis zespry Bandeja 500 gr</nombre>
+        <descripcion>El kiwi Zespri Green, también conocido como Hayward, es refrescante, jugoso y tiene un sabor ligeramente ácido. Es idóneo para llevarlo contigo allá donde vayas y, además, te aporta las vitaminas y los minerales que necesitas.</descripcion>
+        <precio>2.89</precio>
+        <stock>24</stock>
+        <fechaModificacion>26/01/2018</fechaModificacion>
+        <fechaAlta>26/01/2018</fechaAlta>
+        <pathImagen>src/img/kiwi.png</pathImagen>
+    </producto>
+    <producto>
+        <id>1010</id>
+        <nombre>DUREX preservativos intense orgasmic,12 uds </nombre>
+        <descripcion>Durex Intense Orgasmic es el nuevo formato de preservativos con puntos, estrías y gel estimulante que proporciona una mayor placer a los dos componentes de la pareja en las relaciones sexuales</descripcion>
+        <precio>14.99</precio>
+        <stock>528</stock>
+        <fechaModificacion>26/01/2018</fechaModificacion>
+        <fechaAlta>26/01/2018</fechaAlta>
+        <pathImagen>src/img/condones.jpg</pathImagen>
+    </producto>
+    <producto>
+        <id>1011</id>
+        <nombre>ULTIMA alimento para gatos esterilizados,400 gr </nombre>
+        <descripcion>Tras la esterilización, los gatos tienden a aumentar de peso y a tener un tracto urinario más sensible. Con ultima Gatos Esterilizados cubrirás de forma eficaz las necesidades nutricionales de tu gato esterilizado ayudándole a estar en una óptima condición física mientras él disfruta de cada comida.</descripcion>
+        <precio>2.39</precio>
+        <stock>41</stock>
+        <fechaModificacion>26/01/2018</fechaModificacion>
+        <fechaAlta>26/01/2018</fechaAlta>
+        <pathImagen>src/img/comida_gato.png</pathImagen>
+    </producto>
+    <producto>
+        <id>1012</id>
+        <nombre>CARDHU whisky malta 12 años,botella 70 cl </nombre>
+        <descripcion>Whisky puro de malta escocés de la gama Cardhu con un sabor intenso y delicioso. Un whisky de malta dulce, limpio, fresco y con toques de roble. Se disfruta mejor solo o con hielo. Envejecido durante 12 años para liberar las notas afrutadas.</descripcion>
+        <precio>24.35</precio>
+        <stock>52</stock>
+        <fechaModificacion>26/01/2018</fechaModificacion>
+        <fechaAlta>26/01/2018</fechaAlta>
+        <pathImagen>src/img/cardhu.png</pathImagen>
+    </producto>
+    <producto>
+        <id>1013</id>
+        <nombre>KELLOGS barrita de cereales all bran con chocolate estuche 240 gr</nombre>
+        <descripcion>Barrita de cereales de trigo y fibra de avena enriquecida con salvado y con trocitos de chocolate.</descripcion>
+        <precio>2.5</precio>
+        <stock>14</stock>
+        <fechaModificacion>26/01/2018</fechaModificacion>
+        <fechaAlta>26/01/2018</fechaAlta>
+        <pathImagen>src/img/barritas.jpg</pathImagen>
+    </producto>
+    <producto>
+        <id>1014</id>
+        <nombre>KINDER Bueno white chocolate blanco 45 gr</nombre>
+        <descripcion>Crujientes barritas con relleno cremoso de leche y avellanas con cobertura de chocolate blanco y virutas de cacao</descripcion>
+        <precio>1.25</precio>
+        <stock>20</stock>
+        <fechaModificacion>26/01/2018</fechaModificacion>
+        <fechaAlta>26/01/2018</fechaAlta>
+        <pathImagen>src/img/kinder.jpg</pathImagen>
+    </producto>
+    <producto>
+        <id>1015</id>
+        <nombre>ROYAL caramelo liquido 400 grs</nombre>
+        <descripcion>Jarabe de caramelo.</descripcion>
+        <precio>2.26</precio>
+        <stock>6</stock>
+        <fechaModificacion>26/01/2018</fechaModificacion>
+        <fechaAlta>26/01/2018</fechaAlta>
+        <pathImagen>src/img/caramelo.jpg</pathImagen>
+    </producto>
+    <producto>
+        <id>1016</id>
+        <nombre>RAM chocolate a la taza envase 1 lt</nombre>
+        <descripcion>Producto lácteo con chocolate. UHT</descripcion>
+        <precio>1.88</precio>
+        <stock>45</stock>
+        <fechaModificacion>26/01/2018</fechaModificacion>
+        <fechaAlta>26/01/2018</fechaAlta>
+        <pathImagen>src/img/ram.jpg</pathImagen>
+    </producto>
+    <producto>
+        <id>1017</id>
+        <nombre>HORNIMANS té verde al limón</nombre>
+        <descripcion>Té Verde con Limón aromatizado, estuche 20 bolsitas</descripcion>
+        <precio>2.07</precio>
+        <stock>36</stock>
+        <fechaModificacion>26/01/2018</fechaModificacion>
+        <fechaAlta>26/01/2018</fechaAlta>
+        <pathImagen>src/img/te.jpg</pathImagen>
+    </producto>
+    <producto>
+        <id>1018</id>
+        <nombre>DANONE yogur natural azucarado</nombre>
+        <descripcion>pack 4 unidades 125 g</descripcion>
+        <precio>1.09</precio>
+        <stock>62</stock>
+        <fechaModificacion>26/01/2018</fechaModificacion>
+        <fechaAlta>26/01/2018</fechaAlta>
+        <pathImagen>src/img/danone.jpg</pathImagen>
+    </producto>
+    <producto>
+        <id>1019</id>
+        <nombre>FINDUS Salto arroz 3 delicias tradicional bolsa 500 gr</nombre>
+        <descripcion>Mezcla de arroz tres delicias ultracongelada</descripcion>
+        <precio>2.49</precio>
+        <stock>43</stock>
+        <fechaModificacion>26/01/2018</fechaModificacion>
+        <fechaAlta>26/01/2018</fechaAlta>
+        <pathImagen>src/img/arroz.jpg</pathImagen>
+    </producto>
+    <producto>
+        <id>1020</id>
+        <nombre>PESCANOVA filetes de merluza</nombre>
+        <descripcion>Filetes de Merluza sin piel Medianos</descripcion>
+        <precio>3.99</precio>
+        <stock>93</stock>
+        <fechaModificacion>26/01/2018</fechaModificacion>
+        <fechaAlta>26/01/2018</fechaAlta>
+        <pathImagen>src/img/merluza.jpg</pathImagen>
+    </producto>
+    <producto>
+        <id>1021</id>
+        <nombre>NESTLE helado mini maxibon nata pack 6 uds</nombre>
+        <descripcion>Helado sabor nata con trozos de chocolate, recubrimiento de chocolate con leche y galletas.</descripcion>
+        <precio>3.85</precio>
+        <stock>58</stock>
+        <fechaModificacion>26/01/2018</fechaModificacion>
+        <fechaAlta>26/01/2018</fechaAlta>
+        <pathImagen>src/img/maxibon.jpg</pathImagen>
+    </producto>
+    <producto>
+        <id>1022</id>
+        <nombre>ASTURIANA leche desnatada</nombre>
+        <descripcion>Leche UHT desnatada, envase 1 lt.</descripcion>
+        <precio>0.78</precio>
+        <stock>7</stock>
+        <fechaModificacion>26/01/2018</fechaModificacion>
+        <fechaAlta>26/01/2018</fechaAlta>
+        <pathImagen>src/img/leche.jpg</pathImagen>
+    </producto>
+    <producto>
+        <id>1023</id>
+        <nombre>DANONE DANET natillas vainilla</nombre>
+        <descripcion>Natillas. Postre lácteo. Pack 8 unidades 125 gr</descripcion>
+        <precio>3.05</precio>
+        <stock>52</stock>
+        <fechaModificacion>26/01/2018</fechaModificacion>
+        <fechaAlta>26/01/2018</fechaAlta>
+        <pathImagen>src/img/natillas.jpg</pathImagen>
+    </producto>
+    <producto>
+        <id>1024</id>
+        <nombre>SKIP cápsulas active clean</nombre>
+        <descripcion>caja 28 tabletas</descripcion>
+        <precio>7.99</precio>
+        <stock>81</stock>
+        <fechaModificacion>26/01/2018</fechaModificacion>
+        <fechaAlta>26/01/2018</fechaAlta>
+        <pathImagen>src/img/detergente.jpg</pathImagen>
+    </producto>
+    <producto>
+        <id>1024</id>
+        <nombre>Isotónico Storm</nombre>
+        <precio>4.00</precio>
+        <pathImagen>src/img/673659.jpg</pathImagen>
+        <stock>21</stock>
+        <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
+        <fechaAlta>28/01/2018</fechaAlta>
+        <fechaModificacion>28/01/2018</fechaModificacion>
+    </producto>
+    <producto>
+        <id>1025</id>
+        <nombre>Barritas de proteínas sabor chocolate blanco</nombre>
+        <precio>2.80</precio>
+        <pathImagen>src/img/210687.jpg</pathImagen>
+        <stock>147</stock>
+        <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
+        <fechaAlta>28/01/2018</fechaAlta>
+        <fechaModificacion>28/01/2018</fechaModificacion>
+    </producto>
+    <producto>
+        <id>1026</id>
+        <nombre>Bebida isotónica Iced Storm botella</nombre>
+        <precio>1.04</precio>
+        <pathImagen>src/img/394775.png</pathImagen>
+        <stock>135</stock>
+        <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
+        <fechaAlta>28/01/2018</fechaAlta>
+        <fechaModificacion>28/01/2018</fechaModificacion>
+    </producto>
+    <producto>
+        <id>1027</id>
+        <nombre>Bebida isotónica de naranja</nombre>
+        <precio>0.78</precio>
+        <pathImagen>src/img/000098.jpg</pathImagen>
+        <stock>132</stock>
+        <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
+        <fechaAlta>28/01/2018</fechaAlta>
+        <fechaModificacion>28/01/2018</fechaModificacion>
+    </producto>
+    <producto>
+        <id>1028</id>
+        <nombre>Refresco isotónico de naranja</nombre>
+        <precio>1.04</precio>
+        <pathImagen>src/img/790503.png</pathImagen>
+        <stock>14</stock>
+        <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
+        <fechaAlta>28/01/2018</fechaAlta>
+        <fechaModificacion>28/01/2018</fechaModificacion>
+    </producto>
+    <producto>
+        <id>1029</id>
+        <nombre>Refresco isotónico Cool Blue</nombre>
+        <precio>3.05</precio>
+        <pathImagen>src/img/219981.png</pathImagen>
+        <stock>95</stock>
+        <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
+        <fechaAlta>28/01/2018</fechaAlta>
+        <fechaModificacion>28/01/2018</fechaModificacion>
+    </producto>
+    <producto>
+        <id>1030</id>
+        <nombre>Bebida isotónica Citrus Charge botella</nombre>
+        <precio>1.04</precio>
+        <pathImagen>src/img/394779.png</pathImagen>
+        <stock>121</stock>
+        <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
+        <fechaAlta>28/01/2018</fechaAlta>
+        <fechaModificacion>28/01/2018</fechaModificacion>
+    </producto>
+    <producto>
+        <id>1031</id>
+        <nombre>Bebida Reload</nombre>
+        <precio>1.89</precio>
+        <pathImagen>src/img/964053.png</pathImagen>
+        <stock>198</stock>
+        <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
+        <fechaAlta>28/01/2018</fechaAlta>
+        <fechaModificacion>28/01/2018</fechaModificacion>
+    </producto>
+    <producto>
+        <id>1032</id>
+        <nombre>Bebida antioxidante sabor melocotón</nombre>
+        <precio>1.89</precio>
+        <pathImagen>src/img/964045.png</pathImagen>
+        <stock>169</stock>
+        <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
+        <fechaAlta>28/01/2018</fechaAlta>
+        <fechaModificacion>28/01/2018</fechaModificacion>
+    </producto>
+    <producto>
+        <id>1033</id>
+        <nombre>Bebida Everyday</nombre>
+        <precio>1.89</precio>
+        <pathImagen>src/img/964054.png</pathImagen>
+        <stock>52</stock>
+        <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
+        <fechaAlta>28/01/2018</fechaAlta>
+        <fechaModificacion>28/01/2018</fechaModificacion>
+    </producto>
+    <producto>
+        <id>1034</id>
+        <nombre>Barritas de proteínas sabor coco</nombre>
+        <precio>3.05</precio>
+        <pathImagen>src/img/210690.jpg</pathImagen>
+        <stock>97</stock>
+        <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
+        <fechaAlta>28/01/2018</fechaAlta>
+        <fechaModificacion>28/01/2018</fechaModificacion>
+    </producto>
+    <producto>
+        <id>1035</id>
+        <nombre>Refresco isotónico de limón</nombre>
+        <precio>0.78</precio>
+        <pathImagen>src/img/000099.jpg</pathImagen>
+        <stock>54</stock>
+        <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
+        <fechaAlta>28/01/2018</fechaAlta>
+        <fechaModificacion>28/01/2018</fechaModificacion>
+    </producto>
 </productos>
