@@ -160,7 +160,7 @@ public class Prueba extends Application {
             datosProducto.clear();
             datosProducto.addAll(empaquetador.getProductos());
 
-            setRutaArchivoPersonas(archivo);                                  //Guardo la ruta del archivo al registro de preferenciass
+            setRutaArchivoProducto(archivo);                                  //Guardo la ruta del archivo al registro de preferenciass
         } catch (Exception e) {
             //Muestro alerta
             Alert alerta = new Alert(Alert.AlertType.ERROR);
@@ -188,7 +188,7 @@ public class Prueba extends Application {
             m.marshal(empaquetador, System.out);
 
             //Guardo la ruta delk archivo en el registro
-            setRutaArchivoPersonas(archivo);
+            setRutaArchivoProducto(archivo);
         } catch (Exception e) { // catches ANY exception
             Alert alerta = new Alert(Alert.AlertType.ERROR);
             alerta.setTitle("Error");
@@ -212,7 +212,7 @@ public class Prueba extends Application {
     }
     
     //Guardo la ruta del archivo en las preferencias de usuario en Java
-    public void setRutaArchivoPersonas(File archivo){
+    public void setRutaArchivoProducto(File archivo){
         
         Preferences prefs = Preferences.userNodeForPackage(Prueba.class);
         if (archivo != null){
