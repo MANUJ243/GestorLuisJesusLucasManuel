@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0"
+            prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.VistaEstadisticasController">
+   <children>
+      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0"
+                  prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <content>
+            <BarChart fx:id="graficoBarras" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="700.0"
+                      prefWidth="2000" minWidth="-Infinity" title="Stock disponible" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                <xAxis>
+                    <CategoryAxis fx:id="ejeX" side="BOTTOM" />
+                </xAxis>
+                <yAxis>
+                    <NumberAxis fx:id="ejeY" side="LEFT" />
+                </yAxis>
+            </BarChart>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

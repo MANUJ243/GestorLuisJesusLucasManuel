@@ -1,17 +1,35 @@
 package view;
 
 import controller.Prueba;
-import java.awt.Desktop;
-import java.io.File;
-import java.io.IOException;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.MenuItem;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.FileChooser;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
+import model.Empaquetador;
+import org.apache.pdfbox.pdmodel.PDDocument;
+import org.apache.pdfbox.pdmodel.PDPage;
+
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.Unmarshaller;
+import java.awt.*;
+import java.io.File;
+import java.io.IOException;
+import java.net.URL;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import java.util.prefs.Preferences;
 
 public class VistaPrincipalController {
 
+    @FXML
+    public MenuItem stats;
     @FXML
     private MenuItem itemAbrir;
     @FXML
@@ -25,6 +43,11 @@ public class VistaPrincipalController {
     @FXML
     private MenuItem itemAbout;
 
+
+    private AnchorPane estadisticas;
+
+    private ObservableList datosProducto = FXCollections.observableArrayList();
+
     private Stage escenarioMenuBar;
     private Prueba prueba;
 
@@ -33,19 +56,20 @@ public class VistaPrincipalController {
     private File file = new File("src/file/ayuda.docx");
 
     public VistaPrincipalController() {
-
+        cargaProductos(getRutaArchivoProducto());
     }
 
     public void setEscenarioMenuBar(Stage escenarioMenuBar) {
         this.escenarioMenuBar = escenarioMenuBar;
     }
-    
-    public void setPrueba(Prueba prueba){
-        this.prueba=prueba;
+
+
+    public void setPrueba(Prueba prueba) {
+        this.prueba = prueba;
     }
-    
+
     @FXML
-    public void abrir(){
+    public void abrir() {
         FileChooser fileChooser = new FileChooser();
 
         //Filtro para la extensión
@@ -58,10 +82,10 @@ public class VistaPrincipalController {
 
         if (archivo != null) {
             prueba.cargaProductos(archivo);
-        }  
+        }
     }
-    
-     @FXML
+
+    @FXML
     private void guardar() {
         File archivo = prueba.getRutaArchivoProducto();
         if (archivo != null) {
@@ -70,10 +94,10 @@ public class VistaPrincipalController {
             guardarComo();
         }
     }
-    
-     @FXML
+
+    @FXML
     private void guardarComo() {
-        
+
         FileChooser fileChooser = new FileChooser();
 
         //Filtro para la extensión
@@ -85,14 +109,14 @@ public class VistaPrincipalController {
         File archivo = fileChooser.showSaveDialog(prueba.getPrimaryStage());
 
         if (archivo != null) {
-            //Me aseguro de que tiene la extensión correcta
+            //Me aseguro de que tiene la extensión correctaAbrir
             if (!archivo.getPath().endsWith(".xml")) {
                 archivo = new File(archivo.getPath() + ".xml");
             }
             prueba.guardaProductos(archivo);
         }
     }
-    
+
     @FXML
     public void salir() {
         System.exit(0);
@@ -106,14 +130,80 @@ public class VistaPrincipalController {
             System.out.println("error abriendo archivo");
         }
     }
-    
+
+    @FXML
+    public void stats() {
+        //Cargo la vista estadísticas
+        FXMLLoader loader = new FXMLLoader();
+        URL location = Prueba.class.getResource("../view/VistaEstadisticas.fxml");
+        loader.setLocation(location);
+        try {
+            estadisticas = loader.load();
+        } catch (IOException ex) {
+            Logger.getLogger(Prueba.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+        //Inicializo un nuevo escenario y asigno el principal
+        Stage escenarioEstadisticas = new Stage();
+        escenarioEstadisticas.setTitle("Estadisticas");
+        escenarioEstadisticas.initOwner(escenarioMenuBar);
+
+        //Cargo la escena que contiene ese layout de estadisticas
+        Scene escena = new Scene(estadisticas);
+        escenarioEstadisticas.setScene(escena);
+
+        //Asigno el controlador
+        VistaEstadisticasController controller = loader.getController();
+        controller.setEscenarioEstadisticas(escenarioEstadisticas);
+        controller.setProductos(datosProducto);
+
+        //Muestro las estadisticas
+        escenarioEstadisticas.setMaximized(true);
+        escenarioEstadisticas.show();
+    }
+
     @FXML
     private void about() {
-            Alert alerta = new Alert(Alert.AlertType.INFORMATION);
-            alerta.setTitle("About");
-            alerta.setHeaderText("Developed by:");
-            alerta.setContentText("correojesusmc@gmail.com\nmanuj243@gmail.com\nlucas1sanz96@gmail.com\nluismunozcastro1@gmail.com");
+        Alert alerta = new Alert(Alert.AlertType.INFORMATION);
+        alerta.setTitle("About");
+        alerta.setHeaderText("Developed by:");
+        alerta.setContentText("correojesusmc@gmail.com\nmanuj243@gmail.com\nlucas1sanz96@gmail.com\nluismunozcastro1@gmail.com");
+        alerta.showAndWait();
+
+    }
+
+    //Obtengo la ruta del archivo de la preferencias de usuario en Java
+    public File getRutaArchivoProducto() {
+
+        Preferences prefs = Preferences.userNodeForPackage(Prueba.class);
+        String rutaArchivo = prefs.get("rutaArchivo", null);
+        System.out.println(rutaArchivo);
+        if (rutaArchivo != null) {
+            return new File(rutaArchivo);
+        } else {
+            return null;
+        }
+    }
+
+    public void cargaProductos(File archivo) {
+        try {
+            //Contexto
+            JAXBContext context = JAXBContext.newInstance(Empaquetador.class);
+            Unmarshaller um = context.createUnmarshaller();
+
+            //Leo XML del archivo y hago unmarshall
+            Empaquetador empaquetador = (Empaquetador) um.unmarshal(archivo);
+
+            //Borro los anteriores
+            datosProducto.clear();
+            datosProducto.addAll(empaquetador.getProductos());                            //Guardo la ruta del archivo al registro de preferenciass
+        } catch (Exception e) {
+            //Muestro alerta
+            Alert alerta = new Alert(Alert.AlertType.ERROR);
+            alerta.setTitle("Error");
+            alerta.setHeaderText("No se pueden cargar datos de la ruta " + archivo.getPath());
+            alerta.setContentText(e.toString());
             alerta.showAndWait();
-        
+        }
     }
 }

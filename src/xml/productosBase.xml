@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <productos>
     <producto>
         <id>1000</id>
@@ -481,7 +482,7 @@
     </producto>
     <producto>
         <id>1048</id>
-        <nombre>Ensalada de Cangrejo</nombre>
+        <nombre>Ensalada del Cangrejo</nombre>
         <precio>2.00</precio>
         <pathImagen>src/img/387070.png</pathImagen>
         <stock>105</stock>
@@ -501,7 +502,7 @@
     </producto>
     <producto>
         <id>1050</id>
-        <nombre>Ensaladilla Rusa</nombre>
+        <nombre>Ensaladilla de la Rusa</nombre>
         <precio>2.00</precio>
         <pathImagen>src/img/387064.png</pathImagen>
         <stock>4</stock>
@@ -581,7 +582,7 @@
     </producto>
     <producto>
         <id>1058</id>
-        <nombre>Pechuga de Pavo</nombre>
+        <nombre>Pechuga de Pavo Premium</nombre>
         <precio>1.59</precio>
         <pathImagen>src/img/453483.png</pathImagen>
         <stock>64</stock>
@@ -591,7 +592,7 @@
     </producto>
     <producto>
         <id>1059</id>
-        <nombre>Pechuga de Pavo</nombre>
+        <nombre>Pechuga de Pavo de pobre</nombre>
         <precio>2.30</precio>
         <pathImagen>src/img/629626.png</pathImagen>
         <stock>122</stock>
@@ -601,7 +602,7 @@
     </producto>
     <producto>
         <id>1060</id>
-        <nombre>Pechuga de pavo</nombre>
+        <nombre>Pechuga de un pavo muerto</nombre>
         <precio>1.95</precio>
         <pathImagen>src/img/115181.png</pathImagen>
         <stock>162</stock>
@@ -651,7 +652,7 @@
     </producto>
     <producto>
         <id>1065</id>
-        <nombre>Pechuga de pavo</nombre>
+        <nombre>Pechuga de cualquier pavo</nombre>
         <precio>1.00</precio>
         <pathImagen>src/img/216260.png</pathImagen>
         <stock>6</stock>
