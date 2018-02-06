@@ -24,16 +24,16 @@
       </TableView>
       <HBox layoutX="568.0" layoutY="18.0" spacing="20.0" AnchorPane.rightAnchor="20.0">
          <children>
-            <Button fx:id="botonDetalles" mnemonicParsing="false" onAction="#detallesProducto" prefHeight="30.0" prefWidth="80.0" />
-            <Button fx:id="botonNuevo" mnemonicParsing="false" onAction="#crearProducto" prefHeight="30.0" prefWidth="80.0" />
-            <Button fx:id="botonEditar" mnemonicParsing="false" onAction="#editarProducto" prefHeight="30.0" prefWidth="80.0" />
-            <Button fx:id="botonBorrar" mnemonicParsing="false" onAction="#borrarProducto" prefHeight="30.0" prefWidth="80.0" />
-            <Button fx:id="botonAyuda" mnemonicParsing="false" onAction="#ayuda" prefHeight="30.0" prefWidth="80.0" />
+            <Button fx:id="botonNuevo" mnemonicParsing="false" onAction="#crearProducto" prefHeight="30.0" prefWidth="80.0" styleClass="botonVerde" text="Nuevo" />
+            <Button fx:id="botonDetalles" mnemonicParsing="false" onAction="#detallesProducto" prefHeight="30.0" prefWidth="80.0" styleClass="botonAzul" stylesheets="@../css/EstiloPrincipal.css" text="Detalles" />
+            <Button fx:id="botonEditar" mnemonicParsing="false" onAction="#editarProducto" prefHeight="30.0" prefWidth="80.0" styleClass="botonAzul" text="Editar" />
+            <Button fx:id="botonBorrar" mnemonicParsing="false" onAction="#borrarProducto" prefHeight="30.0" prefWidth="80.0" styleClass="botonRojo" text="Borrar" />
+            <Button fx:id="botonAyuda" mnemonicParsing="false" onAction="#ayuda" prefHeight="30.0" prefWidth="80.0" styleClass="botonAzul" text="Ayuda" />
          </children>
       </HBox>
-      <Text layoutX="14.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Para ordenar un campo piche en la cabecera de la columna que desee ordenar." wrappingWidth="397.6708984375">
+      <Text fill="#9e9393" fontSmoothingType="LCD" layoutX="14.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Para ordenar un campo pinche en la cabecera de la columna que desee ordenar." wrappingWidth="479.99998927116394">
          <font>
-            <Font name="System Bold" size="13.0" />
+            <Font name="Berlin Sans FB Bold" size="12.0" />
          </font>
       </Text>
    </children>

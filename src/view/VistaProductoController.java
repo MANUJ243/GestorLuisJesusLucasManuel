@@ -4,17 +4,9 @@ import controller.Prueba;
 import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.MenuItem;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -48,7 +40,7 @@ public class VistaProductoController {
     private Prueba prueba;
 
     private Desktop desktop = Desktop.getDesktop();
-    //Luis:He creado un paquete file en el proyecto para que el word o pdf se aloje en el proyecto
+
     private File file = new File("src/file/ayuda.docx");
 
     public VistaProductoController() {
@@ -68,23 +60,15 @@ public class VistaProductoController {
         nombreColumn.setCellValueFactory(new PropertyValueFactory<>(nombre));
         precioColumn.setCellValueFactory(new PropertyValueFactory<>(precio));
         stockColumn.setCellValueFactory(new PropertyValueFactory<>(stock));
-        botonDetalles.setStyle("-fx-background-image: url('file:src/img_buttons/button_detalles.png');");
-        botonEditar.setStyle("-fx-background-image: url('file:src/img_buttons/button_editar.png');");
-        botonNuevo.setStyle("-fx-background-image: url('file:src/img_buttons/button_nuevo.png');");
-        botonBorrar.setStyle("-fx-background-image: url('file:src/img_buttons/button_borrar.png');");
-        botonAyuda.setStyle("-fx-background-image: url('file:src/img_buttons/button_ayuda.png');");
-
-        /* //Borro los detalles de la persona
-        mostrarDetallesPersona(null);
-        
-        //Escucho cambios en la selección de la tabla y muestro los detalles en caso de cambio
-        tablaPersonas.getSelectionModel().selectedItemProperty().addListener(
-            (observable, oldValue, newValue) -> mostrarDetallesPersona((Persona) newValue));*/
     }
 
     public void setPrueba(Prueba prueba) {
         this.prueba = prueba;
         tablaProducto.setItems(prueba.getDatosProducto());
+    }
+    
+    public TableView getTable(){
+        return this.tablaProducto;
     }
 
     //Aquí podemos sacar otro tipo de alerta para hacerlo más original y no poner el que puso Jairo en la lista de personas
@@ -146,8 +130,6 @@ public class VistaProductoController {
         }
     }
 
-    //Luis: He cambiado el método ayuda y lo he puesto para que enlace directamente con SceneBuilder porque
-    //el anterior cuando le dabas el 1º click a ayuda no abria el archivo , asi si lo abre , no tengo ni idea porque lo hacía
     @FXML
     public void ayuda() {
         try {
@@ -156,18 +138,5 @@ public class VistaProductoController {
             System.out.println("error abriendo archivo");
         }
     }
-    /*public void ayuda() {
-        this.botonAyuda.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-                System.out.println("ayuda");
-                try {
-                    desktop.open(file);
-                } catch (IOException ex) {
-                    System.out.println("error abriendo archivo");
-                }
-            }
-        });
-    }*/
 
 }

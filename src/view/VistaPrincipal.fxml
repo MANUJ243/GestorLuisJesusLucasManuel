@@ -5,25 +5,34 @@
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.layout.BorderPane?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" stylesheets="@../css/EstiloPrincipal.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.VistaPrincipalController">
-   <top>
-      <MenuBar BorderPane.alignment="CENTER">
-        <menus>
-          <Menu mnemonicParsing="false" text="File">
-            <items>
-                  <MenuItem fx:id="itemAbrir" mnemonicParsing="false" text="Abrir" />
-                  <MenuItem fx:id="itemGuardar" mnemonicParsing="false" text="Guardar" />
-                  <MenuItem fx:id="itemGuardarComo" mnemonicParsing="false" text="Guardar como..." />
-              <MenuItem fx:id="itemSalir" mnemonicParsing="false" onAction="#salir" text="Salir" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Help">
-            <items>
-                  <MenuItem fx:id="itemManual" mnemonicParsing="false" onAction="#ayuda" text="Manual" />
-              <MenuItem fx:id="itemAbout" mnemonicParsing="false" text="About" />
-            </items>
-          </Menu>
-        </menus>
-      </MenuBar>
-   </top>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
+            prefWidth="1000.0" stylesheets="@../css/EstiloPrincipal.css" xmlns="http://javafx.com/javafx/8.0.141"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.VistaPrincipalController">
+    <top>
+        <MenuBar BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem fx:id="itemAbrir" mnemonicParsing="false" onAction="#abrir" text="Abrir"/>
+                        <MenuItem fx:id="itemGuardar" mnemonicParsing="false" onAction="#guardar" text="Guardar"/>
+                        <MenuItem fx:id="itemGuardarComo" mnemonicParsing="false" onAction="#guardarComo"
+                                  text="Guardar como..."/>
+                        <MenuItem fx:id="itemSalir" mnemonicParsing="false" onAction="#salir" text="Salir"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Graficos">
+                    <items>
+                        <MenuItem fx:id="stats" mnemonicParsing="false" onAction="#stats" text="Generar Grafico"/>
+                        <MenuItem fx:id="statsToPDF" mnemonicParsing="false" onAction="#stats" text="Exportar grafico a PDF"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem fx:id="itemManual" mnemonicParsing="false" onAction="#ayuda" text="Manual"/>
+                        <MenuItem fx:id="itemAbout" mnemonicParsing="false" onAction="#about" text="About"/>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
 </BorderPane>

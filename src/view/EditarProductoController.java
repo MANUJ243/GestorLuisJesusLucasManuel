@@ -7,6 +7,7 @@ import java.io.OutputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.time.LocalDate;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
@@ -15,6 +16,7 @@ import javafx.scene.control.TextField;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import model.Producto;
+import util.UtilidadDeFechas;
 
 public class EditarProductoController {
 
@@ -43,15 +45,16 @@ public class EditarProductoController {
 
     public void setProducto(Producto producto) {
         this.producto = producto;
-        idTextField.setText(String.valueOf(producto.getId()));
+        idTextField.setText(String.valueOf(producto.getId()));        
+        
+        if (producto.getNombre() != null) {        
         nombreTextField.setText(producto.getNombre());
         precioTextField.setText(String.valueOf(producto.getPrecio()));
         stockTextField.setText(String.valueOf(producto.getStock()));
+        descripcionTextArea.setText(String.valueOf(producto.getDescripcion()));
         img = producto.getPathImagen();
         imagen.setStyle("-fx-background-image: url('file:" + img + "'); -fx-background-size: 150px; -fx-background-repeat: no-repeat; -fx-background-position: 50%; -fx-background-color:#F9F9F9;");
-        if (producto.getNombre() == null) {
-            precioTextField.setText("");
-            stockTextField.setText("");
+
         }
         nombreTextField.requestFocus();
     }
@@ -63,10 +66,15 @@ public class EditarProductoController {
     @FXML
     public void guardar() {
         if (datosValidos()) {
+            
             producto.setNombre(nombreTextField.getText());
-            producto.setPrecio(Double.parseDouble(precioTextField.getText()));
-            producto.setStock(Integer.parseInt(stockTextField.getText()));
+            //producto.setPrecio(Double.parseDouble(precioTextField.getText()));
+            producto.setPrecio(precioTextField.getText());
+            //producto.setStock(Integer.parseInt(stockTextField.getText()));
+            producto.setStock(stockTextField.getText());
             producto.setPathImagen(img);
+            producto.setDescripcion(descripcionTextArea.getText());
+            producto.setFechaModificacion(UtilidadDeFechas.formato(LocalDate.now()));   
             pulsadoGuardar = true;
             escenarioEdicion.close();
         }
@@ -109,6 +117,7 @@ public class EditarProductoController {
 
     @FXML
     public void cancelar() {
+        producto.restarID();
         escenarioEdicion.close();
     }
 

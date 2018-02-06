@@ -1,0 +1,29 @@
+.botonAzul {
+    -fx-background-color: #3498DB;
+    -fx-text-fill: white;
+}
+
+.botonVerde {
+    -fx-background-color: #85C02E;
+    -fx-text-fill: white;
+}
+
+.botonRojo {
+    -fx-background-color: #DB3434;
+    -fx-text-fill: white;
+}
+
+.botonAzul:hover {
+    -fx-background-color: #2772A4;
+    -fx-text-fill: white;
+}
+
+.botonVerde:hover {
+    -fx-background-color: #649023;
+    -fx-text-fill: white;
+}
+
+.botonRojo:hover {
+    -fx-background-color: #A42727;
+    -fx-text-fill: white;
+}

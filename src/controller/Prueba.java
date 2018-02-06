@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.util.prefs.Preferences;
 import javafx.application.Application;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -32,16 +33,18 @@ public class Prueba extends Application {
     private AnchorPane vistaProducto;
     private AnchorPane editarProducto;
     private BorderPane detallesProducto;
+    private VistaProductoController vistaProductoController;
+    private VistaDetallesController vistaDetallesController;
     private ObservableList datosProducto = FXCollections.observableArrayList();
 
     public Prueba() {
-        datosProducto.add(new Producto("Pera", 10.00, 1, "src/img/pera3.jpg"));
-        datosProducto.add(new Producto("Hamburguesa", 8.00, 3, "src/img/camburguer.png"));
-        datosProducto.add(new Producto("Coca-cola", 8.00, 3, "src/img/coca_cola.jpg"));
+        //datosProducto.add(new Producto("Pera","descripcion", "10.00", "1", "src/img/pera3.jpg"));
+        //datosProducto.add(new Producto("Hamburguesa","descripcion", "8.00", "3","src/img/camburguer.png"));
+        //datosProducto.add(new Producto("Coca-cola","descripcion", "8.00", "3", "src/img/coca_cola.jpg"));
     }
 
     public ObservableList getDatosProducto() {
-   
+
         return datosProducto;
     }
 
@@ -63,10 +66,16 @@ public class Prueba extends Application {
         }
         VistaPrincipalController vistaPrincipalController = loader.getController();
         vistaPrincipalController.setEscenarioMenuBar(escenarioPrincipal);
+        vistaPrincipalController.setPrueba(this);
         Scene escena = new Scene(layoutPrincipal);
         escenarioPrincipal.setScene(escena);
         escenarioPrincipal.setMaximized(true);
         escenarioPrincipal.show();
+         //Intento cargar el último archivo abierto
+        File archivo = getRutaArchivoProducto();
+        if (archivo != null){
+            cargaProductos(archivo);
+        }
     }
 
     private void initLayoutProducto() {
@@ -79,12 +88,11 @@ public class Prueba extends Application {
             Logger.getLogger(Prueba.class.getName()).log(Level.SEVERE, null, ex);
         }
         layoutPrincipal.setCenter(vistaProducto);
-        VistaProductoController vistaProductoController = loader.getController();
+        vistaProductoController = loader.getController();
         vistaProductoController.setPrueba(this);
     }
 
     public boolean muestraEditaProducto(Producto producto) {
-
         FXMLLoader loader = new FXMLLoader();
         URL location = Prueba.class.getResource("../view/EditarProducto.fxml");
         loader.setLocation(location);
@@ -106,7 +114,7 @@ public class Prueba extends Application {
         escenarioEdicion.showAndWait();
         return controller.pulsadoGuardar();
     }
-    
+
     public void muestraVistaDetalles(Producto producto) {
 
         FXMLLoader loader = new FXMLLoader();
@@ -123,9 +131,11 @@ public class Prueba extends Application {
         escenarioDetalles.initOwner(escenarioPrincipal);
         Scene escena = new Scene(detallesProducto);
         escenarioDetalles.setScene(escena);
-        VistaDetallesController controller = loader.getController();
-        controller.setEscenarioDetalles(escenarioDetalles);
-        controller.setProducto(producto);
+        vistaDetallesController = loader.getController();
+        vistaDetallesController.setEscenarioDetalles(escenarioDetalles);
+        vistaDetallesController.setProducto(producto);
+        vistaDetallesController.setPrueba(this);
+        vistaDetallesController.setTableView(vistaProductoController.getTable());
         escenarioDetalles.showAndWait();
     }
 
@@ -150,7 +160,7 @@ public class Prueba extends Application {
             datosProducto.clear();
             datosProducto.addAll(empaquetador.getProductos());
 
-            //setRutaArchivoPersonas(archivo);                                  //Guardo la ruta del archivo al registro de preferencias
+            setRutaArchivoProducto(archivo);                                  //Guardo la ruta del archivo al registro de preferenciass
         } catch (Exception e) {
             //Muestro alerta
             Alert alerta = new Alert(Alert.AlertType.ERROR);
@@ -175,9 +185,10 @@ public class Prueba extends Application {
 
             //Marshall y guardo XML a archivo
             m.marshal(empaquetador, archivo);
+            m.marshal(empaquetador, System.out);
 
             //Guardo la ruta delk archivo en el registro
-            //setRutaArchivoPersonas(archivo);
+            setRutaArchivoProducto(archivo);
         } catch (Exception e) { // catches ANY exception
             Alert alerta = new Alert(Alert.AlertType.ERROR);
             alerta.setTitle("Error");
@@ -185,5 +196,37 @@ public class Prueba extends Application {
             alerta.setContentText(e.toString());
             alerta.showAndWait();
         }
+    }
+    
+    //Obtengo la ruta del archivo de la preferencias de usuario en Java
+    public File getRutaArchivoProducto() {
+        
+        Preferences prefs = Preferences.userNodeForPackage(Prueba.class);
+        String rutaArchivo = prefs.get("rutaArchivo", null);
+        System.out.println(rutaArchivo);
+        if (rutaArchivo != null) {
+            return new File(rutaArchivo);
+        } else {
+            return null;
+        }
+    }
+    
+    //Guardo la ruta del archivo en las preferencias de usuario en Java
+    public void setRutaArchivoProducto(File archivo){
+        
+        Preferences prefs = Preferences.userNodeForPackage(Prueba.class);
+        if (archivo != null){
+            //Añado la ruta a las preferencias
+            prefs.put("rutaArchivo", archivo.getPath());
+            //Actualizo el título del escenario a partir del archivo
+            escenarioPrincipal.setTitle("Prueba - "+archivo.getName());
+        }
+        else{
+            //Elimino la ruta de las preferencias
+            prefs.remove("rutaArchivo");
+            //Actualizo el título del escenario quitando el nombre del archivo
+            escenarioPrincipal.setTitle("Prueba");
+        }
+        
     }
 }
