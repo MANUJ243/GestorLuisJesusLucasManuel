@@ -197,10 +197,10 @@ public class Prueba extends Application {
             alerta.showAndWait();
         }
     }
-    
+
     //Obtengo la ruta del archivo de la preferencias de usuario en Java
     public File getRutaArchivoProducto() {
-        
+
         Preferences prefs = Preferences.userNodeForPackage(Prueba.class);
         String rutaArchivo = prefs.get("rutaArchivo", null);
         System.out.println(rutaArchivo);
@@ -210,10 +210,10 @@ public class Prueba extends Application {
             return null;
         }
     }
-    
+
     //Guardo la ruta del archivo en las preferencias de usuario en Java
     public void setRutaArchivoProducto(File archivo){
-        
+
         Preferences prefs = Preferences.userNodeForPackage(Prueba.class);
         if (archivo != null){
             //Añado la ruta a las preferencias
@@ -227,6 +227,6 @@ public class Prueba extends Application {
             //Actualizo el título del escenario quitando el nombre del archivo
             escenarioPrincipal.setTitle("Prueba");
         }
-        
+
     }
 }

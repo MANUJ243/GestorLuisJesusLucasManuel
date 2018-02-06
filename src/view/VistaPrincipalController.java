@@ -56,7 +56,7 @@ public class VistaPrincipalController {
     private File file = new File("src/file/ayuda.docx");
 
     public VistaPrincipalController() {
-        cargaProductos(getRutaArchivoProducto());
+
     }
 
     public void setEscenarioMenuBar(Stage escenarioMenuBar) {
@@ -155,7 +155,7 @@ public class VistaPrincipalController {
         //Asigno el controlador
         VistaEstadisticasController controller = loader.getController();
         controller.setEscenarioEstadisticas(escenarioEstadisticas);
-        controller.setProductos(datosProducto);
+        controller.setProductos(prueba.getDatosProducto());
 
         //Muestro las estadisticas
         escenarioEstadisticas.setMaximized(true);
@@ -172,38 +172,5 @@ public class VistaPrincipalController {
 
     }
 
-    //Obtengo la ruta del archivo de la preferencias de usuario en Java
-    public File getRutaArchivoProducto() {
 
-        Preferences prefs = Preferences.userNodeForPackage(Prueba.class);
-        String rutaArchivo = prefs.get("rutaArchivo", null);
-        System.out.println(rutaArchivo);
-        if (rutaArchivo != null) {
-            return new File(rutaArchivo);
-        } else {
-            return null;
-        }
-    }
-
-    public void cargaProductos(File archivo) {
-        try {
-            //Contexto
-            JAXBContext context = JAXBContext.newInstance(Empaquetador.class);
-            Unmarshaller um = context.createUnmarshaller();
-
-            //Leo XML del archivo y hago unmarshall
-            Empaquetador empaquetador = (Empaquetador) um.unmarshal(archivo);
-
-            //Borro los anteriores
-            datosProducto.clear();
-            datosProducto.addAll(empaquetador.getProductos());                            //Guardo la ruta del archivo al registro de preferenciass
-        } catch (Exception e) {
-            //Muestro alerta
-            Alert alerta = new Alert(Alert.AlertType.ERROR);
-            alerta.setTitle("Error");
-            alerta.setHeaderText("No se pueden cargar datos de la ruta " + archivo.getPath());
-            alerta.setContentText(e.toString());
-            alerta.showAndWait();
-        }
-    }
 }

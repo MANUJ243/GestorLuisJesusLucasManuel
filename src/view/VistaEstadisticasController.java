@@ -28,7 +28,7 @@ public class VistaEstadisticasController {
         //Meto los nombres y stock en sus respectivas listas observables
         for (Object p:datosProducto
              ) {
-            pieChartData.add(new PieChart.Data(((Producto) p).getNombre(), ((Producto) p).getStock()));
+            pieChartData.add(new PieChart.Data(((Producto) p).getNombre(), Double.valueOf(((Producto) p).getStock())));
         }
 
         this.grafico.setData(pieChartData);
