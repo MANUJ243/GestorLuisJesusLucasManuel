@@ -35,7 +35,7 @@
         <nombre>Pipas de girasol fritas peladas</nombre>
         <descripcion>Quieres pipas? Pues no tengo... jajaja XD</descripcion>
         <precio>0.54</precio>
-        <stock>988</stock>
+        <stock>58</stock>
         <fechaModificacion>26/01/2018</fechaModificacion>
         <fechaAlta>26/01/2018</fechaAlta>
         <pathImagen>src/img/712450.jpg</pathImagen>
@@ -53,7 +53,7 @@
     <producto>
         <id>1005</id>
         <nombre>Agua mineral con gas</nombre>
-        <descripcion></descripcion>
+        <descripcion>Pues tio...Agua</descripcion>
         <precio>4.10</precio>
         <stock>71</stock>
         <fechaModificacion>26/01/2018</fechaModificacion>
