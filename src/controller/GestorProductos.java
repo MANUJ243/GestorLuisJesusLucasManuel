@@ -57,7 +57,7 @@ public class GestorProductos extends Application {
 
     private void initVistaPrincipal() {
         FXMLLoader loader = new FXMLLoader();
-        URL location = GestorProductos.class.getResource("../view/VistaPrincipal.fxml");
+        URL location = GestorProductos.class.getResource("/view/VistaPrincipal.fxml");
         loader.setLocation(location);
         try {
             layoutPrincipal = loader.load();
@@ -80,7 +80,7 @@ public class GestorProductos extends Application {
 
     private void initLayoutProducto() {
         FXMLLoader loader = new FXMLLoader();
-        URL location = GestorProductos.class.getResource("../view/VistaProducto.fxml");
+        URL location = GestorProductos.class.getResource("/view/VistaProducto.fxml");
         loader.setLocation(location);
         try {
             vistaProducto = loader.load();
@@ -94,7 +94,7 @@ public class GestorProductos extends Application {
 
     public boolean muestraEditaProducto(Producto producto) {
         FXMLLoader loader = new FXMLLoader();
-        URL location = GestorProductos.class.getResource("../view/EditarProducto.fxml");
+        URL location = GestorProductos.class.getResource("/view/EditarProducto.fxml");
         loader.setLocation(location);
         try {
             editarProducto = loader.load();
@@ -116,9 +116,8 @@ public class GestorProductos extends Application {
     }
 
     public void muestraVistaDetalles(Producto producto) {
-
         FXMLLoader loader = new FXMLLoader();
-        URL location = GestorProductos.class.getResource("../view/vistaDetalles.fxml");
+        URL location = GestorProductos.class.getResource("/view/VistaDetalles.fxml");
         loader.setLocation(location);
         try {
             detallesProducto = loader.load();
@@ -130,6 +129,7 @@ public class GestorProductos extends Application {
         escenarioDetalles.initModality(Modality.WINDOW_MODAL);
         escenarioDetalles.initOwner(escenarioPrincipal);
         Scene escena = new Scene(detallesProducto);
+        System.out.println("pasa de aqui");
         escenarioDetalles.setScene(escena);
         vistaDetallesController = loader.getController();
         vistaDetallesController.setEscenarioDetalles(escenarioDetalles);
