@@ -12,6 +12,7 @@ import javafx.beans.property.StringProperty;
 import javafx.event.EventHandler;
 import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
+import javax.swing.Icon;
 import javax.xml.bind.annotation.XmlElement;
 import util.UtilidadDeFechas;
 

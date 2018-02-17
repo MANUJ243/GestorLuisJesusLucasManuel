@@ -135,7 +135,7 @@ public class VistaPrincipalController {
     public void stats() {
         //Cargo la vista estadísticas
         FXMLLoader loader = new FXMLLoader();
-        URL location = GestorProductos.class.getResource("../view/VistaEstadisticas.fxml");
+        URL location = GestorProductos.class.getResource("/view/VistaEstadisticas.fxml");
         loader.setLocation(location);
         try {
             estadisticas = loader.load();
