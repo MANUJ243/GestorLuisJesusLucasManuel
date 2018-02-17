@@ -26,7 +26,7 @@ import view.VistaDetallesController;
 import view.VistaPrincipalController;
 import view.VistaProductoController;
 
-public class Prueba extends Application {
+public class GestorProductos extends Application {
 
     private Stage escenarioPrincipal;
     private BorderPane layoutPrincipal;
@@ -37,7 +37,7 @@ public class Prueba extends Application {
     private VistaDetallesController vistaDetallesController;
     private ObservableList datosProducto = FXCollections.observableArrayList();
 
-    public Prueba() {
+    public GestorProductos() {
         //datosProducto.add(new Producto("Pera","descripcion", "10.00", "1", "src/img/pera3.jpg"));
         //datosProducto.add(new Producto("Hamburguesa","descripcion", "8.00", "3","src/img/camburguer.png"));
         //datosProducto.add(new Producto("Coca-cola","descripcion", "8.00", "3", "src/img/coca_cola.jpg"));
@@ -57,12 +57,12 @@ public class Prueba extends Application {
 
     private void initVistaPrincipal() {
         FXMLLoader loader = new FXMLLoader();
-        URL location = Prueba.class.getResource("../view/VistaPrincipal.fxml");
+        URL location = GestorProductos.class.getResource("../view/VistaPrincipal.fxml");
         loader.setLocation(location);
         try {
             layoutPrincipal = loader.load();
         } catch (IOException ex) {
-            Logger.getLogger(Prueba.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(GestorProductos.class.getName()).log(Level.SEVERE, null, ex);
         }
         VistaPrincipalController vistaPrincipalController = loader.getController();
         vistaPrincipalController.setEscenarioMenuBar(escenarioPrincipal);
@@ -80,12 +80,12 @@ public class Prueba extends Application {
 
     private void initLayoutProducto() {
         FXMLLoader loader = new FXMLLoader();
-        URL location = Prueba.class.getResource("../view/VistaProducto.fxml");
+        URL location = GestorProductos.class.getResource("../view/VistaProducto.fxml");
         loader.setLocation(location);
         try {
             vistaProducto = loader.load();
         } catch (IOException ex) {
-            Logger.getLogger(Prueba.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(GestorProductos.class.getName()).log(Level.SEVERE, null, ex);
         }
         layoutPrincipal.setCenter(vistaProducto);
         vistaProductoController = loader.getController();
@@ -94,12 +94,12 @@ public class Prueba extends Application {
 
     public boolean muestraEditaProducto(Producto producto) {
         FXMLLoader loader = new FXMLLoader();
-        URL location = Prueba.class.getResource("../view/EditarProducto.fxml");
+        URL location = GestorProductos.class.getResource("../view/EditarProducto.fxml");
         loader.setLocation(location);
         try {
             editarProducto = loader.load();
         } catch (IOException ex) {
-            Logger.getLogger(Prueba.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(GestorProductos.class.getName()).log(Level.SEVERE, null, ex);
             return false;
         }
         Stage escenarioEdicion = new Stage();
@@ -118,12 +118,12 @@ public class Prueba extends Application {
     public void muestraVistaDetalles(Producto producto) {
 
         FXMLLoader loader = new FXMLLoader();
-        URL location = Prueba.class.getResource("../view/vistaDetalles.fxml");
+        URL location = GestorProductos.class.getResource("../view/vistaDetalles.fxml");
         loader.setLocation(location);
         try {
             detallesProducto = loader.load();
         } catch (IOException ex) {
-            Logger.getLogger(Prueba.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(GestorProductos.class.getName()).log(Level.SEVERE, null, ex);
         }
         Stage escenarioDetalles = new Stage();
         escenarioDetalles.setTitle("Detalles producto");
@@ -201,7 +201,7 @@ public class Prueba extends Application {
     //Obtengo la ruta del archivo de la preferencias de usuario en Java
     public File getRutaArchivoProducto() {
 
-        Preferences prefs = Preferences.userNodeForPackage(Prueba.class);
+        Preferences prefs = Preferences.userNodeForPackage(GestorProductos.class);
         String rutaArchivo = prefs.get("rutaArchivo", null);
         System.out.println(rutaArchivo);
         if (rutaArchivo != null) {
@@ -214,7 +214,7 @@ public class Prueba extends Application {
     //Guardo la ruta del archivo en las preferencias de usuario en Java
     public void setRutaArchivoProducto(File archivo){
 
-        Preferences prefs = Preferences.userNodeForPackage(Prueba.class);
+        Preferences prefs = Preferences.userNodeForPackage(GestorProductos.class);
         if (archivo != null){
             //Añado la ruta a las preferencias
             prefs.put("rutaArchivo", archivo.getPath());

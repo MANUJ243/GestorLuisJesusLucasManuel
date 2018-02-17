@@ -1,6 +1,6 @@
 package view;
 
-import controller.Prueba;
+import controller.GestorProductos;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -49,7 +49,7 @@ public class VistaPrincipalController {
     private ObservableList datosProducto = FXCollections.observableArrayList();
 
     private Stage escenarioMenuBar;
-    private Prueba prueba;
+    private GestorProductos prueba;
 
     private Desktop desktop = Desktop.getDesktop();
 
@@ -64,7 +64,7 @@ public class VistaPrincipalController {
     }
 
 
-    public void setPrueba(Prueba prueba) {
+    public void setPrueba(GestorProductos prueba) {
         this.prueba = prueba;
     }
 
@@ -135,12 +135,12 @@ public class VistaPrincipalController {
     public void stats() {
         //Cargo la vista estadísticas
         FXMLLoader loader = new FXMLLoader();
-        URL location = Prueba.class.getResource("../view/VistaEstadisticas.fxml");
+        URL location = GestorProductos.class.getResource("../view/VistaEstadisticas.fxml");
         loader.setLocation(location);
         try {
             estadisticas = loader.load();
         } catch (IOException ex) {
-            Logger.getLogger(Prueba.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(GestorProductos.class.getName()).log(Level.SEVERE, null, ex);
         }
 
         //Inicializo un nuevo escenario y asigno el principal

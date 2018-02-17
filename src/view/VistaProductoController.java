@@ -1,6 +1,6 @@
 package view;
 
-import controller.Prueba;
+import controller.GestorProductos;
 import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
@@ -37,7 +37,7 @@ public class VistaProductoController {
     @FXML
     private Button botonAyuda;
 
-    private Prueba prueba;
+    private GestorProductos prueba;
 
     private Desktop desktop = Desktop.getDesktop();
 
@@ -62,7 +62,7 @@ public class VistaProductoController {
         stockColumn.setCellValueFactory(new PropertyValueFactory<>(stock));
     }
 
-    public void setPrueba(Prueba prueba) {
+    public void setPrueba(GestorProductos prueba) {
         this.prueba = prueba;
         tablaProducto.setItems(prueba.getDatosProducto());
     }

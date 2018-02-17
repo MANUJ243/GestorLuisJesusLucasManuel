@@ -1,6 +1,6 @@
 package view;
 
-import controller.Prueba;
+import controller.GestorProductos;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -40,7 +40,7 @@ public class VistaDetallesController {
     
     private Stage escenarioDetalles;
     
-    private Prueba prueba;
+    private GestorProductos prueba;
     Producto product;
     private TableView tabla;
     private static final String SIN_MODIFICACIONES="Sin modificaciones";
@@ -72,7 +72,7 @@ public class VistaDetallesController {
         bar.anadirAImageView(codigoBarrasImg);
     }
     
-    public void setPrueba(Prueba prueba){
+    public void setPrueba(GestorProductos prueba){
         this.prueba=prueba;
     }
     
