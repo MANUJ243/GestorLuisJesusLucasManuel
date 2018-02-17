@@ -107,6 +107,7 @@ public class Producto {
     @XmlElement
     public void setPathImagen(String path) {
         this.pathImagen = path;
+        System.out.println("ruta de la imagen: " + this.pathImagen);
         this.imagen.setStyle("-fx-background-image: url('file:" + pathImagen + "'); -fx-background-size: 80px; -fx-background-repeat: no-repeat; -fx-background-position: 50%; -fx-background-color:#F9F9F9;");
 
     }
