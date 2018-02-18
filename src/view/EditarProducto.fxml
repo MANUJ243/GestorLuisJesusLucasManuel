@@ -9,12 +9,12 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.EditarProductoController">
+<AnchorPane id="AnchorPane" prefHeight="597.0" prefWidth="705.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.EditarProductoController">
    <children>
       <GridPane layoutX="8.0" prefHeight="264.0" prefWidth="391.0">
         <columnConstraints>
-          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="189.0" minWidth="10.0" prefWidth="103.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="317.0" minWidth="10.0" prefWidth="288.0" />
         </columnConstraints>
         <rowConstraints>
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
@@ -33,10 +33,10 @@
             <TextField fx:id="stockTextField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
          </children>
       </GridPane>
-      <TextArea fx:id="descripcionTextArea" layoutX="110.0" layoutY="300.0" prefHeight="221.0" prefWidth="681.0" />
-      <Button layoutX="536.0" layoutY="543.0" mnemonicParsing="false" onAction="#guardar" text="Guardar" />
-      <Button layoutX="641.0" layoutY="543.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
-      <Label layoutX="8.0" layoutY="290.0" text="Descripción:" />
+      <TextArea fx:id="descripcionTextArea" layoutX="26.0" layoutY="322.0" prefHeight="199.0" prefWidth="655.0" />
+      <Button layoutX="491.0" layoutY="543.0" mnemonicParsing="false" onAction="#guardar" text="Guardar" />
+      <Button layoutX="604.0" layoutY="543.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
+      <Label layoutX="26.0" layoutY="290.0" text="Descripción:" />
       <Button fx:id="imagen" layoutX="481.0" layoutY="14.0" mnemonicParsing="false" prefHeight="165.0" prefWidth="195.0" />
       <Button layoutX="481.0" layoutY="194.0" mnemonicParsing="false" onAction="#seleccionaImagen" prefHeight="31.0" prefWidth="195.0" text="Selecciona una imagen" />
    </children>
