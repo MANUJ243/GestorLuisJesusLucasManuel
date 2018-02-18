@@ -41,7 +41,11 @@ public class VistaProductoController {
 
     private Desktop desktop = Desktop.getDesktop();
 
-    private File file = new File("src/file/ayuda.docx");
+    String rutaJar = GestorProductos.class.getProtectionDomain().getCodeSource().getLocation().getPath();
+        File fichero = new File(rutaJar);        
+        String nombreFinal = rutaJar.replace(fichero.getName(),"");
+
+    private File file = new File(nombreFinal+"file/ayuda.docx");
 
     public VistaProductoController() {
     }

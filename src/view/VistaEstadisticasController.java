@@ -1,5 +1,6 @@
 package view;
 
+import controller.GestorProductos;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.embed.swing.SwingFXUtils;
@@ -32,6 +33,10 @@ public class VistaEstadisticasController{
     private WritableImage img;
 
     private Stage escenarioEstadisticas;
+    
+    String rutaJar = GestorProductos.class.getProtectionDomain().getCodeSource().getLocation().getPath();
+        File fichero = new File(rutaJar);        
+        String nombreFinal = rutaJar.replace(fichero.getName(),"");
 
     public void setProductos(ObservableList productos) {
         //Obtengo los productos
@@ -59,7 +64,7 @@ public class VistaEstadisticasController{
 
         //Intento de captura
         WritableImage image = root.snapshot(null, null);
-        File file = new File("src/snaps/chart.png");
+        File file = new File(nombreFinal+"snaps/chart.png");
         try {
             ImageIO.write(SwingFXUtils.fromFXImage(image, null), "png", file);
         }catch (IOException ignored) {}
