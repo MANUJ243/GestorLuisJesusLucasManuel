@@ -31,7 +31,7 @@ public class VistaDetallesController {
     @FXML
     private Label fechaModificacion;
     @FXML
-    private Text descripcion;
+    private TextArea descripcion;
     @FXML
     private ImageView codigoBarrasImg;
     @FXML
@@ -72,7 +72,7 @@ public class VistaDetallesController {
             fechaModificacion.setText("Fecha de modificación : " + producto.getFechaModificacion());
         }
         
-        
+        descripcion.setEditable(false);
         descripcion.setText(producto.getDescripcion());
         BarCodeGenerator bar = new BarCodeGenerator(producto.getId()+"");
         bar.anadirAImageView(codigoBarrasImg);
