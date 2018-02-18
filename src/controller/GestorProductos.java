@@ -219,13 +219,13 @@ public class GestorProductos extends Application {
             //Añado la ruta a las preferencias
             prefs.put("rutaArchivo", archivo.getPath());
             //Actualizo el título del escenario a partir del archivo
-            escenarioPrincipal.setTitle("GestorProductos - "+archivo.getName());
+            escenarioPrincipal.setTitle("Gestor de Productos - "+archivo.getName());
         }
         else{
             //Elimino la ruta de las preferencias
             prefs.remove("rutaArchivo");
             //Actualizo el título del escenario quitando el nombre del archivo
-            escenarioPrincipal.setTitle("GestorProductos");
+            escenarioPrincipal.setTitle("Gestor de Productos");
         }
 
     }

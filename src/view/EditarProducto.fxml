@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<AnchorPane id="AnchorPane" prefHeight="597.0" prefWidth="705.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.EditarProductoController">
+<AnchorPane id="AnchorPane" prefHeight="597.0" prefWidth="705.0" stylesheets="@../css/EstiloNuevoEditar.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.EditarProductoController">
    <children>
       <GridPane layoutX="8.0" prefHeight="264.0" prefWidth="391.0">
         <columnConstraints>
@@ -34,10 +34,10 @@
          </children>
       </GridPane>
       <TextArea fx:id="descripcionTextArea" layoutX="26.0" layoutY="322.0" prefHeight="199.0" prefWidth="655.0" />
-      <Button layoutX="491.0" layoutY="543.0" mnemonicParsing="false" onAction="#guardar" text="Guardar" />
-      <Button layoutX="604.0" layoutY="543.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
+      <Button layoutX="491.0" layoutY="543.0" mnemonicParsing="false" onAction="#guardar" styleClass="botonAzul" text="Guardar" />
+      <Button layoutX="604.0" layoutY="543.0" mnemonicParsing="false" onAction="#cancelar" styleClass="botonRojo" text="Cancelar" />
       <Label layoutX="26.0" layoutY="290.0" text="Descripción:" />
       <Button fx:id="imagen" layoutX="481.0" layoutY="14.0" mnemonicParsing="false" prefHeight="165.0" prefWidth="195.0" />
-      <Button layoutX="481.0" layoutY="194.0" mnemonicParsing="false" onAction="#seleccionaImagen" prefHeight="31.0" prefWidth="195.0" text="Selecciona una imagen" />
+      <Button layoutX="481.0" layoutY="194.0" mnemonicParsing="false" onAction="#seleccionaImagen" prefHeight="31.0" prefWidth="195.0" styleClass="botonVerde" text="Selecciona una imagen" />
    </children>
 </AnchorPane>
