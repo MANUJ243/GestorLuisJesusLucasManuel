@@ -1,5 +1,8 @@
 package model;
 
+import controller.GestorProductos;
+import java.io.File;
+import java.nio.file.Path;
 import java.time.LocalDate;
 import javafx.beans.property.DoubleProperty;
 import javafx.beans.property.IntegerProperty;
@@ -28,6 +31,11 @@ public class Producto {
     private final StringProperty fechaModificacion;
     private String pathImagen;
     private final Button imagen;
+    
+    
+    String rutaJar = GestorProductos.class.getProtectionDomain().getCodeSource().getLocation().getPath();
+        File fichero = new File(rutaJar);        
+        String nombreFinal = rutaJar.replace(fichero.getName(),"");
 
     public Producto() {
 
@@ -107,8 +115,8 @@ public class Producto {
     @XmlElement
     public void setPathImagen(String path) {
         this.pathImagen = path;
-        System.out.println("ruta de la imagen: " + this.pathImagen);
-        this.imagen.setStyle("-fx-background-image: url('file:" + pathImagen + "'); -fx-background-size: 80px; -fx-background-repeat: no-repeat; -fx-background-position: 50%; -fx-background-color:#F9F9F9;");
+        
+        this.imagen.setStyle("-fx-background-image: url('file:" + nombreFinal+pathImagen + "'); -fx-background-size: 80px; -fx-background-repeat: no-repeat; -fx-background-position: 50%; -fx-background-color:#F9F9F9;");
 
     }
     @XmlElement
@@ -129,17 +137,17 @@ public class Producto {
     }
 
     private void propiedadesBotones() {
-        this.imagen.setStyle("-fx-pref-height: 80px; -fx-pref-width: 80px; -fx-background-image: url('file:" + pathImagen + "'); -fx-background-size: 80px; -fx-background-repeat: no-repeat; -fx-background-position: 50%; -fx-background-color:#F9F9F9;");
+        this.imagen.setStyle("-fx-pref-height: 80px; -fx-pref-width: 80px; -fx-background-image: url('file:" + nombreFinal+pathImagen + "'); -fx-background-size: 80px; -fx-background-repeat: no-repeat; -fx-background-position: 50%; -fx-background-color:#F9F9F9;");
         this.imagen.addEventHandler(MouseEvent.MOUSE_ENTERED, new EventHandler<MouseEvent>(){
             @Override
             public void handle(MouseEvent event) {
-                imagen.setStyle("-fx-pref-height: 150px; -fx-pref-width: 150px; -fx-background-image: url('file:" + pathImagen + "'); -fx-background-size: 150px; -fx-background-repeat: no-repeat; -fx-background-position: 50%; -fx-background-color:#F9F9F9;");
+                imagen.setStyle("-fx-pref-height: 150px; -fx-pref-width: 150px; -fx-background-image: url('file:" + nombreFinal+pathImagen + "'); -fx-background-size: 150px; -fx-background-repeat: no-repeat; -fx-background-position: 50%; -fx-background-color:#F9F9F9;");
             }            
         });
         this.imagen.addEventHandler(MouseEvent.MOUSE_EXITED, new EventHandler<MouseEvent>(){
             @Override
             public void handle(MouseEvent event) {
-                imagen.setStyle("-fx-pref-height: 80px; -fx-pref-width: 80px; -fx-background-image: url('file:" + pathImagen + "'); -fx-background-size: 80px; -fx-background-repeat: no-repeat; -fx-background-position: 50%; -fx-background-color:#F9F9F9;");
+                imagen.setStyle("-fx-pref-height: 80px; -fx-pref-width: 80px; -fx-background-image: url('file:" + nombreFinal+pathImagen + "'); -fx-background-size: 80px; -fx-background-repeat: no-repeat; -fx-background-position: 50%; -fx-background-color:#F9F9F9;");
             }            
         });
     }

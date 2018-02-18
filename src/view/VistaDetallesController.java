@@ -1,6 +1,7 @@
 package view;
 
 import controller.GestorProductos;
+import java.io.File;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -45,6 +46,11 @@ public class VistaDetallesController {
     private TableView tabla;
     private static final String SIN_MODIFICACIONES="Sin modificaciones";
     
+    String rutaJar = GestorProductos.class.getProtectionDomain().getCodeSource().getLocation().getPath();
+        File fichero = new File(rutaJar);        
+        String nombreFinal = rutaJar.replace(fichero.getName(),"");
+    
+    
     public VistaDetallesController(){
     }
     
@@ -54,7 +60,7 @@ public class VistaDetallesController {
     
     public void setProducto(Producto producto) {
         this.product = producto;
-        fotoProducto.setImage(new Image("file:"+producto.getPathImagen()));
+        fotoProducto.setImage(new Image("file:"+nombreFinal+producto.getPathImagen()));
         id.setText("ID : " + producto.getId()+"");
         nombre.setText("Nombre : " + producto.getNombre());
         precio.setText("Precio : " + producto.getPrecio()+"");

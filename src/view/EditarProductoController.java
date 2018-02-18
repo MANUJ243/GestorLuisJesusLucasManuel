@@ -1,5 +1,6 @@
 package view;
 
+import controller.GestorProductos;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
@@ -38,6 +39,15 @@ public class EditarProductoController {
     private boolean pulsadoGuardar = false;
     private File file;
     private String img;
+    
+    
+    String rutaJar = GestorProductos.class.getProtectionDomain().getCodeSource().getLocation().getPath();
+        File fichero = new File(rutaJar);        
+        String nombreFinal = rutaJar.replace(fichero.getName(),"");
+        String rutaImg = nombreFinal+"img/";
+        String rutaFormateo = rutaImg.replace("/", "\\");
+        String rutaFinal = rutaFormateo.replace("\\C", "C");
+    
 
     public void setEscenarioEdicion(Stage escenarioEdicion) {
         this.escenarioEdicion = escenarioEdicion;
@@ -53,7 +63,8 @@ public class EditarProductoController {
         stockTextField.setText(String.valueOf(producto.getStock()));
         descripcionTextArea.setText(String.valueOf(producto.getDescripcion()));
         img = producto.getPathImagen();
-        imagen.setStyle("-fx-background-image: url('file:" + img + "'); -fx-background-size: 150px; -fx-background-repeat: no-repeat; -fx-background-position: 50%; -fx-background-color:#F9F9F9;");
+        
+        imagen.setStyle("-fx-background-image: url('file:" + nombreFinal+img + "'); -fx-background-size: 150px; -fx-background-repeat: no-repeat; -fx-background-position: 50%; -fx-background-color:#F9F9F9;");
 
         }
         nombreTextField.requestFocus();
@@ -90,8 +101,8 @@ public class EditarProductoController {
         file = fileChooser.showOpenDialog(escenarioEdicion);
         if (file != null) {
             copyImageToFilePackage(file);
-            img = "src/img/" + file.getName();
-            imagen.setStyle("-fx-background-image: url('file:" + img + "'); -fx-background-size: 150px; -fx-background-repeat: no-repeat; -fx-background-position: 50%; -fx-background-color:#F9F9F9;");
+            img = "img/" + file.getName();
+            imagen.setStyle("-fx-background-image: url('file:" + nombreFinal+img + "'); -fx-background-size: 150px; -fx-background-repeat: no-repeat; -fx-background-position: 50%; -fx-background-color:#F9F9F9;");
 
         }
         return false;
@@ -99,8 +110,8 @@ public class EditarProductoController {
 
     private void copyImageToFilePackage(File file) {
         Path entrada = Paths.get(file.getAbsolutePath());
-        Path salida = Paths.get("src/img/" + file.getName());
-
+        System.out.println("ruta final: " + rutaFinal +file.getName());
+        Path salida = Paths.get(rutaFinal +file.getName());
         try {
             InputStream input = Files.newInputStream(entrada);
             OutputStream output = Files.newOutputStream(salida);

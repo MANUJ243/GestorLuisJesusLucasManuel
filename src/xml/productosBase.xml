@@ -8,7 +8,7 @@
         <stock>5</stock>
         <fechaModificacion>26/01/2018</fechaModificacion>
         <fechaAlta>26/01/2018</fechaAlta>
-        <pathImagen>src/img/471213.jpg</pathImagen>
+        <pathImagen>img/471213.jpg</pathImagen>
     </producto>
     <producto>
         <id>1001</id>
@@ -18,17 +18,17 @@
         <stock>8</stock>
         <fechaModificacion>26/01/2018</fechaModificacion>
         <fechaAlta>26/01/2018</fechaAlta>
-        <pathImagen>src/img/505201.jpg</pathImagen>
+        <pathImagen>img/505201.jpg</pathImagen>
     </producto>
     <producto>
         <id>1002</id>
         <nombre>Atún claro en aceite de girasol</nombre>
         <descripcion>El atún en lata es un alimento con bastantes beneficios. Junto con el pollo, es uno de los alimentos proteicos preferidos por los deportistas</descripcion>
-        <precio>2,79</precio>
+        <precio>2.79</precio>
         <stock>34</stock>
         <fechaModificacion>26/01/2018</fechaModificacion>
         <fechaAlta>26/01/2018</fechaAlta>
-        <pathImagen>src/img/568198.jpg</pathImagen>
+        <pathImagen>img/568198.jpg</pathImagen>
     </producto>
     <producto>
         <id>1003</id>
@@ -38,7 +38,7 @@
         <stock>58</stock>
         <fechaModificacion>26/01/2018</fechaModificacion>
         <fechaAlta>26/01/2018</fechaAlta>
-        <pathImagen>src/img/712450.jpg</pathImagen>
+        <pathImagen>img/712450.jpg</pathImagen>
     </producto>
     <producto>
         <id>1004</id>
@@ -48,7 +48,7 @@
         <stock>43</stock>
         <fechaModificacion>26/01/2018</fechaModificacion>
         <fechaAlta>26/01/2018</fechaAlta>
-        <pathImagen>src/img/137829.jpg</pathImagen>
+        <pathImagen>img/137829.jpg</pathImagen>
     </producto>
     <producto>
         <id>1005</id>
@@ -58,7 +58,7 @@
         <stock>71</stock>
         <fechaModificacion>26/01/2018</fechaModificacion>
         <fechaAlta>26/01/2018</fechaAlta>
-        <pathImagen>src/img/026623.jpg</pathImagen>
+        <pathImagen>img/026623.jpg</pathImagen>
     </producto>
     <producto>
         <id>1006</id>
@@ -68,7 +68,7 @@
         <stock>140</stock>
         <fechaModificacion>26/01/2018</fechaModificacion>
         <fechaAlta>26/01/2018</fechaAlta>
-        <pathImagen>src/img/mahou.jpg</pathImagen>
+        <pathImagen>img/mahou.jpg</pathImagen>
     </producto>
     <producto>
         <id>1007</id>
@@ -78,7 +78,7 @@
         <stock>28</stock>
         <fechaModificacion>26/01/2018</fechaModificacion>
         <fechaAlta>26/01/2018</fechaAlta>
-        <pathImagen>src/img/danet.jpg</pathImagen>
+        <pathImagen>img/danet.jpg</pathImagen>
     </producto>
     <producto>
         <id>1008</id>
@@ -88,7 +88,7 @@
         <stock>15</stock>
         <fechaModificacion>26/01/2018</fechaModificacion>
         <fechaAlta>26/01/2018</fechaAlta>
-        <pathImagen>src/img/queso.png</pathImagen>
+        <pathImagen>img/queso.png</pathImagen>
     </producto>
     <producto>
         <id>1009</id>
@@ -98,7 +98,7 @@
         <stock>24</stock>
         <fechaModificacion>26/01/2018</fechaModificacion>
         <fechaAlta>26/01/2018</fechaAlta>
-        <pathImagen>src/img/kiwi.png</pathImagen>
+        <pathImagen>img/kiwi.png</pathImagen>
     </producto>
     <producto>
         <id>1010</id>
@@ -108,7 +108,7 @@
         <stock>528</stock>
         <fechaModificacion>26/01/2018</fechaModificacion>
         <fechaAlta>26/01/2018</fechaAlta>
-        <pathImagen>src/img/condones.jpg</pathImagen>
+        <pathImagen>img/condones.jpg</pathImagen>
     </producto>
     <producto>
         <id>1011</id>
@@ -118,7 +118,7 @@
         <stock>41</stock>
         <fechaModificacion>26/01/2018</fechaModificacion>
         <fechaAlta>26/01/2018</fechaAlta>
-        <pathImagen>src/img/comida_gato.png</pathImagen>
+        <pathImagen>img/comida_gato.png</pathImagen>
     </producto>
     <producto>
         <id>1012</id>
@@ -128,7 +128,7 @@
         <stock>52</stock>
         <fechaModificacion>26/01/2018</fechaModificacion>
         <fechaAlta>26/01/2018</fechaAlta>
-        <pathImagen>src/img/cardhu.png</pathImagen>
+        <pathImagen>img/cardhu.png</pathImagen>
     </producto>
     <producto>
         <id>1013</id>
@@ -138,7 +138,7 @@
         <stock>14</stock>
         <fechaModificacion>26/01/2018</fechaModificacion>
         <fechaAlta>26/01/2018</fechaAlta>
-        <pathImagen>src/img/barritas.jpg</pathImagen>
+        <pathImagen>img/barritas.jpg</pathImagen>
     </producto>
     <producto>
         <id>1014</id>
@@ -148,7 +148,7 @@
         <stock>20</stock>
         <fechaModificacion>26/01/2018</fechaModificacion>
         <fechaAlta>26/01/2018</fechaAlta>
-        <pathImagen>src/img/kinder.jpg</pathImagen>
+        <pathImagen>img/kinder.jpg</pathImagen>
     </producto>
     <producto>
         <id>1015</id>
@@ -158,7 +158,7 @@
         <stock>6</stock>
         <fechaModificacion>26/01/2018</fechaModificacion>
         <fechaAlta>26/01/2018</fechaAlta>
-        <pathImagen>src/img/caramelo.jpg</pathImagen>
+        <pathImagen>img/caramelo.jpg</pathImagen>
     </producto>
     <producto>
         <id>1016</id>
@@ -168,7 +168,7 @@
         <stock>45</stock>
         <fechaModificacion>26/01/2018</fechaModificacion>
         <fechaAlta>26/01/2018</fechaAlta>
-        <pathImagen>src/img/ram.jpg</pathImagen>
+        <pathImagen>img/ram.jpg</pathImagen>
     </producto>
     <producto>
         <id>1017</id>
@@ -178,7 +178,7 @@
         <stock>36</stock>
         <fechaModificacion>26/01/2018</fechaModificacion>
         <fechaAlta>26/01/2018</fechaAlta>
-        <pathImagen>src/img/te.jpg</pathImagen>
+        <pathImagen>img/te.jpg</pathImagen>
     </producto>
     <producto>
         <id>1018</id>
@@ -188,7 +188,7 @@
         <stock>62</stock>
         <fechaModificacion>26/01/2018</fechaModificacion>
         <fechaAlta>26/01/2018</fechaAlta>
-        <pathImagen>src/img/danone.jpg</pathImagen>
+        <pathImagen>img/danone.jpg</pathImagen>
     </producto>
     <producto>
         <id>1019</id>
@@ -198,7 +198,7 @@
         <stock>43</stock>
         <fechaModificacion>26/01/2018</fechaModificacion>
         <fechaAlta>26/01/2018</fechaAlta>
-        <pathImagen>src/img/arroz.jpg</pathImagen>
+        <pathImagen>img/arroz.jpg</pathImagen>
     </producto>
     <producto>
         <id>1020</id>
@@ -208,7 +208,7 @@
         <stock>93</stock>
         <fechaModificacion>26/01/2018</fechaModificacion>
         <fechaAlta>26/01/2018</fechaAlta>
-        <pathImagen>src/img/merluza.jpg</pathImagen>
+        <pathImagen>img/merluza.jpg</pathImagen>
     </producto>
     <producto>
         <id>1021</id>
@@ -218,7 +218,7 @@
         <stock>58</stock>
         <fechaModificacion>26/01/2018</fechaModificacion>
         <fechaAlta>26/01/2018</fechaAlta>
-        <pathImagen>src/img/maxibon.jpg</pathImagen>
+        <pathImagen>img/maxibon.jpg</pathImagen>
     </producto>
     <producto>
         <id>1022</id>
@@ -228,7 +228,7 @@
         <stock>7</stock>
         <fechaModificacion>26/01/2018</fechaModificacion>
         <fechaAlta>26/01/2018</fechaAlta>
-        <pathImagen>src/img/leche.jpg</pathImagen>
+        <pathImagen>img/leche.jpg</pathImagen>
     </producto>
     <producto>
         <id>1023</id>
@@ -238,7 +238,7 @@
         <stock>52</stock>
         <fechaModificacion>26/01/2018</fechaModificacion>
         <fechaAlta>26/01/2018</fechaAlta>
-        <pathImagen>src/img/natillas.jpg</pathImagen>
+        <pathImagen>img/natillas.jpg</pathImagen>
     </producto>
     <producto>
         <id>1024</id>
@@ -248,13 +248,13 @@
         <stock>81</stock>
         <fechaModificacion>26/01/2018</fechaModificacion>
         <fechaAlta>26/01/2018</fechaAlta>
-        <pathImagen>src/img/detergente.jpg</pathImagen>
+        <pathImagen>img/detergente.jpg</pathImagen>
     </producto>
     <producto>
         <id>1036</id>
         <nombre>Isotónico Storm</nombre>
         <precio>4.00</precio>
-        <pathImagen>src/img/673659.jpg</pathImagen>
+        <pathImagen>img/673659.jpg</pathImagen>
         <stock>21</stock>
         <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
         <fechaAlta>28/01/2018</fechaAlta>
@@ -264,7 +264,7 @@
         <id>1025</id>
         <nombre>Barritas de proteínas sabor chocolate blanco</nombre>
         <precio>2.80</precio>
-        <pathImagen>src/img/210687.jpg</pathImagen>
+        <pathImagen>img/210687.jpg</pathImagen>
         <stock>147</stock>
         <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
         <fechaAlta>28/01/2018</fechaAlta>
@@ -274,7 +274,7 @@
         <id>1026</id>
         <nombre>Bebida isotónica Iced Storm botella</nombre>
         <precio>1.04</precio>
-        <pathImagen>src/img/394775.png</pathImagen>
+        <pathImagen>img/394775.png</pathImagen>
         <stock>135</stock>
         <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
         <fechaAlta>28/01/2018</fechaAlta>
@@ -284,7 +284,7 @@
         <id>1027</id>
         <nombre>Bebida isotónica de naranja</nombre>
         <precio>0.78</precio>
-        <pathImagen>src/img/000098.jpg</pathImagen>
+        <pathImagen>img/000098.jpg</pathImagen>
         <stock>132</stock>
         <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
         <fechaAlta>28/01/2018</fechaAlta>
@@ -294,7 +294,7 @@
         <id>1028</id>
         <nombre>Refresco isotónico de naranja</nombre>
         <precio>1.04</precio>
-        <pathImagen>src/img/790503.png</pathImagen>
+        <pathImagen>img/790503.png</pathImagen>
         <stock>14</stock>
         <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
         <fechaAlta>28/01/2018</fechaAlta>
@@ -304,7 +304,7 @@
         <id>1029</id>
         <nombre>Refresco isotónico Cool Blue</nombre>
         <precio>3.05</precio>
-        <pathImagen>src/img/219981.png</pathImagen>
+        <pathImagen>img/219981.png</pathImagen>
         <stock>95</stock>
         <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
         <fechaAlta>28/01/2018</fechaAlta>
@@ -314,7 +314,7 @@
         <id>1030</id>
         <nombre>Bebida isotónica Citrus Charge botella</nombre>
         <precio>1.04</precio>
-        <pathImagen>src/img/394779.png</pathImagen>
+        <pathImagen>img/394779.png</pathImagen>
         <stock>121</stock>
         <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
         <fechaAlta>28/01/2018</fechaAlta>
@@ -324,7 +324,7 @@
         <id>1031</id>
         <nombre>Bebida Reload</nombre>
         <precio>1.89</precio>
-        <pathImagen>src/img/964053.png</pathImagen>
+        <pathImagen>img/964053.png</pathImagen>
         <stock>198</stock>
         <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
         <fechaAlta>28/01/2018</fechaAlta>
@@ -334,7 +334,7 @@
         <id>1032</id>
         <nombre>Bebida antioxidante sabor melocotón</nombre>
         <precio>1.89</precio>
-        <pathImagen>src/img/964045.png</pathImagen>
+        <pathImagen>img/964045.png</pathImagen>
         <stock>169</stock>
         <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
         <fechaAlta>28/01/2018</fechaAlta>
@@ -344,7 +344,7 @@
         <id>1033</id>
         <nombre>Bebida Everyday</nombre>
         <precio>1.89</precio>
-        <pathImagen>src/img/964054.png</pathImagen>
+        <pathImagen>img/964054.png</pathImagen>
         <stock>52</stock>
         <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
         <fechaAlta>28/01/2018</fechaAlta>
@@ -354,7 +354,7 @@
         <id>1034</id>
         <nombre>Barritas de proteínas sabor coco</nombre>
         <precio>3.05</precio>
-        <pathImagen>src/img/210690.jpg</pathImagen>
+        <pathImagen>img/210690.jpg</pathImagen>
         <stock>97</stock>
         <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
         <fechaAlta>28/01/2018</fechaAlta>
@@ -364,7 +364,7 @@
         <id>1035</id>
         <nombre>Refresco isotónico de limón</nombre>
         <precio>0.78</precio>
-        <pathImagen>src/img/000099.jpg</pathImagen>
+        <pathImagen>img/000099.jpg</pathImagen>
         <stock>54</stock>
         <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
         <fechaAlta>28/01/2018</fechaAlta>
@@ -374,7 +374,7 @@
         <id>1037</id>
         <nombre>Lasaña casera</nombre>
         <precio>2.50</precio>
-        <pathImagen>src/img/274162.jpg</pathImagen>
+        <pathImagen>img/274162.jpg</pathImagen>
         <stock>21</stock>
         <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
         <fechaAlta>28/01/2018</fechaAlta>
@@ -384,7 +384,7 @@
         <id>1038</id>
         <nombre>Lasaña de espinacas y queso de cabra</nombre>
         <precio>2.50</precio>
-        <pathImagen>src/img/892199.jpg</pathImagen>
+        <pathImagen>img/892199.jpg</pathImagen>
         <stock>99</stock>
         <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
         <fechaAlta>28/01/2018</fechaAlta>
@@ -394,7 +394,7 @@
         <id>1039</id>
         <nombre>Lasaña de atún</nombre>
         <precio>2.50</precio>
-        <pathImagen>src/img/139461.jpg</pathImagen>
+        <pathImagen>img/139461.jpg</pathImagen>
         <stock>123</stock>
         <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
         <fechaAlta>28/01/2018</fechaAlta>
@@ -404,7 +404,7 @@
         <id>1040</id>
         <nombre>Bola de pizza fresca</nombre>
         <precio>1.00</precio>
-        <pathImagen>src/img/235086.jpg</pathImagen>
+        <pathImagen>img/235086.jpg</pathImagen>
         <stock>163</stock>
         <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
         <fechaAlta>28/01/2018</fechaAlta>
@@ -414,7 +414,7 @@
         <id>1041</id>
         <nombre>Provopizza queso azul y nueces</nombre>
         <precio>2.50</precio>
-        <pathImagen>src/img/935761.jpg</pathImagen>
+        <pathImagen>img/935761.jpg</pathImagen>
         <stock>154</stock>
         <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
         <fechaAlta>28/01/2018</fechaAlta>
@@ -424,7 +424,7 @@
         <id>1042</id>
         <nombre>Provopizza de sobrasada</nombre>
         <precio>2.50</precio>
-        <pathImagen>src/img/935762.jpg</pathImagen>
+        <pathImagen>img/935762.jpg</pathImagen>
         <stock>16</stock>
         <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
         <fechaAlta>28/01/2018</fechaAlta>
@@ -434,7 +434,7 @@
         <id>1043</id>
         <nombre>Pasta a la bolgnesa</nombre>
         <precio>2.50</precio>
-        <pathImagen>src/img/185675.jpg</pathImagen>
+        <pathImagen>img/185675.jpg</pathImagen>
         <stock>113</stock>
         <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
         <fechaAlta>28/01/2018</fechaAlta>
@@ -444,7 +444,7 @@
         <id>1044</id>
         <nombre>Mini pizza atún</nombre>
         <precio>1.50</precio>
-        <pathImagen>src/img/154538.jpg</pathImagen>
+        <pathImagen>img/154538.jpg</pathImagen>
         <stock>27</stock>
         <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
         <fechaAlta>28/01/2018</fechaAlta>
@@ -454,7 +454,7 @@
         <id>1045</id>
         <nombre>mini Pizza carbonara</nombre>
         <precio>1.50</precio>
-        <pathImagen>src/img/154503.jpg</pathImagen>
+        <pathImagen>img/154503.jpg</pathImagen>
         <stock>44</stock>
         <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
         <fechaAlta>28/01/2018</fechaAlta>
@@ -464,7 +464,7 @@
         <id>1046</id>
         <nombre>Ensaladilla Rusa</nombre>
         <precio>3.00</precio>
-        <pathImagen>src/img/384223.png</pathImagen>
+        <pathImagen>img/384223.png</pathImagen>
         <stock>62</stock>
         <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
         <fechaAlta>28/01/2018</fechaAlta>
@@ -474,7 +474,7 @@
         <id>1047</id>
         <nombre>Ensalada de Cangrejo</nombre>
         <precio>3.00</precio>
-        <pathImagen>src/img/384200.png</pathImagen>
+        <pathImagen>img/384200.png</pathImagen>
         <stock>195</stock>
         <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
         <fechaAlta>28/01/2018</fechaAlta>
@@ -484,7 +484,7 @@
         <id>1048</id>
         <nombre>Ensalada del Cangrejo</nombre>
         <precio>2.00</precio>
-        <pathImagen>src/img/387070.png</pathImagen>
+        <pathImagen>img/387070.png</pathImagen>
         <stock>105</stock>
         <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
         <fechaAlta>28/01/2018</fechaAlta>
@@ -494,7 +494,7 @@
         <id>1049</id>
         <nombre>Patatas con Ali Oli</nombre>
         <precio>3.00</precio>
-        <pathImagen>src/img/384206.png</pathImagen>
+        <pathImagen>img/384206.png</pathImagen>
         <stock>62</stock>
         <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
         <fechaAlta>28/01/2018</fechaAlta>
@@ -504,7 +504,7 @@
         <id>1050</id>
         <nombre>Ensaladilla de la Rusa</nombre>
         <precio>2.00</precio>
-        <pathImagen>src/img/387064.png</pathImagen>
+        <pathImagen>img/387064.png</pathImagen>
         <stock>4</stock>
         <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
         <fechaAlta>28/01/2018</fechaAlta>
@@ -514,7 +514,7 @@
         <id>1051</id>
         <nombre>Sandwich nórdico de pollo</nombre>
         <precio>1.50</precio>
-        <pathImagen>src/img/726672.png</pathImagen>
+        <pathImagen>img/726672.png</pathImagen>
         <stock>164</stock>
         <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
         <fechaAlta>28/01/2018</fechaAlta>
@@ -524,7 +524,7 @@
         <id>1052</id>
         <nombre>Ensalada Americana</nombre>
         <precio>3.00</precio>
-        <pathImagen>src/img/384202.png</pathImagen>
+        <pathImagen>img/384202.png</pathImagen>
         <stock>152</stock>
         <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
         <fechaAlta>28/01/2018</fechaAlta>
@@ -534,7 +534,7 @@
         <id>1053</id>
         <nombre>Sandwicht nórdico mixto</nombre>
         <precio>1.50</precio>
-        <pathImagen>src/img/726653.png</pathImagen>
+        <pathImagen>img/726653.png</pathImagen>
         <stock>175</stock>
         <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
         <fechaAlta>28/01/2018</fechaAlta>
@@ -544,7 +544,7 @@
         <id>1054</id>
         <nombre>Sandwich de tortilla y empanada</nombre>
         <precio>1.50</precio>
-        <pathImagen>src/img/247619.png</pathImagen>
+        <pathImagen>img/247619.png</pathImagen>
         <stock>159</stock>
         <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
         <fechaAlta>28/01/2018</fechaAlta>
@@ -554,7 +554,7 @@
         <id>1055</id>
         <nombre>Sandwich york salsa inglesa</nombre>
         <precio>2.25</precio>
-        <pathImagen>src/img/988977.jpg</pathImagen>
+        <pathImagen>img/988977.jpg</pathImagen>
         <stock>70</stock>
         <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
         <fechaAlta>28/01/2018</fechaAlta>
@@ -564,7 +564,7 @@
         <id>1056</id>
         <nombre>Sandwich prmium sajonia</nombre>
         <precio>2.00</precio>
-        <pathImagen>src/img/822918.jpg</pathImagen>
+        <pathImagen>img/822918.jpg</pathImagen>
         <stock>182</stock>
         <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
         <fechaAlta>28/01/2018</fechaAlta>
@@ -574,7 +574,7 @@
         <id>1057</id>
         <nombre>Sandwich premium maxi club</nombre>
         <precio>2.00</precio>
-        <pathImagen>src/img/822914.jpg</pathImagen>
+        <pathImagen>img/822914.jpg</pathImagen>
         <stock>66</stock>
         <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
         <fechaAlta>28/01/2018</fechaAlta>
@@ -584,7 +584,7 @@
         <id>1058</id>
         <nombre>Pechuga de Pavo Premium</nombre>
         <precio>1.59</precio>
-        <pathImagen>src/img/453483.png</pathImagen>
+        <pathImagen>img/453483.png</pathImagen>
         <stock>64</stock>
         <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
         <fechaAlta>28/01/2018</fechaAlta>
@@ -594,7 +594,7 @@
         <id>1059</id>
         <nombre>Pechuga de Pavo de pobre</nombre>
         <precio>2.30</precio>
-        <pathImagen>src/img/629626.png</pathImagen>
+        <pathImagen>img/629626.png</pathImagen>
         <stock>122</stock>
         <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
         <fechaAlta>28/01/2018</fechaAlta>
@@ -604,7 +604,7 @@
         <id>1060</id>
         <nombre>Pechuga de un pavo muerto</nombre>
         <precio>1.95</precio>
-        <pathImagen>src/img/115181.png</pathImagen>
+        <pathImagen>img/115181.png</pathImagen>
         <stock>162</stock>
         <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
         <fechaAlta>28/01/2018</fechaAlta>
@@ -614,7 +614,7 @@
         <id>1061</id>
         <nombre>Pechuga de Pavo braseada</nombre>
         <precio>1.59</precio>
-        <pathImagen>src/img/528745.png</pathImagen>
+        <pathImagen>img/528745.png</pathImagen>
         <stock>114</stock>
         <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
         <fechaAlta>28/01/2018</fechaAlta>
@@ -624,7 +624,7 @@
         <id>1062</id>
         <nombre>Pechuga de pavo en lonchas finas</nombre>
         <precio>1.50</precio>
-        <pathImagen>src/img/640020.png</pathImagen>
+        <pathImagen>img/640020.png</pathImagen>
         <stock>183</stock>
         <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
         <fechaAlta>28/01/2018</fechaAlta>
@@ -634,7 +634,7 @@
         <id>1063</id>
         <nombre>Pechuga de Pavo en Finas lonchas</nombre>
         <precio>1.00</precio>
-        <pathImagen>src/img/075168.png</pathImagen>
+        <pathImagen>img/075168.png</pathImagen>
         <stock>70</stock>
         <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
         <fechaAlta>28/01/2018</fechaAlta>
@@ -644,7 +644,7 @@
         <id>1064</id>
         <nombre>Pechuga de pavo natural asada</nombre>
         <precio>3.74</precio>
-        <pathImagen>src/img/242516.png</pathImagen>
+        <pathImagen>img/242516.png</pathImagen>
         <stock>56</stock>
         <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
         <fechaAlta>28/01/2018</fechaAlta>
@@ -654,7 +654,7 @@
         <id>1065</id>
         <nombre>Pechuga de cualquier pavo</nombre>
         <precio>1.00</precio>
-        <pathImagen>src/img/216260.png</pathImagen>
+        <pathImagen>img/216260.png</pathImagen>
         <stock>6</stock>
         <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
         <fechaAlta>28/01/2018</fechaAlta>
@@ -664,7 +664,7 @@
         <id>1066</id>
         <nombre>Mortadela de Pavo</nombre>
         <precio>1.55</precio>
-        <pathImagen>src/img/794538.png</pathImagen>
+        <pathImagen>img/794538.png</pathImagen>
         <stock>131</stock>
         <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
         <fechaAlta>28/01/2018</fechaAlta>
@@ -674,7 +674,7 @@
         <id>1067</id>
         <nombre>Lonchas de pavo</nombre>
         <precio>2.00</precio>
-        <pathImagen>src/img/725121.png</pathImagen>
+        <pathImagen>img/725121.png</pathImagen>
         <stock>36</stock>
         <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
         <fechaAlta>28/01/2018</fechaAlta>
@@ -684,7 +684,7 @@
         <id>1068</id>
         <nombre>Pechuga de pavo en lonchas</nombre>
         <precio>1.00</precio>
-        <pathImagen>src/img/176743.png</pathImagen>
+        <pathImagen>img/176743.png</pathImagen>
         <stock>88</stock>
         <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
         <fechaAlta>28/01/2018</fechaAlta>
@@ -694,7 +694,7 @@
         <id>1069</id>
         <nombre>Pechuga pavo mini</nombre>
         <precio>2.99</precio>
-        <pathImagen>src/img/074199.png</pathImagen>
+        <pathImagen>img/074199.png</pathImagen>
         <stock>22</stock>
         <descripcion>Descripcion predeterminada, generada con ManuWebScrapper - info cogida de Carrefour</descripcion>
         <fechaAlta>28/01/2018</fechaAlta>
