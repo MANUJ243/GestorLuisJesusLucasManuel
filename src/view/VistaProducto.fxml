@@ -31,9 +31,9 @@
             <Button fx:id="botonAyuda" mnemonicParsing="false" onAction="#ayuda" prefHeight="30.0" prefWidth="80.0" styleClass="botonAzul" text="Ayuda" />
          </children>
       </HBox>
-      <Text fill="#9e9393" fontSmoothingType="LCD" layoutX="14.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Para ordenar un campo pinche en la cabecera de la columna que desee ordenar." wrappingWidth="479.99998927116394">
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="14.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Para ordenar un campo pinche en la cabecera de la columna que desee ordenar." wrappingWidth="479.99998927116394">
          <font>
-            <Font name="Berlin Sans FB Bold" size="12.0" />
+            <Font name="Arial" size="12.0" />
          </font>
       </Text>
    </children>

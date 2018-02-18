@@ -27,3 +27,34 @@
     -fx-background-color: #A42727;
     -fx-text-fill: white;
 }
+
+#AnchorPane {
+    -fx-background-color: #262626;
+}
+
+.dorado {
+    -fx-background-color: #db9600;
+    -fx-text-fill: white;
+}
+
+.dorado *{
+    -fx-background-color: #db9600;
+    -fx-text-fill: white;
+}
+
+.menu-item:hover *, .menu-item:hover, .menu:hover, .menu:hover > *{
+    -fx-background-color: #b77d00;
+    -fx-text-fill: white;
+}
+
+.textBlanco {
+    -fx-text-fill: white;
+}
+
+.table-row-cell:selected {
+   -fx-background-color: #ffae00; 
+}
+
+.table-row-cell:selected .text {
+   -fx-fill: black;
+}
