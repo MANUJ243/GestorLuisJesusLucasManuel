@@ -57,7 +57,7 @@ public class VistaPrincipalController {
         File fichero = new File(rutaJar);        
         String nombreFinal = rutaJar.replace(fichero.getName(),"");
 
-    private File file = new File(nombreFinal+"file/ayuda.docx");
+    private File file = new File(nombreFinal+"file/ayuda.pdf");
 
     public VistaPrincipalController() {
 
