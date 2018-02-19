@@ -14,7 +14,7 @@
          <children>
             <ImageView fx:id="codigoBarrasImg" fitHeight="113.0" fitWidth="216.0" layoutX="490.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true" />
             <Button fx:id="editar" layoutX="577.0" layoutY="14.0" mnemonicParsing="false" onAction="#editar" prefHeight="31.0" prefWidth="126.0" styleClass="botonAzul" text="Editar" />
-            <Button layoutX="576.0" layoutY="59.0" mnemonicParsing="false" styleClass="botonAzul" text="Exportar Codigo" />
+            <Button layoutX="576.0" layoutY="59.0" mnemonicParsing="false" onAction="#crearPDF" prefHeight="25.0" prefWidth="126.0" styleClass="botonAzul" text="Exportar Codigo" />
             <Label fx:id="nombre" layoutX="22.0" layoutY="4.0" text="Nombre" />
             <TextArea fx:id="descripcion" layoutX="22.0" layoutY="36.0" prefHeight="213.0" prefWidth="444.0" />
          </children>
