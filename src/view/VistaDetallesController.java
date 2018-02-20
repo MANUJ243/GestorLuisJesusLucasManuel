@@ -104,23 +104,17 @@ public class VistaDetallesController {
     }
 
     public void crearPDF() throws IOException {
-        System.out.println("Metodo llamado");
         //Creo un nuevo documento, una página y la añado
         PDDocument documento = new PDDocument();
-        System.out.println("llego1");
         PDPage pagina = new PDPage();
-        System.out.println("llego2");
         documento.addPage(pagina);
-        System.out.println("llego3");
         documento.getPage(0);
-        System.out.println("1");
         //Inicio un nuevo stream de contenido
         PDPageContentStream contentStream = new PDPageContentStream(documento, pagina);
 
         //Establezco la posición Y de la primera líena y el tipo de fuente
         int linea = 700;
         contentStream.setFont(PDType1Font.TIMES_ROMAN, 12);
-        System.out.println("2");
         contentStream.beginText();
         contentStream.newLineAtOffset(25, linea);
         contentStream.showText(product.getId() + " ");
@@ -135,7 +129,6 @@ public class VistaDetallesController {
 
         //Cierro el content stream
         contentStream.close();
-        System.out.println("3");
         //INicio el file chooser
         FileChooser fileChooser = new FileChooser();
 
@@ -146,7 +139,6 @@ public class VistaDetallesController {
 
         //Muestro el diálogo de guardar
         File archivo = fileChooser.showSaveDialog(escenarioDetalles);
-        System.out.println("4");
         if (archivo != null) {
 
             //Me aseguro de que tiene la extensión correcta y si no la cambio
@@ -160,7 +152,7 @@ public class VistaDetallesController {
             documento.close();
 
         }
-        System.out.println("5");
+        
         //Abro el archivo en el visor de PDF del sistema
         if (Desktop.isDesktopSupported()) {
             try {
@@ -168,7 +160,6 @@ public class VistaDetallesController {
             } catch (IOException ex) {
             }
         }
-        System.out.println("6");
     }
     
     @FXML
