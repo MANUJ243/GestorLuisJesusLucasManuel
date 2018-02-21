@@ -11,6 +11,8 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.Spinner;
+import javafx.scene.control.SpinnerValueFactory;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
@@ -50,7 +52,7 @@ public class VistaDetallesController {
     @FXML
     private ImageView codigoBarrasImg;
     @FXML
-    private TextField numeroEtiquetas;
+    private Spinner numeroEtiquetas;
     @FXML
     private Label codigoBarras;
     @FXML
@@ -93,6 +95,8 @@ public class VistaDetallesController {
         descripcion.setText(producto.getDescripcion());
         bar = new BarCodeGenerator(producto.getId() + "");
         bar.anadirAImageView(codigoBarrasImg);
+        SpinnerValueFactory<Integer> valueFactory = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 100, 1);
+        numeroEtiquetas.setValueFactory(valueFactory);
     }
 
     public void setPrueba(GestorProductos prueba) {
@@ -139,7 +143,7 @@ public class VistaDetallesController {
         linea -= 125;
         contentStream.drawImage(JPEGFactory.createFromImage(documento, bar.getBuffered()), 0, linea, 100, 100);
 
-        for (int i = 0; i < Integer.parseInt(numeroEtiquetas.getText())-1; i++) {
+        for (int i = 0; i < (int) numeroEtiquetas.getValue()-1; i++) {
             documento.addPage(pagina);
             documento.getPage(i + 1);
         }
