@@ -33,6 +33,10 @@ public class BarCodeGenerator {
         }
     }
     
+    public BufferedImage getBuffered(){
+        return bufferedImage;
+    }
+    
     public void anadirAImageView(ImageView imageView){
         Image image = SwingFXUtils.toFXImage(bufferedImage, null);
         imageView.setImage(image);

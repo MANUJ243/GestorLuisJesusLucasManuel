@@ -19,6 +19,8 @@ import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDPage;
 import org.apache.pdfbox.pdmodel.PDPageContentStream;
 import org.apache.pdfbox.pdmodel.font.PDType1Font;
+import org.apache.pdfbox.pdmodel.graphics.image.JPEGFactory;
+import org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject;
 import util.BarCodeGenerator;
 import util.UtilidadDeFechas;
 
@@ -57,6 +59,7 @@ public class VistaDetallesController {
     String rutaJar = GestorProductos.class.getProtectionDomain().getCodeSource().getLocation().getPath();
     File fichero = new File(rutaJar);
     String nombreFinal = rutaJar.replace(fichero.getName(), "");
+    private BarCodeGenerator bar;
 
     public VistaDetallesController() {
     }
@@ -81,7 +84,7 @@ public class VistaDetallesController {
 
         descripcion.setEditable(false);
         descripcion.setText(producto.getDescripcion());
-        BarCodeGenerator bar = new BarCodeGenerator(producto.getId() + "");
+        bar = new BarCodeGenerator(producto.getId() + "");
         bar.anadirAImageView(codigoBarrasImg);
     }
 
@@ -123,6 +126,8 @@ public class VistaDetallesController {
         contentStream.showText(product.getFechaAlta()+ " ");
         contentStream.showText(product.getFechaModificacion()+ " ");
         contentStream.showText(product.getStock()+ " ");
+        contentStream.drawImage(JPEGFactory.createFromImage(documento, bar.getBuffered()), 0, 0, 100, 100);
+        
         contentStream.endText();
         //Cambio de línea
         linea -= 25;
