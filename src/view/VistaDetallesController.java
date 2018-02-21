@@ -4,11 +4,16 @@ import controller.GestorProductos;
 import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.text.Text;
@@ -44,6 +49,8 @@ public class VistaDetallesController {
     private TextArea descripcion;
     @FXML
     private ImageView codigoBarrasImg;
+    @FXML
+    private TextField numeroEtiquetas;
     @FXML
     private Label codigoBarras;
     @FXML
@@ -107,58 +114,58 @@ public class VistaDetallesController {
     }
 
     public void crearPDF() throws IOException {
-        //Creo un nuevo documento, una página y la añado
+
         PDDocument documento = new PDDocument();
         PDPage pagina = new PDPage();
         documento.addPage(pagina);
         documento.getPage(0);
-        //Inicio un nuevo stream de contenido
+
         PDPageContentStream contentStream = new PDPageContentStream(documento, pagina);
+        ArrayList<String> detalles = new ArrayList<>();
+        detalles.add("ID: " + product.getId());
+        detalles.add("TITULO: " + product.getNombre());
 
-        //Establezco la posición Y de la primera líena y el tipo de fuente
         int linea = 700;
-        contentStream.setFont(PDType1Font.TIMES_ROMAN, 12);
-        contentStream.beginText();
-        contentStream.newLineAtOffset(25, linea);
-        contentStream.showText(product.getId() + " ");
-        contentStream.showText(product.getNombre() + " ");
-        contentStream.showText(product.getDescripcion() + " ");
-        contentStream.showText(product.getFechaAlta()+ " ");
-        contentStream.showText(product.getFechaModificacion()+ " ");
-        contentStream.showText(product.getStock()+ " ");
-        contentStream.drawImage(JPEGFactory.createFromImage(documento, bar.getBuffered()), 0, 0, 100, 100);
-        
-        contentStream.endText();
-        //Cambio de línea
-        linea -= 25;
+        contentStream.setFont(PDType1Font.TIMES_ROMAN, 10);
 
-        //Cierro el content stream
+        for (int i = 0; i < detalles.size(); i++) {
+            contentStream.beginText();
+            contentStream.newLineAtOffset(25, linea);
+            contentStream.showText(detalles.get(i));
+            contentStream.endText();
+            linea -= 25;
+        }
+
+        linea -= 125;
+        contentStream.drawImage(JPEGFactory.createFromImage(documento, bar.getBuffered()), 0, linea, 100, 100);
+
+        for (int i = 0; i < Integer.parseInt(numeroEtiquetas.getText())-1; i++) {
+            documento.addPage(pagina);
+            documento.getPage(i + 1);
+        }
+
         contentStream.close();
-        //INicio el file chooser
+
         FileChooser fileChooser = new FileChooser();
 
-        //Filtro para la extensión
         FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter(
                 "PDF files (*.pdf)", "*.pdf");
         fileChooser.getExtensionFilters().add(extFilter);
 
-        //Muestro el diálogo de guardar
         File archivo = fileChooser.showSaveDialog(escenarioDetalles);
         if (archivo != null) {
 
-            //Me aseguro de que tiene la extensión correcta y si no la cambio
             String extension = "";
             if (!archivo.getPath().endsWith(extension)) {
                 extension = ".pdf";
             }
-            //Escribo en el archivo y lo cierro
+
             archivo = new File(archivo.getPath() + extension);
             documento.save(archivo);
             documento.close();
 
         }
-        
-        //Abro el archivo en el visor de PDF del sistema
+
         if (Desktop.isDesktopSupported()) {
             try {
                 Desktop.getDesktop().open(archivo);
@@ -166,9 +173,17 @@ public class VistaDetallesController {
             }
         }
     }
-    
+
     @FXML
-    private void pdf() throws IOException {
-      crearPDF();
+    private void pdf() {
+        try {
+            crearPDF();
+        } catch (IOException ex) {
+            Alert alerta = new Alert(Alert.AlertType.WARNING);
+            alerta.setTitle("Error");
+            alerta.setHeaderText("Datos no validos!");
+            alerta.setContentText("Debes introducir un numero sin decimales");
+            alerta.showAndWait();
+        }
     }
 }
