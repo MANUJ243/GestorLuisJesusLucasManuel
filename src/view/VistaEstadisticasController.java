@@ -96,7 +96,7 @@ public class VistaEstadisticasController{
         int linea = 700;
         contentStream.setFont(PDType1Font.TIMES_ROMAN, 10);
 
-        contentStream.drawImage(JPEGFactory.createFromImage(documento, SwingFXUtils.fromFXImage(image, null)), 0, linea, (float) grafico.getWidth(), (float) grafico.getHeight());
+        contentStream.drawImage(JPEGFactory.createFromImage(documento, SwingFXUtils.fromFXImage(image, null)), 0, linea, 100, 100);
 
         contentStream.close();
 
