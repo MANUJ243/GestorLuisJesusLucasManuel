@@ -43,7 +43,7 @@ public class VistaPrincipalController {
     @FXML
     private MenuItem itemAbout;
 
-
+    
     private AnchorPane estadisticas;
 
     private ObservableList datosProducto = FXCollections.observableArrayList();
