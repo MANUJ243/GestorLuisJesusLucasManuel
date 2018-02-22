@@ -20,7 +20,6 @@
                 <Menu mnemonicParsing="false" text="Graficos">
                     <items>
                         <MenuItem fx:id="stats" mnemonicParsing="false" onAction="#stats" text="Generar Grafico" />
-                        <MenuItem fx:id="statsToPDF" mnemonicParsing="false" onAction="#stats" text="Exportar grafico a PDF" />
                     </items>
                 </Menu>
                 <Menu mnemonicParsing="false" text="Help">

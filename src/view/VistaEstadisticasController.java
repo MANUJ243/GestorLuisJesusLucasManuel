@@ -2,30 +2,18 @@ package view;
 
 import controller.GestorProductos;
 import java.awt.Desktop;
-import java.awt.image.BufferedImage;
-import java.io.ByteArrayOutputStream;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.embed.swing.SwingFXUtils;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
-import javafx.scene.SnapshotParameters;
 import javafx.scene.chart.PieChart;
-import javafx.scene.control.Label;
-import javafx.scene.image.Image;
 import javafx.scene.image.WritableImage;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import model.Producto;
-
-import javax.imageio.ImageIO;
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javafx.stage.FileChooser;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDPage;
@@ -93,10 +81,10 @@ public class VistaEstadisticasController{
 
         PDPageContentStream contentStream = new PDPageContentStream(documento, pagina);
 
-        int linea = 700;
+        int linea = 300;
         contentStream.setFont(PDType1Font.TIMES_ROMAN, 10);
 
-        contentStream.drawImage(JPEGFactory.createFromImage(documento, SwingFXUtils.fromFXImage(image, null)), 0, linea, 100, 100);
+        contentStream.drawImage(JPEGFactory.createFromImage(documento, SwingFXUtils.fromFXImage(image, null)), 0, linea, (float) grafico.getWidth()/3, (float) grafico.getHeight()/3);
 
         contentStream.close();
 
